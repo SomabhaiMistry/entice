@@ -1,4 +1,3 @@
-const img_backgound = 'assets/images/backgound.png';
 const img_bg_computer_mode = 'assets/images/img_bg_computer_mode.png';
 const img_back_rect = 'assets/images/img_back_rect.png';   /*nanu*/
 const img_player_select_bg = 'assets/images/img_player_select_bg.png';/*motu*/
@@ -6,7 +5,6 @@ const img_logo = 'assets/images/logo.png';
 const img_google = 'assets/images/google.png';
 const img_fb = 'assets/images/fb.png';
 const icon_back = 'assets/images/iconback.png';
-const icon_search = 'assets/images/icon_search.png';
 const img_flag_india = 'assets/images/img_flag_india.png';
 const img_flag_uk = 'assets/images/img_flag_uk.png';
 const img_flag_china = 'assets/images/img_flag_china.png';
@@ -21,11 +19,9 @@ const img_btn_save = 'assets/images/img_btn_save.png';
 const img_btn_play = 'assets/images/img_btn_play.png';
 const icon_down_arrow = 'assets/images/icon_down_arrow.png';
 const img_county_bg = 'assets/images/img_county_bg.png';
-const img_search_bg = 'assets/images/img_search_bg.png';
-const img_et_bg = 'assets/images/img_et_bg.png';
 const img_add_friends = 'assets/images/img_add_friends.png';
 const img_green_box = 'assets/images/img_green_box.png';
-const img_plus = 'assets/images/img_adding.png';
+const img_plus = 'assets/images/img_plus.png';
 const img_deposite_bg = 'assets/images/img_deposite_bg.png';
 const img_download = 'assets/images/img_download.png';
 const img_upload = 'assets/images/img_upload.png';
@@ -75,9 +71,35 @@ const img_rule_rect = 'assets/images/img_rule_rect.png';
 const img_face1 = 'assets/images/face1.svg';
 const img_face2 = 'assets/images/face2.png';
 const face_high = 'assets/images/face_high.png';
-//
-//
-// const fb1 = 'assets/images/vaibhav.svg';
-// const back = 'assets/images/b_y.svg';
-const fb = 'assets/images/fb.svg';
+const txt_bg = 'assets/images/txt_bg.png';
+
+
+
+
+
 const b_y = 'assets/images/b_y.svg';
+
+
+
+const icon_et_bg = 'assets/images/icon_et_bg.svg';
+const btn_login = 'assets/images/btn_login.svg';
+const btn_create_account = 'assets/images/btn_create_account.svg';
+const btn_continue = 'assets/images/btn_continue.svg';
+const fb = 'assets/images/fb.svg';
+const google = 'assets/images/google.svg';
+const icon_magnifying = 'assets/images/icon_magnifying.svg';
+const icon_searching = 'assets/images/icon_searching.svg';
+const icon_indean = 'assets/images/icon_indean.svg';
+const search_fram = 'assets/images/search_fram.svg';
+const icon_down = 'assets/images/icon_down.svg';
+const box_green = 'assets/images/box_green.svg';
+
+const icon_like_user = 'assets/images/icon_like_user.svg';
+const icon_star = 'assets/images/icon_star.svg';
+
+
+
+const img_backgound = 'assets/images/backgound.png';
+const img_et_bg = 'assets/images/img_et_bg.png';
+const img_search_bg = 'assets/images/img_search_bg.png';
+const icon_search = 'assets/images/icon_search.png';
