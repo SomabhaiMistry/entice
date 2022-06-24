@@ -148,7 +148,7 @@ class _WalletState extends State<Wallet> {
                             fit: BoxFit.fill,
                           ),
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 17.w),
+                            padding: EdgeInsets.only(left: 17.w,right: 10.w),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               mainAxisSize: MainAxisSize.max,

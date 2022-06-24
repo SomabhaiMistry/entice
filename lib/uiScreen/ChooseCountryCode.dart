@@ -67,7 +67,7 @@ class _ChooseCountryCodeState extends State<ChooseCountryCode> {
                 ),
 
                 Container(
-                  height: 65.h,
+                  height: 70.h,
                   margin: EdgeInsets.only(right: 25.w, left: 25.w,top: 28.h,bottom: 8.h),
                   child: Stack(
                     alignment: Alignment.center,

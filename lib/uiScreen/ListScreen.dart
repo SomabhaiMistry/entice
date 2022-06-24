@@ -13,6 +13,7 @@ import 'HomePage.dart';
 import 'LoginScreen.dart';
 import 'MobileVerification.dart';
 import 'PlayWithFriend.dart';
+import 'PlaywithFriendFourPlayer.dart';
 import 'PlaywithFriendPlayer.dart';
 import 'SplashScreen.dart';
 import 'Wallet.dart';
@@ -333,28 +334,28 @@ class ListScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                // /*PlaywithFriendFourPlayer*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => PlaywithFriendFourPlayer(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "15.PlaywithFriendFourPlayer Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                //
-                //
+                /*PlaywithFriendFourPlayer*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PlaywithFriendFourPlayer(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "15.PlaywithFriendFourPlayer Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+
+
                 // /*-------- 4th part --------*/
                 // Center(
                 //   child: Text("4th Part",style: TextStyle(

@@ -66,7 +66,7 @@ class _PlaywithFriendPlayerState extends State<PlaywithFriendPlayer> {
                   ),
                 ),
                 SizedBox(height: 44.h,),
-                Center(child: Image.asset(img_player1,height: 65.h,width: 65.w,)),
+                Center(child: Image.asset(img_player1,height: 70.h,width: 70.w,)),
                 // const Center(
                 //   child: CircleAvatar(
                 //     backgroundColor: Colors.white,
@@ -77,22 +77,22 @@ class _PlaywithFriendPlayerState extends State<PlaywithFriendPlayer> {
                 //     ),
                 //   ),
                 // ),
-                SizedBox(height: 10.h,),
+                SizedBox(height: 5.h,),
                 Center(
                   child: Text(str_vrunda_patel,style: TextStyle(
                       fontSize: 16.sp,color: Colors.white,fontFamily: chewy_regular
                   ),),
                 ),
-                SizedBox(height: 11.h,),
+                SizedBox(height: 15.h,),
                 Center(
                   child: Text(str_vs,style: TextStyle(
                       fontSize: 32.sp,color:orange_FF9353,fontFamily: chewy_regular
                   ),),
                 ),
                 SizedBox(height: 15.h,),
-                Center(child: Image.asset(img_player2,height: 65.h,width: 65.w,)),
+                Center(child: Image.asset(img_player2,height: 70.h,width: 70.w,)),
 
-                SizedBox(height: 10.h,),
+                SizedBox(height: 5.h,),
                 Center(
                   child: Text(str_jay,style: TextStyle(
                       fontSize: 16.sp,color: Colors.white,fontFamily: chewy_regular

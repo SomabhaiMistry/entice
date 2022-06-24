@@ -145,3 +145,5 @@ const img_ring = 'assets/images/img_ring.png';
 const coin_select_bg = 'assets/images/coin_select_bg.png';
 const img_player1 = 'assets/images/img_player1.png';
 const img_player2 = 'assets/images/img_player2.png';
+const img_player3 = 'assets/images/img_player3.png';
+const img_player4 = 'assets/images/img_player4.png';
