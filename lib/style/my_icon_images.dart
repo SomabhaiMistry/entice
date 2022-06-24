@@ -86,6 +86,7 @@ const btn_login = 'assets/images/btn_login.svg';
 const btn_create_account = 'assets/images/btn_create_account.svg';
 const btn_continue = 'assets/images/btn_continue.svg';
 const btn_next = 'assets/images/btn_next.svg';
+const btn_play = 'assets/images/btn_play.svg';
 const fb = 'assets/images/fb.svg';
 const google = 'assets/images/google.svg';
 const icon_magnifying = 'assets/images/icon_magnifying.svg';
@@ -100,6 +101,21 @@ const btn_deposite = 'assets/images/btn_deposite.svg';
 const img_withrwal = 'assets/images/img_withrwal.svg';
 const game_mode_bg = 'assets/images/game_mode_bg.svg';
 const icon_cross = 'assets/images/icon_cross.svg';
+
+const icon_player2 = 'assets/images/icon_player2.svg';
+
+
+
+const icon_cystal_red = 'assets/images/icon_cystal_red.svg';
+const icon_cystal_blue = 'assets/images/icon_cystal_blue.svg';
+const icon_cystal_yellow = 'assets/images/icon_cystal_yellow.svg';
+const icon_cystal_green = 'assets/images/icon_cystal_green.svg';
+
+const icon_red_coin = 'assets/images/icon_red_coin.svg';
+const icon_blue_coin = 'assets/images/icon_blue_coin.svg';
+const icon_yellow_coin = 'assets/images/icon_yellow_coin.svg';
+const icon_green_coin = 'assets/images/icon_green_coin.svg';
+// const coin_select_bg = 'assets/images/coin_select_bg.svg';
 
 
 const btn_play_online = 'assets/images/btn_play_online.svg';
@@ -125,3 +141,7 @@ const icon_ludo_title = 'assets/images/icon_ludo_title.png';
 const img_addition = 'assets/images/img_addition.png';
 const img_additional_back = 'assets/images/img_additional_back.png';
 const img_minus = 'assets/images/img_minus.png';
+const img_ring = 'assets/images/img_ring.png';
+const coin_select_bg = 'assets/images/coin_select_bg.png';
+const img_player1 = 'assets/images/img_player1.png';
+const img_player2 = 'assets/images/img_player2.png';

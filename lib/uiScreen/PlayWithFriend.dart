@@ -82,13 +82,13 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
             Stack(
               alignment: Alignment.topCenter,
               children: [
-                Center(child: SvgPicture.asset(game_mode_bg)),
+                Center(child: SvgPicture.asset(game_mode_bg,width: double.infinity,height: 450.h,)),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      transform: Matrix4.translationValues(0, -75, 0),
+                      transform: Matrix4.translationValues(0, -70, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,

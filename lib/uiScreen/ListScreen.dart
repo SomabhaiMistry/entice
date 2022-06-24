@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/src/size_extension.dart';
 import '../style/my_color.dart';
 import '../utilites/Constant.dart';
 import 'ChooseCountryCode.dart';
+import 'CoinPlayerSelection.dart';
+import 'CreateFourPlayerSelect.dart';
 import 'CreateNewAccount.dart';
 import 'CreateRoom.dart';
 import 'Deposit.dart';
@@ -11,6 +13,7 @@ import 'HomePage.dart';
 import 'LoginScreen.dart';
 import 'MobileVerification.dart';
 import 'PlayWithFriend.dart';
+import 'PlaywithFriendPlayer.dart';
 import 'SplashScreen.dart';
 import 'Wallet.dart';
 import 'WelCome.dart';
@@ -270,66 +273,66 @@ class ListScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                // /*CreateFourPlayerSelect*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => CreateFourPlayerSelect(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "12.CreateFourPlayerSelect Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*CoinPlayerSelection*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => CoinPlayerSelection(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "13.CoinPlayerSelection Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*PlaywithFriendPlayer*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => PlaywithFriendPlayer(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "14.PlaywithFriendPlayer Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
+                /*CreateFourPlayerSelect*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CreateFourPlayerSelect(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "12.CreateFourPlayerSelect Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*CoinPlayerSelection*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CoinPlayerSelection(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "13.CoinPlayerSelection Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*PlaywithFriendPlayer*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PlaywithFriendPlayer(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "14.PlaywithFriendPlayer Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
                 // /*PlaywithFriendFourPlayer*/
                 // GestureDetector(
                 //   onTap: () {

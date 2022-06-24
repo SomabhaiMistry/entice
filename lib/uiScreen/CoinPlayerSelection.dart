@@ -8,26 +8,25 @@ import '../style/my_icon_images.dart';
 import '../style/my_string.dart';
 import '../utilites/Constant.dart';
 
-class CreateRoom extends StatefulWidget {
-  const CreateRoom({Key? key}) : super(key: key);
+class CoinPlayerSelection extends StatefulWidget {
+  const CoinPlayerSelection({Key? key}) : super(key: key);
 
   @override
-  State<CreateRoom> createState() => _CreateRoomState();
+  State<CoinPlayerSelection> createState() => _CoinPlayerSelectionState();
 }
 
-class _CreateRoomState extends State<CreateRoom> {
+class _CoinPlayerSelectionState extends State<CoinPlayerSelection> {
 
   bool tvCreateGame = true;
   bool tvJoinGame = false;
 
-  int _n = 1000;
-
+  bool first = false;
+  bool secound = false;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white,
         body: Stack(
           alignment: Alignment.topRight,
           children: [
@@ -86,18 +85,19 @@ class _CreateRoomState extends State<CreateRoom> {
                   height: 35.h,
                   fit: BoxFit.fill,
                 )),
+
             Stack(
               alignment: Alignment.topCenter,
               children: [
-                Container(
-                    margin: EdgeInsets.only(top: 30.h),
-                    child: Center(child: SvgPicture.asset(game_mode_bg,width: double.infinity,height: 450.h))),
+                Center(child: Container(
+                    margin: EdgeInsets.only(left: 25.w,right: 25.w),
+                    child: SvgPicture.asset(game_mode_bg,width: double.infinity,))),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      transform: Matrix4.translationValues(0, -38, 0),
+                      transform: Matrix4.translationValues(0, -85, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
@@ -123,10 +123,8 @@ class _CreateRoomState extends State<CreateRoom> {
                         ],
                       ),
                     ),
-
                     Container(
-                      transform: Matrix4.translationValues(0, -25, 0),
-
+                      transform: Matrix4.translationValues(0, -80, 0),
                       margin: EdgeInsets.only(left: 50.w, right: 50.w),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -177,9 +175,10 @@ class _CreateRoomState extends State<CreateRoom> {
                         ],
                       ),
                     ),
+
                     Container(
-                      transform: Matrix4.translationValues(0, -15, 0),
-                      margin: EdgeInsets.only( left: 50.w, right: 45.w),
+                      transform: Matrix4.translationValues(0, -75, 0),
+                      margin: EdgeInsets.only(top: 8.h, left: 50.w, right: 45.w),
                       child: const DottedLine(
                         direction: Axis.horizontal,
                         lineLength: double.infinity,
@@ -192,68 +191,148 @@ class _CreateRoomState extends State<CreateRoom> {
                         dashGapRadius: 0.0,
                       ),
                     ),
-                    SizedBox(
-                      height: 15.h,
-                    ),
+
                     Center(
-                      child: Text(
-                        str_select_amount,
-                        style: TextStyle(
-                            fontFamily: chewy_regular,
-                            fontSize: 19.sp,
-                            color: pista_439050),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(top: 25.h,),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          InkWell(
-                              onTap: () {
-                                setState(() {
-                                  _n--;
-                                });
-                              },
-                              child:Image.asset(img_minus,height: 45,width: 45,)),
-                          Stack(
-                            alignment: Alignment.center,
-                            children: [
-                              Image.asset(img_additional_back,width: 125.w,height: 50.h,),
-                              Text(
-                                '$_n'.toString(),
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 27.sp,
-                                    fontFamily: chewy_regular),
-                              )
-                            ],
-                          ),
-                          InkWell(
-                              onTap: () {
-                                setState(() {
-                                  _n++;
-                                });
-                              },
-                              child:Image.asset(img_addition,height: 45,width: 45,)),
-                        ],
+                      child: Container(
+                        transform: Matrix4.translationValues(0, -35, 0),
+                        child: Text(
+                          str_select_friend,
+                          style: TextStyle(
+                              fontFamily: chewy_regular,
+                              fontSize: 19.sp,
+                              color: pista_439050),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ),
 
                     Container(
+                      margin: EdgeInsets.only(left: 50.w, right: 50.w),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    SvgPicture.asset(icon_red_coin,height: 24.h,width: 24.w,),
+                                    SizedBox(
+                                      width: 3.w,
+                                    ),
+                                    SvgPicture.asset(icon_blue_coin,height: 24.h,width: 24.w,),
+
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 12.h,
+                                ),
+                                InkWell(
+                                    onTap: () {
+                                      setState(() {
+                                        first = true;
+                                        secound = false;
+                                      });
+                                    },
+                                    child: Image.asset(first
+                                        ? img_selected_coin
+                                        : img_ring,height: 45,width: 45,)),
+
+
+                                SizedBox(
+                                  height: 5.h,
+                                ),
+                                Text(
+                                  str_two_player,
+                                  style: TextStyle(
+                                      fontFamily: chewy_regular,
+                                      color: pista_439050,
+                                      fontSize: 20.sp),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    SvgPicture.asset(
+                                      icon_red_coin,
+                                      height: 24.h,
+                                      width: 24.w,),
+                                    SizedBox(
+                                      width: 3.w,
+                                    ),
+                                    SvgPicture.asset(
+                                      icon_blue_coin,
+                                      height: 24.h,
+                                      width: 24.w,),
+                                    SizedBox(
+                                      width: 3.w,
+                                    ),
+                                    SvgPicture.asset(
+                                      icon_yellow_coin,
+                                      height: 24.h,
+                                      width: 24.w,),
+                                    SizedBox(
+                                      width: 3.w,
+                                    ),
+                                    SvgPicture.asset(
+                                      icon_green_coin,
+                                      height: 24.h,
+                                      width: 24.w,),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 12.h,
+                                ),
+                                InkWell(
+                                    onTap: () {
+                                      setState(() {
+                                        first = false;
+                                        secound = true;
+                                      });
+                                    },
+                                    child: Image.asset(secound
+                                        ? img_selected_coin
+                                        : img_ring,height: 45,width: 45,)),
+                                SizedBox(
+                                  height: 5.h,
+                                ),
+                                Text(
+                                  str_four_player,
+                                  style: TextStyle(
+                                      fontFamily: chewy_regular,
+                                      color: pista_439050,
+                                      fontSize: 20.sp),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
                         margin: EdgeInsets.only(right: 60.w, left: 60.w,top: 25.h),
                         height: 70.h,
                         width: double.infinity,
-                        child:SvgPicture.asset(btn_next)),
+                        child:SvgPicture.asset(btn_play)),
                   ],
                 )
               ],
             )
           ],
         ),
-
       ),
     );
   }

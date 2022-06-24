@@ -55,6 +55,7 @@ var str_four_player = "4 player";
 var str_room_code = "RoomCode: JK5R94";
 var str_share_room_code = "Share this room code with friends\nand ask them to join";
 var str_vrunda_patel = "Vrunda Patel";
+var str_jay = "Jay Patel";
 var str_vs = "VS";
 var str_code = "100 NTIC";
 var str_not_close_page = "Donot close this page, else you will loose your coin.";
