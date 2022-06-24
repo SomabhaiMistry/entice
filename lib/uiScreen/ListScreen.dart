@@ -5,10 +5,14 @@ import '../style/my_color.dart';
 import '../utilites/Constant.dart';
 import 'ChooseCountryCode.dart';
 import 'CreateNewAccount.dart';
+import 'CreateRoom.dart';
+import 'Deposit.dart';
 import 'HomePage.dart';
 import 'LoginScreen.dart';
 import 'MobileVerification.dart';
+import 'PlayWithFriend.dart';
 import 'SplashScreen.dart';
+import 'Wallet.dart';
 import 'WelCome.dart';
 
 class ListScreen extends StatelessWidget {
@@ -179,93 +183,93 @@ class ListScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                // /*Wallet*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => Wallet(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "8.Wallet Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*Deposit*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => Deposit(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "9.Deposit Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                //
-                // /*---------- 3rd part --------*/
-                // Center(
-                //   child: Text("3rd Part",style: TextStyle(
-                //       color: Colors.black,fontSize: 15.sp,fontFamily: chewy_regular
-                //   ),),
-                // ),
-                // /*PlayWithFriend*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => PlayWithFriend(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "10.PlayWithFriend Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*CreateRoom*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => CreateRoom(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "11.CreateRoom Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
+                /*Wallet*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Wallet(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "8.Wallet Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*Deposit*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Deposit(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "9.Deposit Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+
+                /*---------- 3rd part --------*/
+                Center(
+                  child: Text("3rd Part",style: TextStyle(
+                      color: Colors.black,fontSize: 15.sp,fontFamily: chewy_regular
+                  ),),
+                ),
+                /*PlayWithFriend*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PlayWithFriend(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "10.PlayWithFriend Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*CreateRoom*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CreateRoom(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "11.CreateRoom Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
                 // /*CreateFourPlayerSelect*/
                 // GestureDetector(
                 //   onTap: () {

@@ -19,16 +19,16 @@ class ChooseCountryCode extends StatefulWidget {
 class _ChooseCountryCodeState extends State<ChooseCountryCode> {
 
   List<ChooseCountryCodeModel> countryCodeList = [
-    ChooseCountryCodeModel(img_flag_india,"INDIA","+91"),
-    ChooseCountryCodeModel(img_flag_india,"UK","+92"),
-    ChooseCountryCodeModel(img_flag_india,"Serbia","+93"),
-    ChooseCountryCodeModel(img_flag_india,"South Africa","+94"),
-    ChooseCountryCodeModel(img_flag_india,"Afghanistan","+95"),
-    ChooseCountryCodeModel(img_flag_india,"INDIA","+91"),
-    ChooseCountryCodeModel(img_flag_india,"UK","+92"),
-    ChooseCountryCodeModel(img_flag_india,"Serbia","+93"),
-    ChooseCountryCodeModel(img_flag_india,"South Africa","+94"),
-    ChooseCountryCodeModel(img_flag_india,"Afghanistan","+95"),
+    ChooseCountryCodeModel(img_india,"INDIA","+91"),
+    ChooseCountryCodeModel(img_uk,"UK","+92"),
+    ChooseCountryCodeModel(img_serbia,"Serbia","+93"),
+    ChooseCountryCodeModel(img_south_africa,"South Africa","+94"),
+    ChooseCountryCodeModel(img_afghanistan,"Afghanistan","+95"),
+    ChooseCountryCodeModel(img_india,"INDIA","+91"),
+    ChooseCountryCodeModel(img_uk,"UK","+92"),
+    ChooseCountryCodeModel(img_serbia,"Serbia","+93"),
+    ChooseCountryCodeModel(img_south_africa,"South Africa","+94"),
+    ChooseCountryCodeModel(img_afghanistan,"Afghanistan","+95"),
   ];
 
   @override
@@ -68,7 +68,7 @@ class _ChooseCountryCodeState extends State<ChooseCountryCode> {
 
                 Container(
                   height: 65.h,
-                  margin: EdgeInsets.only(right: 25.w, left: 25.w,top: 28.h,bottom: 15.h),
+                  margin: EdgeInsets.only(right: 25.w, left: 25.w,top: 28.h,bottom: 8.h),
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
@@ -77,8 +77,8 @@ class _ChooseCountryCodeState extends State<ChooseCountryCode> {
                         children: [
                           SizedBox(width: 20.h,),
                           // SvgPicture.asset(icon_searching),
-                          Image.asset(icon_search),
-                          SizedBox(width: 12.h,),
+                          Image.asset(icon_search,height: 22.h,width: 22.w,),
+                          SizedBox(width: 11.h,),
                           Expanded(
                             child: TextField(
                               style: TextStyle(

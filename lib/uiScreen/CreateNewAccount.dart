@@ -272,9 +272,9 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
 
                                     ),),
                                   ),
-                                  SizedBox(width: 6.w,),
+                                  SizedBox(width: 3.w,),
 
-                                  Center(child: SvgPicture.asset(icon_down)),
+                                  Center(child: Image.asset(img_down,height: 18.h,width: 15.w,)),
 
                                   SizedBox(width: 8.w,),
 

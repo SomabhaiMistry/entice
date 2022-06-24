@@ -11,6 +11,7 @@ const String roboto_regular = "robotoRegular ";
 
 const String chewy_regular = "chewy_Regular";
 const String poppins_regular = "poppinsRegular";
+const String poppins_bold = "poppinsBold";
 const String aladin_regular = "Aladin Regular";
 const String fredokaOne_regular = "FredokaOneRegular";
 const String chelseaMarket_regular = "ChelseaMarketRegular";

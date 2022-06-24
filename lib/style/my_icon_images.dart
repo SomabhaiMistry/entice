@@ -42,7 +42,6 @@ const img_ply_friend = 'assets/images/img_ply_friend.png';
 const img_play_computer = 'assets/images/img_play_computer.png';
 const img_btn_next = 'assets/images/img_btn_next.png';
 const img_add = 'assets/images/img_add.png';
-const img_minus = 'assets/images/img_minus.png';
 const img_btn_price = 'assets/images/img_btn_price.png';
 const img_red_triangle = 'assets/images/img_red_triangle.png';
 const img_blue_triangle = 'assets/images/img_blue_triangle.png';
@@ -81,25 +80,48 @@ const b_y = 'assets/images/b_y.svg';
 
 
 
+
 const icon_et_bg = 'assets/images/icon_et_bg.svg';
 const btn_login = 'assets/images/btn_login.svg';
 const btn_create_account = 'assets/images/btn_create_account.svg';
 const btn_continue = 'assets/images/btn_continue.svg';
+const btn_next = 'assets/images/btn_next.svg';
 const fb = 'assets/images/fb.svg';
 const google = 'assets/images/google.svg';
 const icon_magnifying = 'assets/images/icon_magnifying.svg';
 const icon_searching = 'assets/images/icon_searching.svg';
 const icon_indean = 'assets/images/icon_indean.svg';
 const search_fram = 'assets/images/search_fram.svg';
-const icon_down = 'assets/images/icon_down.svg';
 const box_green = 'assets/images/box_green.svg';
 
 const icon_like_user = 'assets/images/icon_like_user.svg';
 const icon_star = 'assets/images/icon_star.svg';
+const btn_deposite = 'assets/images/btn_deposite.svg';
+const img_withrwal = 'assets/images/img_withrwal.svg';
+const game_mode_bg = 'assets/images/game_mode_bg.svg';
+const icon_cross = 'assets/images/icon_cross.svg';
 
 
+const btn_play_online = 'assets/images/btn_play_online.svg';
+const btn_play_with_friend = 'assets/images/btn_play_with_friend.svg';
+const btn_play_with_computer = 'assets/images/btn_play_with_computer.svg';
+const icon_question_mark = 'assets/images/icon_question_mark.svg';
 
 const img_backgound = 'assets/images/backgound.png';
 const img_et_bg = 'assets/images/img_et_bg.png';
 const img_search_bg = 'assets/images/img_search_bg.png';
 const icon_search = 'assets/images/icon_search.png';
+
+
+const img_india = 'assets/images/img_india.png';
+const img_afghanistan = 'assets/images/img_afghanistan.png';
+const img_serbia = 'assets/images/img_serbia.png';
+const img_south_africa = 'assets/images/img_south_africa.png';
+const img_uk = 'assets/images/img_uk.png';
+const img_down = 'assets/images/img_down.png';
+const img_copy = 'assets/images/img_copy.png';
+const img_bg_blur = 'assets/images/img_bg_blur.png';
+const icon_ludo_title = 'assets/images/icon_ludo_title.png';
+const img_addition = 'assets/images/img_addition.png';
+const img_additional_back = 'assets/images/img_additional_back.png';
+const img_minus = 'assets/images/img_minus.png';

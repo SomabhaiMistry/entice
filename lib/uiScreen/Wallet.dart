@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../model/WalletTransactionModel.dart';
 import '../style/my_color.dart';
@@ -52,7 +53,7 @@ class _WalletState extends State<Wallet> {
                             onTap: () {
                               Navigator.pop(context);
                             },
-                            child: Image.asset(icon_back)),
+                            child:SvgPicture.asset(b_y)),
                         SizedBox(
                           width: 18.5.w,
                         ),
@@ -66,6 +67,7 @@ class _WalletState extends State<Wallet> {
                       ],
                     ),
                   ),
+
                   Container(
                     margin: EdgeInsets.only(right: 23.w, left: 23.w, top: 30.h),
                     child: Stack(
@@ -81,7 +83,7 @@ class _WalletState extends State<Wallet> {
                           padding: EdgeInsets.symmetric(horizontal: 20.w),
                           child: Row(
                             children: [
-                              Image.asset(img_wallet),
+                              Image.asset(img_wallet,width: 38.w,height: 38.h,),
                               SizedBox(
                                 width: 15.w,
                               ),
@@ -105,15 +107,16 @@ class _WalletState extends State<Wallet> {
                       ],
                     ),
                   ),
+
                   Container(
                     margin: EdgeInsets.only(top: 20.h, right: 25.w, left: 25.w),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(child: Image.asset(img_deposite,height: 55.h,width: double.infinity,fit: BoxFit.fill,)),
+                        Expanded(child: SvgPicture.asset(btn_deposite,height: 55.h,width: double.infinity,fit: BoxFit.fill,)),
                         SizedBox(width: 15.w,),
-                        Expanded(child: Image.asset(img_widthrawl,height: 55.h,width: double.infinity,fit: BoxFit.fill,)),
+                        Expanded(child: SvgPicture.asset(img_withrwal,height: 55.h,width: double.infinity,fit: BoxFit.fill,)),
                       ],
                     ),
                   ),
@@ -167,7 +170,7 @@ class _WalletState extends State<Wallet> {
                                       fontFamily: chewy_regular),
                                 ),
                                 SizedBox(width: 9.w,),
-                                Image.asset(walletTransactionList[i].imgTransaction)
+                                Image.asset(walletTransactionList[i].imgTransaction,width: 35.w,height: 35.h,)
                               ],
                             ),
                           ),

@@ -1,0 +1,29 @@
+<svg width="44" height="50" viewBox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="paint0_linear_3_628" x1="21.7273" y1="4.54541" x2="21.7273" y2="46" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FB7A70"/>
+            <stop offset="0.421875" stop-color="#FF5D51"/>
+            <stop offset="1" stop-color="#F44336"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_3_628" x1="21.7273" y1="4.54541" x2="21.7273" y2="46" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF5E52"/>
+            <stop offset="0.162089" stop-color="#FA5044"/>
+            <stop offset="1" stop-color="#BB1306"/>
+        </linearGradient>
+        <clipPath id="clip0_3_628">
+            <rect width="24" height="24" fill="white" transform="translate(9.72729 13.2727)"/>
+        </clipPath>
+    </defs>
+
+    <mask id="path-1-outside-1_3_628" maskUnits="userSpaceOnUse" x="0" y="0.54541" width="44" height="50" fill="black">
+<rect fill="white" y="0.54541" width="44" height="50"/>
+<path d="M1 25.2727C1 13.8253 10.2799 4.54541 21.7273 4.54541C33.1746 4.54541 42.4545 13.8253 42.4545 25.2727C42.4545 36.72 33.1746 46 21.7273 46C10.2799 46 1 36.72 1 25.2727Z"/>
+</mask>
+<path d="M1 25.2727C1 13.8253 10.2799 4.54541 21.7273 4.54541C33.1746 4.54541 42.4545 13.8253 42.4545 25.2727C42.4545 36.72 33.1746 46 21.7273 46C10.2799 46 1 36.72 1 25.2727Z" fill="url(#paint0_linear_3_628)"/>
+<g clip-path="url(#clip0_3_628)">
+<path d="M28 19L16 31" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 19L28 31" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M0 22.2727C0 10.273 9.72763 0.54541 21.7273 0.54541C33.7269 0.54541 43.4545 10.273 43.4545 22.2727L41.4545 25.2727C41.4545 16.0345 32.6223 8.54541 21.7273 8.54541C10.8322 8.54541 2 16.0345 2 25.2727L0 22.2727ZM43.4545 28.2727C43.4545 40.2723 33.7269 50 21.7273 50C9.72763 50 0 40.2723 0 28.2727L2 25.2727C2 34.5109 10.8322 42 21.7273 42C32.6223 42 41.4545 34.5109 41.4545 25.2727L43.4545 28.2727ZM21.7273 50C9.72763 50 0 40.2723 0 28.2727V22.2727C0 10.273 9.72763 0.54541 21.7273 0.54541V8.54541C10.8322 8.54541 2 16.0345 2 25.2727C2 34.5109 10.8322 42 21.7273 42V50ZM21.7273 0.54541C33.7269 0.54541 43.4545 10.273 43.4545 22.2727V28.2727C43.4545 40.2723 33.7269 50 21.7273 50V42C32.6223 42 41.4545 34.5109 41.4545 25.2727C41.4545 16.0345 32.6223 8.54541 21.7273 8.54541V0.54541Z" fill="url(#paint1_linear_3_628)" mask="url(#path-1-outside-1_3_628)"/>
+<ellipse cx="12.1395" cy="5.68172" rx="2.21777" ry="0.954302" transform="rotate(-20.8666 12.1395 5.68172)" fill="white" fill-opacity="0.5"/>
+</svg>

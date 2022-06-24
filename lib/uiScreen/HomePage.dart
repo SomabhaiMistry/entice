@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                                 ],
                               ),
                             ),
-                            Image.asset(img_like_user),
+                            Image.asset(img_like_user,height: 28.h,width: 28.w,),
                             // SvgPicture.asset(icon_like_user)
                           ],
                         ),
@@ -140,12 +140,13 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                             Container(
+                              margin: EdgeInsets.only(left: 15.w),
                                 transform:
-                                    Matrix4.translationValues(0, -13, -0),
+                                    Matrix4.translationValues(0, -2, -0),
                                 child: Image.asset(
                                   img_file,
-                                  height: 50.h,
-                                  width: 55.w,
+                                  height: 30.h,
+                                  width: 30.w,
                                 )),
                           ],
                         ),
@@ -177,9 +178,9 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             // SvgPicture.asset(icon_star),
-                            Image.asset(img_star),
-                            Image.asset(img_profile),
-                            Image.asset(img_setting),
+                            Image.asset(img_star,height: 35.h,width: 35.w,),
+                            Image.asset(img_profile,height: 35.h,width: 35.w,),
+                            Image.asset(img_setting,height: 35.h,width: 35.w,),
                           ],
                         ),
                       ),

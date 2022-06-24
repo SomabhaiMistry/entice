@@ -120,3 +120,7 @@ flutter:
     - family: poppinsRegular
       fonts:
         - asset: fonts/poppins_regular.otf
+
+    - family: poppinsBold
+      fonts:
+        - asset: fonts/poppins_bold.otf
