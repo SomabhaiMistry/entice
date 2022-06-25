@@ -150,6 +150,7 @@ class _ChooseAvatarState extends State<ChooseAvatar> {
                                   offstage: !checked,child: Container(
                                   margin: EdgeInsets.only(top: 5.h,right: 3.w),
                                     child: Image.asset(img_circle_tick)),
+
                                 )
                                 // Image.asset(img_circle_tick)
                               ],
