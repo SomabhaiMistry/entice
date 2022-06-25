@@ -1,3 +1,4 @@
+import 'package:entice/uiScreen/Demo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/src/size_extension.dart';
 
@@ -385,7 +386,7 @@ class ListScreen extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(12.0),
                     child: Text(
-                      "16.CreateRoomOnline Screen",
+                      "16.CreateRoomOnline Screen  Position",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,
@@ -505,7 +506,7 @@ class ListScreen extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(12.0),
                     child: Text(
-                      "22.GameModeSelect Screen",
+                      "22.GameModeSelect Screen Position",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,
@@ -586,6 +587,26 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       "26.ChooseAvatar Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*ChooseAvatar*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Demo(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "Demo Position",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,

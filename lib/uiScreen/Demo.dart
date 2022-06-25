@@ -1,20 +1,22 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/src/size_extension.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../style/my_color.dart';
 import '../style/my_icon_images.dart';
 import '../style/my_string.dart';
 import '../utilites/Constant.dart';
 
-class PlayWithFriend extends StatefulWidget {
-  const PlayWithFriend({Key? key}) : super(key: key);
+class Demo extends StatefulWidget {
+  const Demo({Key? key}) : super(key: key);
 
   @override
-  State<PlayWithFriend> createState() => _PlayWithFriendState();
+  State<Demo> createState() => _DemoState();
 }
 
-class _PlayWithFriendState extends State<PlayWithFriend> {
+class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -89,15 +91,15 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
                 children: [
                   Stack(
                     children: [
-                      Center(
-                        child: Container(
-                          margin: EdgeInsets.only(top:25 ),
-                          child: SvgPicture.asset(
-                            game_mode_bg,
-                            fit: BoxFit.fill,
-                          ),
+                    Center(
+                      child: Container(
+                        margin: EdgeInsets.only(top:25 ),
+                        child: SvgPicture.asset(
+                        game_mode_bg,
+                        fit: BoxFit.fill,
                         ),
                       ),
+                    ),
 
                       Container(
                         margin: EdgeInsets.only(top: 95),

@@ -88,52 +88,43 @@ class _GameModeSelectState extends State<GameModeSelect> {
                     child: Center(child: SvgPicture.asset(game_mode_bg,fit: BoxFit.fill,
                       width: double.infinity,height: 450.h,))),
 
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      transform: Matrix4.translationValues(0, -65, 0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          GestureDetector(
-                              onTap: (){
-                                Navigator.pop(context);
-                              },
-                              child: Container(
-                                  margin: EdgeInsets.only(top: 20.h),
-                                  child:SvgPicture.asset(b_y))),
-
-                          SizedBox(
-                            width: 3.w,
-                          ),
-                          Image.asset(img_color_selected,width: 170,height: 70,),
-                          SizedBox(
-                            width: 3.w,
-                          ),
-                          Container(
+                Positioned(
+                  top: 180,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      GestureDetector(
+                          onTap: (){
+                            Navigator.pop(context);
+                          },
+                          child: Container(
                               margin: EdgeInsets.only(top: 20.h),
-                              child:SvgPicture.asset(icon_question_mark)),
-                        ],
-                      ),
-                    ),
-                    Container(
-                        margin: EdgeInsets.only(left: 60.w,right: 60.w),
-                        transform: Matrix4.translationValues(0, -45, 0),
-                        child: Center(child: Image.asset(btn_easy,height: 90.h,))),
-                    Container(
-                      margin: EdgeInsets.only(left: 60.w,right: 60.w),
-                        transform: Matrix4.translationValues(0, -25, 0),
-                        child: Center(child: Image.asset(btn_normal,height: 90.h))),
+                              child:SvgPicture.asset(b_y))),
 
-                    Container(
-                        margin: EdgeInsets.only(left: 60.w,right: 60.w),
-                        // transform: Matrix4.translationValues(0, -25, 0),
-                        child: Center(child: Image.asset(btn_hard,height: 90.h))),
-                  ],
-                )
+                      SizedBox(
+                        width: 3.w,
+                      ),
+                      Image.asset(img_color_selected,width: 170,height: 70,),
+                      SizedBox(
+                        width: 3.w,
+                      ),
+                      Container(
+                          margin: EdgeInsets.only(top: 20.h),
+                          child:SvgPicture.asset(icon_question_mark)),
+                    ],
+                  ),
+                ),
+                Positioned(
+                    top: 275,
+                    child: Image.asset(btn_easy,height: 90.h,)),
+                Positioned(
+                    top: 390,
+                    child: Image.asset(btn_normal,height: 90.h)),
+
+                Positioned(
+                    top: 510,
+                    child: Image.asset(btn_hard,height: 90.h))
               ],
             )
           ],

@@ -16,9 +16,8 @@ class RulesPager1 extends StatefulWidget {
 class _RulesPager1State extends State<RulesPager1> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return SafeArea(
+      child: Scaffold(
         body: Stack(
           children: [
             Image.asset(
