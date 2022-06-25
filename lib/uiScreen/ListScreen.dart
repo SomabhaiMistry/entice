@@ -5,16 +5,21 @@ import '../style/my_color.dart';
 import '../utilites/Constant.dart';
 import 'ChooseCountryCode.dart';
 import 'CoinPlayerSelection.dart';
+import 'CoinPlayerSelectionOnline.dart';
 import 'CreateFourPlayerSelect.dart';
+import 'CreateFourPlayerSelectOnline.dart';
 import 'CreateNewAccount.dart';
 import 'CreateRoom.dart';
+import 'CreateRoomOnline.dart';
 import 'Deposit.dart';
 import 'HomePage.dart';
 import 'LoginScreen.dart';
 import 'MobileVerification.dart';
 import 'PlayWithFriend.dart';
 import 'PlaywithFriendFourPlayer.dart';
+import 'PlaywithFriendOnline.dart';
 import 'PlaywithFriendPlayer.dart';
+import 'RulesPage.dart';
 import 'SplashScreen.dart';
 import 'Wallet.dart';
 import 'WelCome.dart';
@@ -356,112 +361,112 @@ class ListScreen extends StatelessWidget {
                 ),
 
 
-                // /*-------- 4th part --------*/
-                // Center(
-                //   child: Text("4th Part",style: TextStyle(
-                //       color: Colors.black,fontSize: 15.sp,fontFamily: chewy_regular
-                //   ),),
-                // ),
-                // /*CreateRoomOnline*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => CreateRoomOnline(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "16.CreateRoomOnline Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*RulesPage*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => RulesPage(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "17.RulesPage Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*CreateFourPlayerSelectOnline*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => CreateFourPlayerSelectOnline(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "18.CreateFourPlayerSelectOnline Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*CoinPlayerSelectionOnline*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => CoinPlayerSelectionOnline(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "19.CoinPlayerSelectionOnline Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*PlaywithFriendOnline*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => PlaywithFriendOnline(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "20.PlaywithFriendOnline Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
+                /*-------- 4th part --------*/
+                Center(
+                  child: Text("4th Part",style: TextStyle(
+                      color: Colors.black,fontSize: 15.sp,fontFamily: chewy_regular
+                  ),),
+                ),
+                /*CreateRoomOnline*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CreateRoomOnline(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "16.CreateRoomOnline Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*RulesPage*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => RulesPage(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "17.RulesPage Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*CreateFourPlayerSelectOnline*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CreateFourPlayerSelectOnline(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "18.CreateFourPlayerSelectOnline Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*CoinPlayerSelectionOnline*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CoinPlayerSelectionOnline(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "19.CoinPlayerSelectionOnline Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*PlaywithFriendOnline*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PlaywithFriendOnline(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "20.PlaywithFriendOnline Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
                 // /*PlaywithFriendFourPlayerOnline*/
                 // GestureDetector(
                 //   onTap: () {

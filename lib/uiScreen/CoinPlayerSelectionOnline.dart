@@ -1,5 +1,3 @@
-import 'package:dotted_line/dotted_line.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/src/size_extension.dart';
 import 'package:flutter_svg/svg.dart';
@@ -9,20 +7,18 @@ import '../style/my_icon_images.dart';
 import '../style/my_string.dart';
 import '../utilites/Constant.dart';
 
-class CoinPlayerSelection extends StatefulWidget {
-  const CoinPlayerSelection({Key? key}) : super(key: key);
+class CoinPlayerSelectionOnline extends StatefulWidget {
+  const CoinPlayerSelectionOnline({Key? key}) : super(key: key);
 
   @override
-  State<CoinPlayerSelection> createState() => _CoinPlayerSelectionState();
+  State<CoinPlayerSelectionOnline> createState() =>
+      _CoinPlayerSelectionOnlineState();
 }
 
-class _CoinPlayerSelectionState extends State<CoinPlayerSelection> {
-
-  bool tvCreateGame = true;
-  bool tvJoinGame = false;
-
+class _CoinPlayerSelectionOnlineState extends State<CoinPlayerSelectionOnline> {
   bool first = false;
   bool secound = false;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -55,7 +51,8 @@ class _CoinPlayerSelectionState extends State<CoinPlayerSelection> {
                     SizedBox(
                       width: 12.w,
                     ),
-                    Text(str_coin,
+                    Text(
+                      str_coin,
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 14.sp,
@@ -86,19 +83,24 @@ class _CoinPlayerSelectionState extends State<CoinPlayerSelection> {
                   height: 35.h,
                   fit: BoxFit.fill,
                 )),
-
             Stack(
               alignment: Alignment.center,
               children: [
-                Center(child: Container(
-                    margin: EdgeInsets.only(left: 20.w,right: 20.w),
-                    child: Image.asset(img_coin_2_player_select,fit: BoxFit.fill,))),
+                Center(
+                    child: Container(
+                        margin: EdgeInsets.only(left: 15.w, right: 15.w),
+                        child: Image.asset(
+                          img_coin_2_player_select,
+                          fit: BoxFit.fill,
+                          width: double.infinity,
+                          height: 525,
+                        ))),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      transform: Matrix4.translationValues(0, -110, 0),
+                      transform: Matrix4.translationValues(0, -125, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
@@ -114,7 +116,7 @@ class _CoinPlayerSelectionState extends State<CoinPlayerSelection> {
                           SizedBox(
                             width: 3.w,
                           ),
-                          Image.asset(icon_ludo_title,width: 160.w,height: 70.h,),
+                          Image.asset(icon_ludo_title,width: 190.w,height: 75.h,fit: BoxFit.fill,),
                           SizedBox(
                             width: 3.w,
                           ),
@@ -124,75 +126,6 @@ class _CoinPlayerSelectionState extends State<CoinPlayerSelection> {
                         ],
                       ),
                     ),
-                    Container(
-                      transform: Matrix4.translationValues(0, -100, 0),
-                      margin: EdgeInsets.only(left: 50.w, right: 50.w),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Expanded(
-                            child: InkWell(
-                              onTap: () {
-                                setState(() {
-                                  tvCreateGame = true;
-                                  tvJoinGame = false;
-                                });
-                              },
-                              child: Text(
-                                str_create,
-                                style: TextStyle(
-                                    fontSize: 20.sp,
-                                    color: tvCreateGame?pista_439050: light_pista_A0DDA4,
-                                    fontFamily: fredokaOne_regular),
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            height: 38.h,
-                            width: 2.w,
-                            decoration: BoxDecoration(
-                                color: line_DEDC9A,
-                                borderRadius: BorderRadius.circular(8.r)),
-                          ),
-                          Expanded(
-                            child: InkWell(
-                              onTap: () {
-                                setState(() {
-                                  tvCreateGame = false;
-                                  tvJoinGame = true;
-                                });
-                              },
-                              child: Text(
-                                str_join,
-                                style: TextStyle(
-                                    fontSize: 20.sp,
-                                    color: tvJoinGame?pista_439050: light_pista_A0DDA4,
-                                    fontFamily: fredokaOne_regular),
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    Container(
-                      transform: Matrix4.translationValues(0, -85, 0),
-                      margin: EdgeInsets.only(left: 50.w, right: 45.w),
-                      child: const DottedLine(
-                        direction: Axis.horizontal,
-                        lineLength: double.infinity,
-                        lineThickness: 1.4,
-                        dashLength: 25.0,
-                        dashColor:pista_439050,
-                        dashRadius: 0.0,
-                        dashGapLength: 6.0,
-                        dashGapColor: Colors.transparent,
-                        dashGapRadius: 0.0,
-                      ),
-                    ),
-
                     Center(
                       child: Container(
                         transform: Matrix4.translationValues(0, -65, 0),
@@ -206,7 +139,6 @@ class _CoinPlayerSelectionState extends State<CoinPlayerSelection> {
                         ),
                       ),
                     ),
-
                     Container(
                       transform: Matrix4.translationValues(0, -20, 0),
                       margin: EdgeInsets.only(left: 50.w, right: 50.w),

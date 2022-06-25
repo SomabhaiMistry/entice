@@ -38,8 +38,8 @@ class _CreateRoomState extends State<CreateRoom> {
               fit: BoxFit.fill,
             ),
             Positioned(
-              top: 40,
-              right: 10,
+              top: 60,
+              right: 20,
               child: Container(
                 padding: EdgeInsets.only(left: 0.w),
                 decoration: BoxDecoration(
@@ -53,7 +53,7 @@ class _CreateRoomState extends State<CreateRoom> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(
-                      width: 12.w,
+                      width: 16.w,
                     ),
                     Text(str_coin,
                       style: TextStyle(
@@ -79,7 +79,7 @@ class _CreateRoomState extends State<CreateRoom> {
               ),
             ),
             Container(
-                margin: EdgeInsets.only(top: 35.h, right: 95.r),
+                margin: EdgeInsets.only(top: 55.h, right:100.w),
                 child: Image.asset(
                   img_wallet,
                   width: 35.w,
@@ -87,17 +87,18 @@ class _CreateRoomState extends State<CreateRoom> {
                   fit: BoxFit.fill,
                 )),
             Stack(
-              alignment: Alignment.topCenter,
+              alignment: Alignment.center,
               children: [
                 Container(
-                    margin: EdgeInsets.only(top: 30.h),
-                    child: Center(child: SvgPicture.asset(game_mode_bg,width: double.infinity,height: 450.h))),
+                    margin: EdgeInsets.only(top: 20.h),
+                    child: Center(child: SvgPicture.asset(game_mode_bg,fit: BoxFit.fill,
+                      width: double.infinity,height: 470.h,))),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      transform: Matrix4.translationValues(0, -38, 0),
+                      transform: Matrix4.translationValues(0, -68, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
@@ -125,7 +126,7 @@ class _CreateRoomState extends State<CreateRoom> {
                     ),
 
                     Container(
-                      transform: Matrix4.translationValues(0, -25, 0),
+                      transform: Matrix4.translationValues(0, -55, 0),
 
                       margin: EdgeInsets.only(left: 50.w, right: 50.w),
                       child: Row(
@@ -177,8 +178,9 @@ class _CreateRoomState extends State<CreateRoom> {
                         ],
                       ),
                     ),
+
                     Container(
-                      transform: Matrix4.translationValues(0, -15, 0),
+                      transform: Matrix4.translationValues(0, -40, 0),
                       margin: EdgeInsets.only( left: 50.w, right: 45.w),
                       child: const DottedLine(
                         direction: Axis.horizontal,
@@ -192,9 +194,7 @@ class _CreateRoomState extends State<CreateRoom> {
                         dashGapRadius: 0.0,
                       ),
                     ),
-                    SizedBox(
-                      height: 15.h,
-                    ),
+
                     Center(
                       child: Text(
                         str_select_amount,

@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/src/size_extension.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../style/my_color.dart';
 import '../style/my_icon_images.dart';
 import '../style/my_string.dart';
 import '../utilites/Constant.dart';
 
-class PlayWithFriend extends StatefulWidget {
-  const PlayWithFriend({Key? key}) : super(key: key);
+class CreateRoomOnline extends StatefulWidget {
+  const CreateRoomOnline({Key? key}) : super(key: key);
 
   @override
-  State<PlayWithFriend> createState() => _PlayWithFriendState();
+  State<CreateRoomOnline> createState() => _CreateRoomOnlineState();
 }
 
-class _PlayWithFriendState extends State<PlayWithFriend> {
+class _CreateRoomOnlineState extends State<CreateRoomOnline> {
+
+  int _n = 1000;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,8 +34,8 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
               fit: BoxFit.fill,
             ),
             Positioned(
-              top: 60,
-              right: 20,
+              top: 40,
+              right: 10,
               child: Container(
                 padding: EdgeInsets.only(left: 0.w),
                 decoration: BoxDecoration(
@@ -46,7 +49,7 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(
-                      width: 16.w,
+                      width: 12.w,
                     ),
                     Text(str_coin,
                       style: TextStyle(
@@ -72,7 +75,7 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
               ),
             ),
             Container(
-                margin: EdgeInsets.only(top: 55.h, right:100.w),
+                margin: EdgeInsets.only(top: 35.h, right: 95.r),
                 child: Image.asset(
                   img_wallet,
                   width: 35.w,
@@ -82,17 +85,13 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
             Stack(
               alignment: Alignment.center,
               children: [
-                Container(
-                    margin: EdgeInsets.only(left: 0.w,top: 30.w),
-                    child: Center(child: SvgPicture.asset(game_mode_bg,fit: BoxFit.fill,
-                      width: double.infinity,height: 475.h,))),
-                // Center(child: SvgPicture.asset(game_mode_bg,width: double.infinity,height: 450.h,)),
+                Center(child:SvgPicture.asset(game_mode_bg,width: double.infinity,height: 450.h)),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      transform: Matrix4.translationValues(0, -70, 0),
+                      transform: Matrix4.translationValues(0, -95, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
@@ -114,28 +113,70 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
                           ),
                           Container(
                               margin: EdgeInsets.only(top: 20.h),
-                              child: SvgPicture.asset(icon_cross)),
+                              child:  SvgPicture.asset(icon_question_mark)),
+                        ],
+                      ),
+                    ),
+                    Center(
+                      child: Container(
+                        transform: Matrix4.translationValues(0, -55, 0),
+                        child: Text(
+                          str_select_amount,
+                          style: TextStyle(
+                              fontFamily: chewy_regular,
+                              fontSize: 19.sp,
+                              color: pista_439050),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      transform: Matrix4.translationValues(0, -10, 0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          InkWell(
+                              onTap: () {
+                                setState(() {
+                                  _n--;
+                                });
+                              },
+                              child:Image.asset(img_minus,height: 45,width: 45,)),
+                          Stack(
+                            alignment: Alignment.center,
+                            children: [
+                              Image.asset(img_additional_back,width: 125.w,height: 50.h,),
+                              Text(
+                                '$_n'.toString(),
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 27.sp,
+                                    fontFamily: chewy_regular),
+                              )
+                            ],
+                          ),
+                          InkWell(
+                              onTap: () {
+                                setState(() {
+                                  _n++;
+                                });
+                              },
+                              child:Image.asset(img_addition,height: 45,width: 45,)),
                         ],
                       ),
                     ),
                     Container(
-                        transform: Matrix4.translationValues(0, -55, 0),
-                        child: Center(child: SvgPicture.asset(btn_play_online))),
-
-                    Container(
-                        transform: Matrix4.translationValues(0, -32, 0),
-                        child: Center(child:  SvgPicture.asset(btn_play_with_friend))),
-
-                    Container(
-                        transform: Matrix4.translationValues(0, -10, 0),
-                        child: Center(child: SvgPicture.asset(btn_play_with_computer))),
+                        margin: EdgeInsets.only(right: 60.w, left: 60.w,top: 25.h),
+                        height: 70.h,
+                        width: double.infinity,
+                        child:SvgPicture.asset(btn_next)),
                   ],
                 )
               ],
             )
           ],
         ),
-
       ),
     );
   }

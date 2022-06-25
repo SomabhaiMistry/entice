@@ -147,3 +147,6 @@ const img_player1 = 'assets/images/img_player1.png';
 const img_player2 = 'assets/images/img_player2.png';
 const img_player3 = 'assets/images/img_player3.png';
 const img_player4 = 'assets/images/img_player4.png';
+const img_rules_rect = 'assets/images/img_rules_rect.png';
+const img_rules_bg = 'assets/images/img_rules_bg.png';
+const img_coin_2_player_select = 'assets/images/img_coin_2_player_select.png';
