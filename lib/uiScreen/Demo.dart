@@ -82,7 +82,6 @@ class _DemoState extends State<Demo> {
                 fit: BoxFit.fill,
               ),
             ),
-
             Align(
               alignment: Alignment.center,
               child: Column(
@@ -91,60 +90,72 @@ class _DemoState extends State<Demo> {
                 children: [
                   Stack(
                     children: [
-                    Center(
-                      child: Container(
-                        margin: EdgeInsets.only(top:25 ),
-                        child: SvgPicture.asset(
-                        game_mode_bg,
-                        fit: BoxFit.fill,
+                      Center(
+                        child: Container(
+                          margin: EdgeInsets.only(top: 25),
+                          child: SvgPicture.asset(
+                            game_mode_bg,
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       ),
-                    ),
-
                       Container(
                         margin: EdgeInsets.only(top: 95),
                         child: Column(
-                          crossAxisAlignment:CrossAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            SvgPicture.asset(btn_play_online),
-                            SizedBox(height: 20,),
-
-                            SvgPicture.asset(btn_play_with_friend),
-                            SizedBox(height: 20,),
-
-                            Center(child: SvgPicture.asset(btn_play_with_computer))
-
+                            Center(
+                              child: Image.asset(
+                                btn_easy,
+                                height: 90.h,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Image.asset(
+                              btn_normal,
+                              height: 90.h,
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Image.asset(
+                              btn_hard,
+                              height: 90.h,
+                            ),
                           ],
                         ),
                       ),
-
                       Center(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             GestureDetector(
-                                onTap: (){
+                                onTap: () {
                                   Navigator.pop(context);
                                 },
                                 child: Container(
                                     margin: EdgeInsets.only(top: 20.h),
                                     child: SvgPicture.asset(b_y))),
-
                             SizedBox(
                               width: 3.w,
                             ),
-                            Image.asset(icon_ludo_title,width: 160.w,height: 70.h,),
+                            Image.asset(
+                              icon_ludo_title,
+                              width: 160.w,
+                              height: 70.h,
+                            ),
                             SizedBox(
                               width: 3.w,
                             ),
                             Container(
                                 margin: EdgeInsets.only(top: 20.h),
-                                child: SvgPicture.asset(icon_cross)),
+                                child: SvgPicture.asset(icon_question_mark)),
                           ],
                         ),
                       ),
-
                     ],
                   ),
                 ],
