@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/src/size_extension.dart';
 import '../style/my_color.dart';
 import '../utilites/Constant.dart';
 import 'AddNewFriend.dart';
+import 'ChooseAvatar.dart';
 import 'ChooseCountryCode.dart';
 import 'CoinPlayerSelection.dart';
 import 'CoinPlayerSelectionOnline.dart';
@@ -572,26 +573,26 @@ class ListScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                // /*ChooseAvatar*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => ChooseAvatar(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "26.ChooseAvatar Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
+                /*ChooseAvatar*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ChooseAvatar(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "26.ChooseAvatar Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
