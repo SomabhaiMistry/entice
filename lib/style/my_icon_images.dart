@@ -82,6 +82,7 @@ const b_y = 'assets/images/b_y.svg';
 
 
 const icon_et_bg = 'assets/images/icon_et_bg.svg';
+const btn_add_new_friend = 'assets/images/btn_add_new_friend.png';
 const btn_login = 'assets/images/btn_login.svg';
 const btn_create_account = 'assets/images/btn_create_account.svg';
 const btn_continue = 'assets/images/btn_continue.svg';
@@ -122,6 +123,7 @@ const btn_play_online = 'assets/images/btn_play_online.svg';
 const btn_play_with_friend = 'assets/images/btn_play_with_friend.svg';
 const btn_play_with_computer = 'assets/images/btn_play_with_computer.svg';
 const icon_question_mark = 'assets/images/icon_question_mark.svg';
+const add_friends = 'assets/images/add_friends.svg';
 
 const img_backgound = 'assets/images/backgound.png';
 const img_et_bg = 'assets/images/img_et_bg.png';
@@ -150,3 +152,11 @@ const img_player4 = 'assets/images/img_player4.png';
 const img_rules_rect = 'assets/images/img_rules_rect.png';
 const img_rules_bg = 'assets/images/img_rules_bg.png';
 const img_coin_2_player_select = 'assets/images/img_coin_2_player_select.png';
+const img_color_selected = 'assets/images/img_color_select.png';
+const btn_easy = 'assets/images/btn_easy.png';
+const btn_normal = 'assets/images/btn_normal.png';
+const btn_hard = 'assets/images/btn_hard.png';
+const btn_save = 'assets/images/btn_save.png';
+
+
+const avater1 = 'assets/images/avater1.png';

@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/src/size_extension.dart';
 
 import '../style/my_color.dart';
 import '../utilites/Constant.dart';
+import 'AddNewFriend.dart';
 import 'ChooseCountryCode.dart';
 import 'CoinPlayerSelection.dart';
 import 'CoinPlayerSelectionOnline.dart';
@@ -12,13 +13,17 @@ import 'CreateNewAccount.dart';
 import 'CreateRoom.dart';
 import 'CreateRoomOnline.dart';
 import 'Deposit.dart';
+import 'FriendSearch.dart';
+import 'GameModeSelect.dart';
 import 'HomePage.dart';
 import 'LoginScreen.dart';
 import 'MobileVerification.dart';
 import 'PlayWithFriend.dart';
 import 'PlaywithFriendFourPlayer.dart';
+import 'PlaywithFriendFourPlayerOnline.dart';
 import 'PlaywithFriendOnline.dart';
 import 'PlaywithFriendPlayer.dart';
+import 'Profile.dart';
 import 'RulesPage.dart';
 import 'SplashScreen.dart';
 import 'Wallet.dart';
@@ -467,106 +472,106 @@ class ListScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                // /*PlaywithFriendFourPlayerOnline*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => PlaywithFriendFourPlayerOnline(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "21.PlaywithFriendFourPlayerOnline Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*GameModeSelect*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => GameModeSelect(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "22.GameModeSelect Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*AddNewFriend*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => AddNewFriend(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "23.AddNewFriend Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*FriendSearch*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => FriendSearch(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "24.FriendSearch Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
-                // /*Profile*/
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => Profile(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.all(12.0),
-                //     child: Text(
-                //       "25.Profile Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: helveticaNeueNeue_medium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
+                /*PlaywithFriendFourPlayerOnline*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PlaywithFriendFourPlayerOnline(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "21.PlaywithFriendFourPlayerOnline Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*GameModeSelect*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GameModeSelect(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "22.GameModeSelect Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*AddNewFriend*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AddNewFriend(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "23.AddNewFriend Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*FriendSearch*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => FriendSearch(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "24.FriendSearch Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                /*Profile*/
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Profile(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "25.Profile Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
                 // /*ChooseAvatar*/
                 // GestureDetector(
                 //   onTap: () {

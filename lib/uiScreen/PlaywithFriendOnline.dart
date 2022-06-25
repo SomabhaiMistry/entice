@@ -51,7 +51,16 @@ class _PlaywithFriendOnlineState extends State<PlaywithFriendOnline> {
                   ),
                 ),
                 SizedBox(height: 110.h,),
-                Center(child: Image.asset(img_player1,height: 70.h,width: 70.w,)),
+                Center(
+                  child: Container(
+                    width: 70,
+                    height: 70,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(40),
+                      child: Image.asset(img_player1,height: 55.h,width: 55.w,fit: BoxFit.fill,),
+                    ),
+                  ),
+                ),
                 SizedBox(height: 5.h,),
                 Center(
                   child: Text(str_vrunda_patel,style: TextStyle(
@@ -65,7 +74,16 @@ class _PlaywithFriendOnlineState extends State<PlaywithFriendOnline> {
                   ),),
                 ),
                 SizedBox(height: 15.h,),
-                Center(child: Image.asset(img_player2,height: 70.h,width: 70.w,)),
+                Center(
+                  child: Container(
+                    width: 70,
+                    height: 70,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(40),
+                      child: Image.asset(img_player2,height: 55.h,width: 55.w,fit: BoxFit.fill,),
+                    ),
+                  ),
+                ),
                 SizedBox(height: 5.h,),
                 Center(
                   child: Text(str_jay,style: TextStyle(

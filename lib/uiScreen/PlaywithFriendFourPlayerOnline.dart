@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/src/size_extension.dart';
-
 import '../style/my_color.dart';
 import '../style/my_icon_images.dart';
 import '../style/my_string.dart';
 import '../utilites/Constant.dart';
 
-class PlaywithFriendFourPlayer extends StatefulWidget {
-  const PlaywithFriendFourPlayer({Key? key}) : super(key: key);
+class PlaywithFriendFourPlayerOnline extends StatefulWidget {
+  const PlaywithFriendFourPlayerOnline({Key? key}) : super(key: key);
 
   @override
-  State<PlaywithFriendFourPlayer> createState() => _PlaywithFriendFourPlayerState();
+  State<PlaywithFriendFourPlayerOnline> createState() => _PlaywithFriendFourPlayerOnlineState();
 }
 
-class _PlaywithFriendFourPlayerState extends State<PlaywithFriendFourPlayer> {
+class _PlaywithFriendFourPlayerOnlineState extends State<PlaywithFriendFourPlayerOnline> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,27 +32,13 @@ class _PlaywithFriendFourPlayerState extends State<PlaywithFriendFourPlayer> {
               children: [
                 SizedBox(height: 55.h,),
                 Center(child: Image.asset(img_ludo_title_big,fit: BoxFit.fill,width: 260.w,)),
-                SizedBox(height: 30.h,),
-                Center(
-                  child: Text(str_room_code,style: TextStyle(
-                      fontSize: 25.sp,color: Colors.white,fontFamily: chewy_regular
-                  ),),
-                ),
-                SizedBox(height: 10.h,),
-                Center(
-                  child: Text(str_share_room_code,style: TextStyle(
-                      fontSize: 14.sp,color: Colors.white,fontFamily: chelseaMarket_regular,
-                      height: 1.3
-                  ),textAlign: TextAlign.center,),
-                ),
-                SizedBox(height: 12.h,),
-                Center(child: Image.asset(img_share,width: 45.w,height: 45.h,)),
+
                 SizedBox(height: 30.h,),
                 Center(
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      Image.asset(img_deposite_bg,height: 65.h,width:195.w,fit: BoxFit.fill,),
+                      Image.asset(img_deposite_bg,height: 65.h,width:175.w,fit: BoxFit.fill,),
                       Container(
                         padding: EdgeInsets.symmetric(horizontal: 20.w),
                         child:  Text(str_code,style: TextStyle(
@@ -65,17 +50,8 @@ class _PlaywithFriendFourPlayerState extends State<PlaywithFriendFourPlayer> {
                     ],
                   ),
                 ),
-                SizedBox(height: 44.h,),
-                // const Center(
-                //   child: CircleAvatar(
-                //     backgroundColor: Colors.white,
-                //     radius: 35.0,
-                //     child: CircleAvatar(
-                //       backgroundImage: AssetImage(img_flag_india),
-                //       radius: 33.0,
-                //     ),
-                //   ),
-                // ),
+                SizedBox(height: 95.h,),
+
                 Center(
                   child: Container(
                     width: 70,
