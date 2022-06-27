@@ -47,7 +47,7 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                                 onTap: () {
                                   Navigator.pop(context);
                                 },
-                                child:SvgPicture.asset(b_y)),
+                                child: SvgPicture.asset(b_y)),
                             SizedBox(
                               width: 18.5.w,
                             ),
@@ -68,7 +68,9 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           SvgPicture.asset(google),
-                          SizedBox(width: 35.h,),
+                          SizedBox(
+                            width: 35.h,
+                          ),
                           SvgPicture.asset(fb)
                         ],
                       ),
@@ -89,7 +91,8 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                                 str_or,
                                 style: TextStyle(
                                     fontFamily: chewy_regular,
-                                    fontSize: 20.sp, color: Colors.white),
+                                    fontSize: 20.sp,
+                                    color: Colors.white),
                               ),
                             ),
                             Container(
@@ -100,9 +103,8 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                           ],
                         ),
                       ),
-
                       Container(
-                        margin: EdgeInsets.only(left: 45.w,top: 18.h),
+                        margin: EdgeInsets.only(left: 45.w, top: 18.h),
                         child: Text(
                           str_full_name,
                           style: TextStyle(
@@ -146,9 +148,8 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                           ],
                         ),
                       ),
-
                       Container(
-                        margin: EdgeInsets.only(left: 45.w,top: 20.h),
+                        margin: EdgeInsets.only(left: 45.w, top: 20.h),
                         child: Text(
                           str_email_iD,
                           style: TextStyle(
@@ -159,7 +160,8 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                       ),
                       Container(
                         height: 70.h,
-                        margin: EdgeInsets.only(right: 45.w, left: 45.w, top: 7.h),
+                        margin:
+                            EdgeInsets.only(right: 45.w, left: 45.w, top: 7.h),
                         child: Stack(
                           alignment: Alignment.center,
                           children: [
@@ -191,9 +193,8 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                           ],
                         ),
                       ),
-
                       Container(
-                        margin: EdgeInsets.only(left: 45.w,top: 20.h),
+                        margin: EdgeInsets.only(left: 45.w, top: 20.h),
                         child: Text(
                           str_Username,
                           style: TextStyle(
@@ -204,7 +205,8 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                       ),
                       Container(
                         height: 70.h,
-                        margin: EdgeInsets.only(right: 45.w, left: 45.w, top: 7.h),
+                        margin:
+                            EdgeInsets.only(right: 45.w, left: 45.w, top: 7.h),
                         child: Stack(
                           alignment: Alignment.center,
                           children: [
@@ -236,9 +238,8 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                           ],
                         ),
                       ),
-
                       Container(
-                        margin: EdgeInsets.only(left: 45.w,top: 20.h),
+                        margin: EdgeInsets.only(left: 45.w, top: 20.h),
                         child: Text(
                           str_mobile_no,
                           style: TextStyle(
@@ -266,18 +267,26 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Center(
-                                    child: Text("+91",style: TextStyle(
-                                      fontFamily: chewy_regular,color:blue_245de5,
-                                      fontSize: 20.sp
-
-                                    ),),
+                                    child: Text(
+                                      "+91",
+                                      style: TextStyle(
+                                          fontFamily: chewy_regular,
+                                          color: blue_245de5,
+                                          fontSize: 20.sp),
+                                    ),
                                   ),
-                                  SizedBox(width: 3.w,),
-
-                                  Center(child: Image.asset(img_down,height: 18.h,width: 15.w,)),
-
-                                  SizedBox(width: 8.w,),
-
+                                  SizedBox(
+                                    width: 3.w,
+                                  ),
+                                  Center(
+                                      child: Image.asset(
+                                    img_down,
+                                    height: 18.h,
+                                    width: 15.w,
+                                  )),
+                                  SizedBox(
+                                    width: 8.w,
+                                  ),
                                   Expanded(
                                     child: Center(
                                       child: TextField(
@@ -305,9 +314,8 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                           ],
                         ),
                       ),
-
                       Container(
-                        margin: EdgeInsets.only(left: 45.w,top: 20.h),
+                        margin: EdgeInsets.only(left: 45.w, top: 20.h),
                         child: Text(
                           str_confirm_pwd,
                           style: TextStyle(
@@ -338,7 +346,7 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                                     color: blue_245de5,
                                     fontFamily: chewy_regular,
                                     fontSize: 20.sp),
-                                decoration:  InputDecoration(
+                                decoration: InputDecoration(
                                   isDense: true,
                                   hintText: str_enter_confirm_pwd,
                                   hintStyle: TextStyle(
@@ -354,9 +362,8 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                           ],
                         ),
                       ),
-
                       Container(
-                        margin: EdgeInsets.only(left: 45.w,top: 20.h),
+                        margin: EdgeInsets.only(left: 45.w, top: 20.h),
                         child: Text(
                           str_confirm_pwd,
                           style: TextStyle(
@@ -402,12 +409,13 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                           ],
                         ),
                       ),
-
-                Container(
-                    height: 75.h,
-                    margin: EdgeInsets.only(right: 45.w, left: 45.w,top: 20.h),
-                    child: SvgPicture.asset(btn_create_account,width: 340,)),
-
+                      Container(
+                          height: 75.h,
+                          margin: EdgeInsets.only(
+                              right: 45.w, left: 45.w, top: 20.h),
+                          child: SvgPicture.asset(
+                            btn_create_account,width: double.infinity
+                          )),
                       SizedBox(
                         height: 35.h,
                       ),

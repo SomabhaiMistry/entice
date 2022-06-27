@@ -35,9 +35,8 @@ class _CoinPlayerSelectionOnlineState extends State<CoinPlayerSelectionOnline> {
             ),
             Positioned(
               top: 40,
-              right: 10,
+              right: 20,
               child: Container(
-                padding: EdgeInsets.only(left: 0.w),
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.only(
@@ -49,7 +48,7 @@ class _CoinPlayerSelectionOnlineState extends State<CoinPlayerSelectionOnline> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(
-                      width: 12.w,
+                      width: 16.w,
                     ),
                     Text(
                       str_coin,
@@ -75,14 +74,16 @@ class _CoinPlayerSelectionOnlineState extends State<CoinPlayerSelectionOnline> {
                 ),
               ),
             ),
-            Container(
-                margin: EdgeInsets.only(top: 35.h, right: 95.r),
-                child: Image.asset(
-                  img_wallet,
-                  width: 35.w,
-                  height: 35.h,
-                  fit: BoxFit.fill,
-                )),
+            Positioned(
+              top: 35,
+              right: 105,
+              child: Image.asset(
+                img_wallet,
+                width: 35.w,
+                height: 35.h,
+                fit: BoxFit.fill,
+              ),
+            ),
             Stack(
               alignment: Alignment.center,
               children: [

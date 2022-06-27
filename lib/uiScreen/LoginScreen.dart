@@ -128,7 +128,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Container(
                     height: 75.h,
                       margin: EdgeInsets.only(right: 45.w, left: 45.w,top: 20.h),
-                      child: SvgPicture.asset(btn_login,width: 340,)),
+                      child: SvgPicture.asset(btn_login,width: double.infinity,)),
 
                   Container(
                     margin: EdgeInsets.only(top: 40.h),

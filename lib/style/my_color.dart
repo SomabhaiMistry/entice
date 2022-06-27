@@ -27,3 +27,8 @@ const lemon_FFBF02 = Color(0xffFFBF02);
 const orange_FF9353 = Color(0xffFF9353);
 const white_opacity_B3ffffff = Color(0xB3ffffff);
 const sky_blue_42caff = Color(0xff42caff);
+
+
+const btn_sky_blue_23A8F8 = Color(0xff23A8F8);
+const btn_sky_blue2_1B9DF6 = Color(0xff1B9DF6);
+const btn_sky_blue3_0E7DEC = Color(0xff0E7DEC);

@@ -122,7 +122,7 @@ class _WelComeState extends State<WelCome> {
                 Container(
                     height: 75.h,
                     margin: EdgeInsets.only(right: 45.w, left: 45.w,bottom: 20.h),
-                    child: SvgPicture.asset(btn_continue,width: 340,)),
+                    child: SvgPicture.asset(btn_continue,width: double.infinity)),
               ],
             )
           ],

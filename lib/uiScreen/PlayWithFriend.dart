@@ -30,7 +30,7 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
               fit: BoxFit.fill,
             ),
             Positioned(
-              top: 60,
+              top: 40,
               right: 20,
               child: Container(
                 decoration: BoxDecoration(
@@ -71,7 +71,7 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
               ),
             ),
             Positioned(
-              top: 55,
+              top: 35,
               right: 105,
               child: Image.asset(
                 img_wallet,

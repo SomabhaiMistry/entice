@@ -1,3 +1,4 @@
+import 'package:entice/uiScreen/ButtonDemo.dart';
 import 'package:entice/uiScreen/Demo.dart';
 import 'package:entice/uiScreen/ListScreen.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: ListScreen(),
+          home: ButtonDemo(),
         );
       },
     );

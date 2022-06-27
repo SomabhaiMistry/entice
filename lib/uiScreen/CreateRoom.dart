@@ -38,10 +38,9 @@ class _CreateRoomState extends State<CreateRoom> {
               fit: BoxFit.fill,
             ),
             Positioned(
-              top: 60,
+              top: 40,
               right: 20,
               child: Container(
-                padding: EdgeInsets.only(left: 0.w),
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.only(
@@ -55,7 +54,8 @@ class _CreateRoomState extends State<CreateRoom> {
                     SizedBox(
                       width: 16.w,
                     ),
-                    Text(str_coin,
+                    Text(
+                      str_coin,
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 14.sp,
@@ -78,14 +78,16 @@ class _CreateRoomState extends State<CreateRoom> {
                 ),
               ),
             ),
-            Container(
-                margin: EdgeInsets.only(top: 55.h, right:100.w),
-                child: Image.asset(
-                  img_wallet,
-                  width: 35.w,
-                  height: 35.h,
-                  fit: BoxFit.fill,
-                )),
+            Positioned(
+              top: 35,
+              right: 105,
+              child: Image.asset(
+                img_wallet,
+                width: 35.w,
+                height: 35.h,
+                fit: BoxFit.fill,
+              ),
+            ),
             Stack(
               alignment: Alignment.center,
               children: [
