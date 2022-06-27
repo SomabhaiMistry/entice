@@ -23,7 +23,7 @@ class _ButtonDemoState extends State<ButtonDemo> with SingleTickerProviderStateM
         milliseconds: 100,
       ),
       lowerBound: 0.0,
-      upperBound: 0.3,
+      upperBound: 6.5,
     )..addListener(() {
       setState(() {});
     });
@@ -125,10 +125,7 @@ class _ButtonDemoState extends State<ButtonDemo> with SingleTickerProviderStateM
         child: Text(
           'Login',
           style: TextStyle
-            (
-              letterSpacing:3,
-
-              shadows: <Shadow>[
+            (letterSpacing:3, shadows: <Shadow>[
             Shadow(
               // offset: Offset(10.0, 10.0),
               blurRadius: 3.0,
