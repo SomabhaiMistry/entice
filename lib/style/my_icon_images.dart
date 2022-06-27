@@ -107,6 +107,11 @@ const icon_player2 = 'assets/images/icon_player2.svg';
 
 
 
+const bt_demo = 'assets/images/bt_demo.svg';
+
+
+
+
 const icon_cystal_red = 'assets/images/icon_cystal_red.svg';
 const icon_cystal_blue = 'assets/images/icon_cystal_blue.svg';
 const icon_cystal_yellow = 'assets/images/icon_cystal_yellow.svg';

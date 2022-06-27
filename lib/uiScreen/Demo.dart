@@ -1,3 +1,4 @@
+import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -17,6 +18,14 @@ class Demo extends StatefulWidget {
 }
 
 class _DemoState extends State<Demo> {
+  bool tvCreateGame = true;
+  bool tvJoinGame = false;
+  bool coinRed = false;
+  bool coinBlue = false;
+  bool coinYellow = false;
+  bool coinGreen = false;
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -92,41 +101,229 @@ class _DemoState extends State<Demo> {
                     children: [
                       Center(
                         child: Container(
-                          margin: EdgeInsets.only(top: 25),
-                          child: SvgPicture.asset(
-                            game_mode_bg,
+                          margin: EdgeInsets.only(top: 35.h,left: 23.w,right: 23.w),
+                          child: Image.asset(
+                            coin_select_bg,
+                            // height: 430.h,
+                            width: double.infinity,
                             fit: BoxFit.fill,
                           ),
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: 95),
+                        margin: EdgeInsets.only(top: 80),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Center(
-                              child: Image.asset(
-                                btn_easy,
-                                height: 90.h,
+                            Container(
+                              margin: EdgeInsets.only(left: 50.w, right: 50.w),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Expanded(
+                                    child: InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          tvCreateGame = true;
+                                          tvJoinGame = false;
+                                        });
+                                      },
+                                      child: Text(
+                                        str_create,
+                                        style: TextStyle(
+                                            fontSize: 20.sp,
+                                            color: tvCreateGame?pista_439050: light_pista_A0DDA4,
+                                            fontFamily: fredokaOne_regular),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 38.h,
+                                    width: 2.w,
+                                    decoration: BoxDecoration(
+                                        color: line_DEDC9A,
+                                        borderRadius: BorderRadius.circular(8.r)),
+                                  ),
+                                  Expanded(
+                                    child: InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          tvCreateGame = false;
+                                          tvJoinGame = true;
+                                        });
+                                      },
+                                      child: Text(
+                                        str_join,
+                                        style: TextStyle(
+                                            fontSize: 20.sp,
+                                            color: tvJoinGame?pista_439050: light_pista_A0DDA4,
+                                            fontFamily: fredokaOne_regular),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            SizedBox(
-                              height: 20,
+                            Container(
+                              margin: EdgeInsets.only( left: 50.w, right: 40.w,top: 8.h),
+                              child: const DottedLine(
+                                direction: Axis.horizontal,
+                                lineLength: double.infinity,
+                                lineThickness: 1.4,
+                                dashLength: 25.0,
+                                dashColor:pista_439050,
+                                dashRadius: 0.0,
+                                dashGapLength: 6.0,
+                                dashGapColor: Colors.transparent,
+                                dashGapRadius: 0.0,
+                              ),
                             ),
-                            Image.asset(
-                              btn_normal,
-                              height: 90.h,
+                            SizedBox(height: 25.h,),
+                            Center(
+                              child: Text(str_select_color,
+                                style: TextStyle(
+                                    fontFamily: chewy_regular,
+                                    fontSize: 19.sp,
+                                    color: pista_439050),
+                                textAlign: TextAlign.center,
+                              ),
                             ),
-                            SizedBox(
-                              height: 20,
+
+                            Container(
+                              margin: EdgeInsets.only(left: 40.w,right: 40.w,top: 35.h),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        SvgPicture.asset(icon_cystal_red),
+                                        SizedBox(height: 5.h,),
+                                        Text(str_red,style: TextStyle(
+                                            fontFamily: sfpro_display_bold,
+                                            color: red_DD364A,fontSize: 12.sp
+                                        ),),
+                                        SizedBox(height: 8.h,),
+                                        SvgPicture.asset(icon_red_coin),
+                                        SizedBox(height: 20.h,),
+                                        InkWell(
+                                            onTap: () {
+                                              setState(() {
+                                                coinRed = true;
+                                                coinBlue = false;
+                                                coinYellow = false;
+                                                coinGreen = false;
+                                              });
+                                            },
+                                            child: Image.asset(coinRed
+                                                ? img_selected_coin
+                                                : img_ring,height: 45.h,width: 45.w,)),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        SvgPicture.asset(icon_cystal_blue),
+                                        SizedBox(height: 5.h,),
+                                        Text(str_blue,style: TextStyle(
+                                            fontFamily: sfpro_display_bold,
+                                            color: blue_2FA1C7,fontSize: 12.sp
+                                        ),),
+                                        SizedBox(height: 8.h,),
+                                        SvgPicture.asset(icon_blue_coin),
+                                        SizedBox(height: 20.h,),
+                                        InkWell(
+                                            onTap: () {
+                                              setState(() {
+                                                coinRed = false;
+                                                coinBlue = true;
+                                                coinYellow = false;
+                                                coinGreen = false;
+                                              });
+                                            },
+                                            child: Image.asset(coinBlue
+                                                ? img_selected_coin
+                                                : img_ring,height: 45.h,width: 45.w,)),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        SvgPicture.asset(icon_cystal_yellow),
+                                        SizedBox(height: 5.h,),
+                                        Text(str_yellow,style: TextStyle(
+                                            fontFamily: sfpro_display_bold,
+                                            color: lemon_FFBF02,fontSize: 12.sp
+                                        ),),
+                                        SizedBox(height: 8.h,),
+                                        SvgPicture.asset(icon_yellow_coin),
+                                        SizedBox(height: 20.h,),
+                                        InkWell(
+                                            onTap: () {
+                                              setState(() {
+                                                coinRed = false;
+                                                coinBlue = false;
+                                                coinYellow = true;
+                                                coinGreen = false;
+                                              });
+                                            },
+                                            child: Image.asset(coinYellow
+                                                ? img_selected_coin
+                                                : img_ring,height: 45.h,width: 45.w,)),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [SvgPicture.asset(icon_cystal_green),
+                                        SizedBox(height: 5.h,),
+                                        Text(str_green,style: TextStyle(
+                                            fontFamily: sfpro_display_bold,
+                                            color: parrot_green_3D9A43,fontSize: 12.sp
+                                        ),),
+                                        SizedBox(height: 8.h,),
+                                        SvgPicture.asset(icon_green_coin),
+                                        SizedBox(height: 20.h,),
+                                        InkWell(
+                                            onTap: () {
+                                              setState(() {
+                                                coinRed = false;
+                                                coinBlue = false;
+                                                coinYellow = false;
+                                                coinGreen = true;
+                                              });
+                                            },
+                                            child: Image.asset(coinGreen
+                                                ? img_selected_coin
+                                                : img_ring,height: 45.h,width: 45.w,)),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                            Image.asset(
-                              btn_hard,
-                              height: 90.h,
-                            ),
+                            Container(
+                                margin: EdgeInsets.only(right: 55.w, left: 55.w,top: 25.h),
+                                height: 70.h,
+                                width: double.infinity,
+                                child:SvgPicture.asset(btn_next,fit: BoxFit.fill,)),
                           ],
                         ),
                       ),
+
                       Center(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,

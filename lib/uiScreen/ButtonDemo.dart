@@ -1,3 +1,4 @@
+import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:entice/utilites/Constant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class _ButtonDemoState extends State<ButtonDemo> with SingleTickerProviderStateM
         milliseconds: 100,
       ),
       lowerBound: 0.0,
-      upperBound: 6.5,
+      upperBound: 0.1
     )..addListener(() {
       setState(() {});
     });
@@ -44,10 +45,61 @@ class _ButtonDemoState extends State<ButtonDemo> with SingleTickerProviderStateM
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
+          backgroundColor: Colors.white,
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+
+              BouncingWidget(
+                duration: Duration(milliseconds: 250),
+                scaleFactor: 1.7,
+                onPressed: () {
+                  print("onPressed");
+                },
+                child: Container(
+                  margin: EdgeInsets.only(left: 25,right: 25,bottom: 15),
+                  padding: EdgeInsets.symmetric(vertical: 18),
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0XFF42caff),
+                          offset: Offset(-0, 4), // changes position of shadow
+                          // offset: Offset(0, -4), // changes position of shadow
+                        ),
+                      ],
+                      gradient: LinearGradient(
+                      begin: Alignment.topRight,
+                      end: Alignment.bottomLeft,
+                      colors: [btn_sky_blue_23A8F8,btn_sky_blue2_1B9DF6,btn_sky_blue3_0E7DEC]),
+                    borderRadius: BorderRadius.circular(25)
+                  ),
+                  child: Text(
+                    "Hello !",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: chewy_regular,
+                      fontSize: 28,
+                      shadows: <Shadow>[
+                        Shadow(
+                          // offset: Offset(10.0, 10.0),
+                          blurRadius: 3.0,
+                          color: Color.fromARGB(255, 0, 0, 0),
+                        ),
+                        Shadow(
+                          // offset: Offset(10.0, 10.0),
+                          blurRadius: 8.0,
+                          color: Color.fromARGB(125, 0, 0, 255),
+                        ),
+                      ],
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+
               SizedBox(
                 width: double.infinity,
                 child: Container(

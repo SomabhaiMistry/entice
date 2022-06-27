@@ -15,6 +15,7 @@ class GameModeSelect extends StatefulWidget {
 }
 
 class _GameModeSelectState extends State<GameModeSelect> {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,7 +31,7 @@ class _GameModeSelectState extends State<GameModeSelect> {
               fit: BoxFit.fill,
             ),
             Positioned(
-              top: 60,
+              top: 40,
               right: 20,
               child: Container(
                 decoration: BoxDecoration(
@@ -71,7 +72,7 @@ class _GameModeSelectState extends State<GameModeSelect> {
               ),
             ),
             Positioned(
-              top: 55,
+              top: 35,
               right: 105,
               child: Image.asset(
                 img_wallet,
@@ -141,7 +142,7 @@ class _GameModeSelectState extends State<GameModeSelect> {
                               width: 3.w,
                             ),
                             Image.asset(
-                              icon_ludo_title,
+                              img_color_selected,
                               width: 160.w,
                               height: 70.h,
                             ),

@@ -109,9 +109,7 @@ class _PlayWithFriendState extends State<PlayWithFriend> {
 
                             SvgPicture.asset(btn_play_with_friend),
                             SizedBox(height: 20,),
-
                             Center(child: SvgPicture.asset(btn_play_with_computer))
-
                           ],
                         ),
                       ),

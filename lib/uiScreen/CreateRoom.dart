@@ -38,7 +38,7 @@ class _CreateRoomState extends State<CreateRoom> {
               fit: BoxFit.fill,
             ),
             Positioned(
-              top: 40,
+              top: 60,
               right: 20,
               child: Container(
                 decoration: BoxDecoration(
@@ -79,7 +79,7 @@ class _CreateRoomState extends State<CreateRoom> {
               ),
             ),
             Positioned(
-              top: 35,
+              top: 55,
               right: 105,
               child: Image.asset(
                 img_wallet,
@@ -88,170 +88,187 @@ class _CreateRoomState extends State<CreateRoom> {
                 fit: BoxFit.fill,
               ),
             ),
-            Stack(
+            Align(
               alignment: Alignment.center,
-              children: [
-                Container(
-                    margin: EdgeInsets.only(top: 20.h),
-                    child: Center(child: SvgPicture.asset(game_mode_bg,fit: BoxFit.fill,
-                      width: double.infinity,height: 470.h,))),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      transform: Matrix4.translationValues(0, -68, 0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          GestureDetector(
-                              onTap: (){
-                                Navigator.pop(context);
-                              },
-                              child: Container(
-                                  margin: EdgeInsets.only(top: 20.h),
-                                  child: SvgPicture.asset(b_y))),
-
-                          SizedBox(
-                            width: 3.w,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Stack(
+                    children: [
+                      Center(
+                        child: Container(
+                          margin: EdgeInsets.only(top: 35.h,left: 23.w,right: 23.w),
+                          child: Image.asset(
+                            img_coin_2_player_select,
+                            height: 430.h,
+                            width: double.infinity,
+                            fit: BoxFit.fill,
                           ),
-                          Image.asset(icon_ludo_title,width: 160.w,height: 70.h,),
-                          SizedBox(
-                            width: 3.w,
-                          ),
-                          Container(
-                              margin: EdgeInsets.only(top: 20.h),
-                              child: SvgPicture.asset(icon_question_mark)),
-                        ],
+                        ),
                       ),
-                    ),
-
-                    Container(
-                      transform: Matrix4.translationValues(0, -55, 0),
-
-                      margin: EdgeInsets.only(left: 50.w, right: 50.w),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Expanded(
-                            child: InkWell(
-                              onTap: () {
-                                setState(() {
-                                  tvCreateGame = true;
-                                  tvJoinGame = false;
-                                });
-                              },
+                      Container(
+                        margin: EdgeInsets.only(top: 80),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(left: 50.w, right: 50.w),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Expanded(
+                                    child: InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          tvCreateGame = true;
+                                          tvJoinGame = false;
+                                        });
+                                      },
+                                      child: Text(
+                                        str_create,
+                                        style: TextStyle(
+                                            fontSize: 20.sp,
+                                            color: tvCreateGame?pista_439050: light_pista_A0DDA4,
+                                            fontFamily: fredokaOne_regular),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 38.h,
+                                    width: 2.w,
+                                    decoration: BoxDecoration(
+                                        color: line_DEDC9A,
+                                        borderRadius: BorderRadius.circular(8.r)),
+                                  ),
+                                  Expanded(
+                                    child: InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          tvCreateGame = false;
+                                          tvJoinGame = true;
+                                        });
+                                      },
+                                      child: Text(
+                                        str_join,
+                                        style: TextStyle(
+                                            fontSize: 20.sp,
+                                            color: tvJoinGame?pista_439050: light_pista_A0DDA4,
+                                            fontFamily: fredokaOne_regular),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only( left: 50.w, right: 40.w,top: 8.h),
+                              child: const DottedLine(
+                                direction: Axis.horizontal,
+                                lineLength: double.infinity,
+                                lineThickness: 1.4,
+                                dashLength: 25.0,
+                                dashColor:pista_439050,
+                                dashRadius: 0.0,
+                                dashGapLength: 6.0,
+                                dashGapColor: Colors.transparent,
+                                dashGapRadius: 0.0,
+                              ),
+                            ),
+                            SizedBox(height: 25.h,),
+                            Center(
                               child: Text(
-                                str_create,
+                                str_select_amount,
                                 style: TextStyle(
-                                    fontSize: 20.sp,
-                                    color: tvCreateGame?pista_439050: light_pista_A0DDA4,
-                                    fontFamily: fredokaOne_regular),
+                                    fontFamily: chewy_regular,
+                                    fontSize: 19.sp,
+                                    color: pista_439050),
                                 textAlign: TextAlign.center,
                               ),
                             ),
-                          ),
-                          Container(
-                            height: 38.h,
-                            width: 2.w,
-                            decoration: BoxDecoration(
-                                color: line_DEDC9A,
-                                borderRadius: BorderRadius.circular(8.r)),
-                          ),
-                          Expanded(
-                            child: InkWell(
-                              onTap: () {
-                                setState(() {
-                                  tvCreateGame = false;
-                                  tvJoinGame = true;
-                                });
-                              },
-                              child: Text(
-                                str_join,
-                                style: TextStyle(
-                                    fontSize: 20.sp,
-                                    color: tvJoinGame?pista_439050: light_pista_A0DDA4,
-                                    fontFamily: fredokaOne_regular),
-                                textAlign: TextAlign.center,
+                            Container(
+                              margin: EdgeInsets.only(top: 25.h,),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          _n--;
+                                        });
+                                      },
+                                      child:Image.asset(img_minus,height: 45,width: 45,)),
+                                  SizedBox(width: 12.w,),
+                                  Stack(
+                                    alignment: Alignment.center,
+                                    children: [
+                                      Image.asset(img_additional_back,width: 110.w,height: 60.h,),
+                                      Text(
+                                        '$_n'.toString(),
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 27.sp,
+                                            fontFamily: chewy_regular),
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(width: 12.w,),
+                                  InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          _n++;
+                                        });
+                                      },
+                                      child:Image.asset(img_addition,height: 45,width: 45,)),
+
+                                ],
                               ),
                             ),
-                          ),
-                        ],
+                            Container(
+                                margin: EdgeInsets.only(right: 60.w, left: 60.w,top: 25.h),
+                                height: 70.h,
+                                width: double.infinity,
+                                child:SvgPicture.asset(btn_next)),
+                          ],
+                        ),
                       ),
-                    ),
 
-                    Container(
-                      transform: Matrix4.translationValues(0, -40, 0),
-                      margin: EdgeInsets.only( left: 50.w, right: 45.w),
-                      child: const DottedLine(
-                        direction: Axis.horizontal,
-                        lineLength: double.infinity,
-                        lineThickness: 1.4,
-                        dashLength: 25.0,
-                        dashColor:pista_439050,
-                        dashRadius: 0.0,
-                        dashGapLength: 6.0,
-                        dashGapColor: Colors.transparent,
-                        dashGapRadius: 0.0,
+                      Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            GestureDetector(
+                                onTap: () {
+                                  Navigator.pop(context);
+                                },
+                                child: Container(
+                                    margin: EdgeInsets.only(top: 20.h),
+                                    child: SvgPicture.asset(b_y))),
+                            SizedBox(
+                              width: 3.w,
+                            ),
+                            Image.asset(
+                              icon_ludo_title,
+                              width: 160.w,
+                              height: 70.h,
+                            ),
+                            SizedBox(
+                              width: 3.w,
+                            ),
+                            Container(
+                                margin: EdgeInsets.only(top: 20.h),
+                                child: SvgPicture.asset(icon_question_mark)),
+                          ],
+                        ),
                       ),
-                    ),
-
-                    Center(
-                      child: Text(
-                        str_select_amount,
-                        style: TextStyle(
-                            fontFamily: chewy_regular,
-                            fontSize: 19.sp,
-                            color: pista_439050),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(top: 25.h,),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          InkWell(
-                              onTap: () {
-                                setState(() {
-                                  _n--;
-                                });
-                              },
-                              child:Image.asset(img_minus,height: 45,width: 45,)),
-                          Stack(
-                            alignment: Alignment.center,
-                            children: [
-                              Image.asset(img_additional_back,width: 125.w,height: 50.h,),
-                              Text(
-                                '$_n'.toString(),
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 27.sp,
-                                    fontFamily: chewy_regular),
-                              )
-                            ],
-                          ),
-                          InkWell(
-                              onTap: () {
-                                setState(() {
-                                  _n++;
-                                });
-                              },
-                              child:Image.asset(img_addition,height: 45,width: 45,)),
-                        ],
-                      ),
-                    ),
-
-                    Container(
-                        margin: EdgeInsets.only(right: 60.w, left: 60.w,top: 25.h),
-                        height: 70.h,
-                        width: double.infinity,
-                        child:SvgPicture.asset(btn_next)),
-                  ],
-                )
-              ],
+                    ],
+                  ),
+                ],
+              ),
             )
           ],
         ),

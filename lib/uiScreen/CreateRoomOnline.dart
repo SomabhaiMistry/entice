@@ -1,3 +1,4 @@
+import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/src/size_extension.dart';
 import 'package:flutter_svg/svg.dart';
@@ -15,9 +16,7 @@ class CreateRoomOnline extends StatefulWidget {
 }
 
 class _CreateRoomOnlineState extends State<CreateRoomOnline> {
-
   int _n = 1000;
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -34,7 +33,7 @@ class _CreateRoomOnlineState extends State<CreateRoomOnline> {
               fit: BoxFit.fill,
             ),
             Positioned(
-              top: 40,
+              top: 60,
               right: 20,
               child: Container(
                 decoration: BoxDecoration(
@@ -75,7 +74,7 @@ class _CreateRoomOnlineState extends State<CreateRoomOnline> {
               ),
             ),
             Positioned(
-              top: 35,
+              top: 55,
               right: 105,
               child: Image.asset(
                 img_wallet,
@@ -84,90 +83,122 @@ class _CreateRoomOnlineState extends State<CreateRoomOnline> {
                 fit: BoxFit.fill,
               ),
             ),
-            Stack(
+            Align(
               alignment: Alignment.center,
-              children: [
-                Center(child:SvgPicture.asset(game_mode_bg,width: double.infinity,height: 450.h)),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        GestureDetector(
-                            onTap: (){
-                              Navigator.pop(context);
-                            },
-                            child: Container(
-                                margin: EdgeInsets.only(top: 20.h),
-                                child: SvgPicture.asset(b_y))),
-
-                        SizedBox(
-                          width: 3.w,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Stack(
+                    children: [
+                      Center(
+                        child: Container(
+                          margin: EdgeInsets.only(top: 35.h,left: 23.w,right: 23.w),
+                          child: Image.asset(
+                            img_coin_2_player_select,
+                            height: 430.h,
+                            width: double.infinity,
+                            fit: BoxFit.fill,
+                          ),
                         ),
-                        Image.asset(icon_ludo_title,width: 160.w,height: 70.h,),
-                        SizedBox(
-                          width: 3.w,
-                        ),
-                        Container(
-                            margin: EdgeInsets.only(top: 20.h),
-                            child:  SvgPicture.asset(icon_question_mark)),
-                      ],
-                    ),
-                    Container(
-                      transform: Matrix4.translationValues(0, -55, 0),
-                      child: Text(
-                        str_select_amount,
-                        style: TextStyle(
-                            fontFamily: chewy_regular,
-                            fontSize: 19.sp,
-                            color: pista_439050),
-                        textAlign: TextAlign.center,
                       ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        InkWell(
-                            onTap: () {
-                              setState(() {
-                                _n--;
-                              });
-                            },
-                            child:Image.asset(img_minus,height: 45,width: 45,)),
-                        Stack(
-                          alignment: Alignment.center,
+                      Container(
+                        margin: EdgeInsets.only(top: 80),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Image.asset(img_additional_back,width: 125.w,height: 50.h,),
-                            Text(
-                              '$_n'.toString(),
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 27.sp,
-                                  fontFamily: chewy_regular),
-                            )
+                            SizedBox(height: 30.h,),
+                            Center(
+                              child: Text(
+                                str_select_amount,
+                                style: TextStyle(
+                                    fontFamily: chewy_regular,
+                                    fontSize: 19.sp,
+                                    color: pista_439050),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(top: 40.h,),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          _n--;
+                                        });
+                                      },
+                                      child:Image.asset(img_minus,height: 45,width: 45,)),
+                                  SizedBox(width: 12.w,),
+                                  Stack(
+                                    alignment: Alignment.center,
+                                    children: [
+                                      Image.asset(img_additional_back,width: 110.w,height: 60.h,),
+                                      Text(
+                                        '$_n'.toString(),
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 27.sp,
+                                            fontFamily: chewy_regular),
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(width: 12.w,),
+                                  InkWell(
+                                      onTap: () {
+                                        setState(() {
+                                          _n++;
+                                        });
+                                      },
+                                      child:Image.asset(img_addition,height: 45,width: 45,)),
+
+                                ],
+                              ),
+                            ),
+                            Container(
+                                margin: EdgeInsets.only(right: 60.w, left: 60.w,top: 40.h),
+                                height: 70.h,
+                                width: double.infinity,
+                                child:SvgPicture.asset(btn_next)),
                           ],
                         ),
-                        InkWell(
-                            onTap: () {
-                              setState(() {
-                                _n++;
-                              });
-                            },
-                            child:Image.asset(img_addition,height: 45,width: 45,)),
-                      ],
-                    ),
-                    Container(
-                        margin: EdgeInsets.only(right: 60.w, left: 60.w,top: 25.h),
-                        height: 70.h,
-                        width: double.infinity,
-                        child:SvgPicture.asset(btn_next)),
-                  ],
-                )
-              ],
+                      ),
+
+                      Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            GestureDetector(
+                                onTap: () {
+                                  Navigator.pop(context);
+                                },
+                                child: Container(
+                                    margin: EdgeInsets.only(top: 20.h),
+                                    child: SvgPicture.asset(b_y))),
+                            SizedBox(
+                              width: 3.w,
+                            ),
+                            Image.asset(
+                              icon_ludo_title,
+                              width: 160.w,
+                              height: 70.h,
+                            ),
+                            SizedBox(
+                              width: 3.w,
+                            ),
+                            Container(
+                                margin: EdgeInsets.only(top: 20.h),
+                                child: SvgPicture.asset(icon_question_mark)),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             )
           ],
         ),

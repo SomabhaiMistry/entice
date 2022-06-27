@@ -27,6 +27,7 @@ class _CoinPlayerSelectionOnlineState extends State<CoinPlayerSelectionOnline> {
         body: Stack(
           alignment: Alignment.topRight,
           children: [
+
             Image.asset(
               img_bg_blur,
               height: double.infinity,
@@ -100,6 +101,8 @@ class _CoinPlayerSelectionOnlineState extends State<CoinPlayerSelectionOnline> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    Text("vaui",style: TextStyle(fontFamily: chewy_regular,fontSize: 25,color: Colors.white),),
+
                     Container(
                       transform: Matrix4.translationValues(0, -125, 0),
                       child: Row(
