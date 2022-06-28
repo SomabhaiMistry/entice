@@ -14,6 +14,7 @@ class AddNewFriend extends StatefulWidget {
 }
 
 class _AddNewFriendState extends State<AddNewFriend> {
+  //testing
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
