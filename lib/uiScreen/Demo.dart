@@ -18,14 +18,9 @@ class Demo extends StatefulWidget {
 }
 
 class _DemoState extends State<Demo> {
-  bool tvCreateGame = true;
-  bool tvJoinGame = false;
-  bool coinRed = false;
-  bool coinBlue = false;
-  bool coinYellow = false;
-  bool coinGreen = false;
 
-
+  bool first = false;
+  bool secound = false;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -101,225 +96,80 @@ class _DemoState extends State<Demo> {
                     children: [
                       Center(
                         child: Container(
-                          margin: EdgeInsets.only(top: 35.h,left: 23.w,right: 23.w),
+                          margin: EdgeInsets.only(top: 30.h,left: 23.w,right: 23.w),
                           child: Image.asset(
-                            coin_select_bg,
-                            // height: 430.h,
-                            width: double.infinity,
+                            img_rules_bg,
+                            // height: 450.h,
+                            // width: double.infinity,
                             fit: BoxFit.fill,
                           ),
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: 80),
+                        margin: EdgeInsets.only(top: 0.h),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              margin: EdgeInsets.only(left: 50.w, right: 50.w),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Expanded(
-                                    child: InkWell(
-                                      onTap: () {
-                                        setState(() {
-                                          tvCreateGame = true;
-                                          tvJoinGame = false;
-                                        });
-                                      },
-                                      child: Text(
-                                        str_create,
-                                        style: TextStyle(
-                                            fontSize: 20.sp,
-                                            color: tvCreateGame?pista_439050: light_pista_A0DDA4,
-                                            fontFamily: fredokaOne_regular),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  ),
-                                  Container(
-                                    height: 38.h,
-                                    width: 2.w,
-                                    decoration: BoxDecoration(
-                                        color: line_DEDC9A,
-                                        borderRadius: BorderRadius.circular(8.r)),
-                                  ),
-                                  Expanded(
-                                    child: InkWell(
-                                      onTap: () {
-                                        setState(() {
-                                          tvCreateGame = false;
-                                          tvJoinGame = true;
-                                        });
-                                      },
-                                      child: Text(
-                                        str_join,
-                                        style: TextStyle(
-                                            fontSize: 20.sp,
-                                            color: tvJoinGame?pista_439050: light_pista_A0DDA4,
-                                            fontFamily: fredokaOne_regular),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.only( left: 50.w, right: 40.w,top: 8.h),
-                              child: const DottedLine(
-                                direction: Axis.horizontal,
-                                lineLength: double.infinity,
-                                lineThickness: 1.4,
-                                dashLength: 25.0,
-                                dashColor:pista_439050,
-                                dashRadius: 0.0,
-                                dashGapLength: 6.0,
-                                dashGapColor: Colors.transparent,
-                                dashGapRadius: 0.0,
-                              ),
-                            ),
-                            SizedBox(height: 25.h,),
-                            Center(
-                              child: Text(str_select_color,
+                              margin: EdgeInsets.only(left: 60.h,right: 60.h),
+                              child: Text(
+                                str_playes_description,
                                 style: TextStyle(
-                                    fontFamily: chewy_regular,
-                                    fontSize: 19.sp,
+                                    fontSize: 13.sp,
+                                    height: 1.3,
+                                    fontFamily: poppins_regular,
                                     color: pista_439050),
-                                textAlign: TextAlign.center,
                               ),
                             ),
-
-                            Container(
-                              margin: EdgeInsets.only(left: 40.w,right: 40.w,top: 35.h),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Expanded(
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        SvgPicture.asset(icon_cystal_red),
-                                        SizedBox(height: 5.h,),
-                                        Text(str_red,style: TextStyle(
-                                            fontFamily: sfpro_display_bold,
-                                            color: red_DD364A,fontSize: 12.sp
-                                        ),),
-                                        SizedBox(height: 8.h,),
-                                        SvgPicture.asset(icon_red_coin),
-                                        SizedBox(height: 20.h,),
-                                        InkWell(
-                                            onTap: () {
-                                              setState(() {
-                                                coinRed = true;
-                                                coinBlue = false;
-                                                coinYellow = false;
-                                                coinGreen = false;
-                                              });
-                                            },
-                                            child: Image.asset(coinRed
-                                                ? img_selected_coin
-                                                : img_ring,height: 45.h,width: 45.w,)),
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        SvgPicture.asset(icon_cystal_blue),
-                                        SizedBox(height: 5.h,),
-                                        Text(str_blue,style: TextStyle(
-                                            fontFamily: sfpro_display_bold,
-                                            color: blue_2FA1C7,fontSize: 12.sp
-                                        ),),
-                                        SizedBox(height: 8.h,),
-                                        SvgPicture.asset(icon_blue_coin),
-                                        SizedBox(height: 20.h,),
-                                        InkWell(
-                                            onTap: () {
-                                              setState(() {
-                                                coinRed = false;
-                                                coinBlue = true;
-                                                coinYellow = false;
-                                                coinGreen = false;
-                                              });
-                                            },
-                                            child: Image.asset(coinBlue
-                                                ? img_selected_coin
-                                                : img_ring,height: 45.h,width: 45.w,)),
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        SvgPicture.asset(icon_cystal_yellow),
-                                        SizedBox(height: 5.h,),
-                                        Text(str_yellow,style: TextStyle(
-                                            fontFamily: sfpro_display_bold,
-                                            color: lemon_FFBF02,fontSize: 12.sp
-                                        ),),
-                                        SizedBox(height: 8.h,),
-                                        SvgPicture.asset(icon_yellow_coin),
-                                        SizedBox(height: 20.h,),
-                                        InkWell(
-                                            onTap: () {
-                                              setState(() {
-                                                coinRed = false;
-                                                coinBlue = false;
-                                                coinYellow = true;
-                                                coinGreen = false;
-                                              });
-                                            },
-                                            child: Image.asset(coinYellow
-                                                ? img_selected_coin
-                                                : img_ring,height: 45.h,width: 45.w,)),
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [SvgPicture.asset(icon_cystal_green),
-                                        SizedBox(height: 5.h,),
-                                        Text(str_green,style: TextStyle(
-                                            fontFamily: sfpro_display_bold,
-                                            color: parrot_green_3D9A43,fontSize: 12.sp
-                                        ),),
-                                        SizedBox(height: 8.h,),
-                                        SvgPicture.asset(icon_green_coin),
-                                        SizedBox(height: 20.h,),
-                                        InkWell(
-                                            onTap: () {
-                                              setState(() {
-                                                coinRed = false;
-                                                coinBlue = false;
-                                                coinYellow = false;
-                                                coinGreen = true;
-                                              });
-                                            },
-                                            child: Image.asset(coinGreen
-                                                ? img_selected_coin
-                                                : img_ring,height: 45.h,width: 45.w,)),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            Text(
+                              str_four_playes,
+                              style: TextStyle(
+                                  fontSize: 14.sp,
+                                  fontFamily: sfpro_display_bold,
+                                  fontWeight: FontWeight.w900,
+                                  color: pista_439050),
                             ),
-                            Container(
-                                margin: EdgeInsets.only(right: 55.w, left: 55.w,top: 25.h),
-                                height: 70.h,
-                                width: double.infinity,
-                                child:SvgPicture.asset(btn_next,fit: BoxFit.fill,)),
+                            Text(
+                              str_first_playes,
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  height: 1.3,
+                                  fontFamily: poppins_regular,
+                                  color: pista_439050),
+                            ),
+                            Text(
+                              str_secound_playes,
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  height: 1.3,
+                                  fontFamily: poppins_regular,
+                                  color: pista_439050),
+                            ),
+                            Text(
+                              str_third_playes,
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  height: 1.3,
+                                  fontFamily: poppins_regular,
+                                  color: pista_439050),
+                            ),
+                            Text(
+                              str_two_playes,
+                              style: TextStyle(
+                                  fontSize: 14.sp,
+                                  fontFamily: sfpro_display_bold,
+                                  fontWeight: FontWeight.w900,
+                                  color: pista_439050),
+                            ),
+                            Text(
+                              str_winner,
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  height: 1.3,
+                                  fontFamily: poppins_regular,
+                                  color: pista_439050),
+                            ),
                           ],
                         ),
                       ),
@@ -340,7 +190,7 @@ class _DemoState extends State<Demo> {
                               width: 3.w,
                             ),
                             Image.asset(
-                              icon_ludo_title,
+                              img_rules_rect,
                               width: 160.w,
                               height: 70.h,
                             ),
@@ -349,7 +199,7 @@ class _DemoState extends State<Demo> {
                             ),
                             Container(
                                 margin: EdgeInsets.only(top: 20.h),
-                                child: SvgPicture.asset(icon_question_mark)),
+                                child: SvgPicture.asset(icon_cross)),
                           ],
                         ),
                       ),

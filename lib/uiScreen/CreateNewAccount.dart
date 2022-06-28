@@ -68,9 +68,7 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           SvgPicture.asset(google),
-                          SizedBox(
-                            width: 35.h,
-                          ),
+                          SizedBox(width: 35.h,),
                           SvgPicture.asset(fb)
                         ],
                       ),

@@ -64,7 +64,7 @@ class _ProfileState extends State<Profile> {
                           backgroundColor: Colors.white,
                           radius: 60.0,
                           child: CircleAvatar(
-                            backgroundImage: AssetImage(img_flag_india),
+                            backgroundImage: AssetImage(img_india),
                             radius: 55.0,
                           ),
                         ),

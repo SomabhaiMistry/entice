@@ -22,9 +22,9 @@ class _ChooseAvatarState extends State<ChooseAvatar> {
   List<ChooseAvatarModel> chooseAvatarList = [
     ChooseAvatarModel(img_face2),
     ChooseAvatarModel(face_high),
-    ChooseAvatarModel(img_flag_china),
-    ChooseAvatarModel(img_flag_africa),
-    ChooseAvatarModel(img_flag_afghnishtan),
+    ChooseAvatarModel(img_india),
+    ChooseAvatarModel(img_india),
+    ChooseAvatarModel(img_india),
   ];
   @override
   Widget build(BuildContext context) {
@@ -79,7 +79,7 @@ class _ChooseAvatarState extends State<ChooseAvatar> {
                       backgroundColor: Colors.white,
                       radius: 60.0,
                       child: CircleAvatar(
-                        backgroundImage: AssetImage(img_flag_india),
+                        backgroundImage: AssetImage(img_india),
                         radius: 55.0,
                       ),
                     ),

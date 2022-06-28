@@ -31,36 +31,35 @@ class _RulesPageState extends State<RulesPage> {
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.black,
-        body: Stack(
-          children: <Widget>[
-            Flexible(
-              child: PageView.builder(
-                scrollDirection: Axis.horizontal,
-                controller: _controller,
-                itemCount: _samplePages.length,
-                onPageChanged: (value){
-                  setState(() {
-                    currentIndex = value;
-                  });
-                },
-                itemBuilder: (BuildContext context, int index) {
-                  return _samplePages[index % _samplePages.length];
-                },
-              ),
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Stack(
+        children: <Widget>[
+          Flexible(
+            child: PageView.builder(
+              scrollDirection: Axis.horizontal,
+              controller: _controller,
+              itemCount: _samplePages.length,
+              onPageChanged: (value){
+                setState(() {
+                  currentIndex = value;
+                });
+              },
+              itemBuilder: (BuildContext context, int index) {
+                return _samplePages[index % _samplePages.length];
+              },
             ),
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Row(
+          ),
+         Container(
+           margin: EdgeInsets.only(top: 20.h,right: 15.w),
+           child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Stack(
                     children: [
                       Container(
                         padding: EdgeInsets.only(left: 15.w),
-                        margin: EdgeInsets.only(left: 12.h,top: 25.h),
+                        margin: EdgeInsets.only(left: 12.h,top: 60.h),
                         decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.only(
@@ -73,7 +72,7 @@ class _RulesPageState extends State<RulesPage> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             SizedBox(
-                              width: 12.w,
+                              width: 9.w,
                             ),
                             Text(
                               str_coin,
@@ -86,7 +85,6 @@ class _RulesPageState extends State<RulesPage> {
                               width: 12.w,
                             ),
                             Container(
-                              transform: Matrix4.translationValues(0, 0, -15),
                               child: Stack(
                                 alignment: Alignment.center,
                                 children: [
@@ -99,66 +97,66 @@ class _RulesPageState extends State<RulesPage> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: 18.h),
+                        margin: EdgeInsets.only(top: 56.h),
                           child: Image.asset(img_wallet,width: 35.w,height: 35.h,)),
                     ],
                   )
                 ],
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 25.w, left: 32.w, right: 32.w),
-              child: Container(
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: <Widget>[
-                    GestureDetector(
-                      onTap: () {
-                        _controller.previousPage(
-                            duration: _kDuration, curve: _kCurve);
-                      },
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                              img_backward,height: 45.h,width: 45.w,
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(bottom: 15.h),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: List.generate(_samplePages.length, (index) => buildDot(index, context),
-                        ),
-                      ),
-                    ),
+         ),
 
-                    GestureDetector(
-                      onTap: () {
-                        _controller.nextPage(
-                            duration: _kDuration, curve: _kCurve);
-                      },
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Image.asset(
-                            img_forward,height: 45.h,width: 45.w,
-                          ),
-                        ],
+          Padding(
+            padding: EdgeInsets.only(bottom: 25.w, left: 32.w, right: 32.w),
+            child: Container(
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: <Widget>[
+                  GestureDetector(
+                    onTap: () {
+                      _controller.previousPage(
+                          duration: _kDuration, curve: _kCurve);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                            img_backward,height: 45.h,width: 45.w,
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(bottom: 15.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(_samplePages.length, (index) => buildDot(index, context),
                       ),
                     ),
-                  ],
-                ),
+                  ),
+
+                  GestureDetector(
+                    onTap: () {
+                      _controller.nextPage(
+                          duration: _kDuration, curve: _kCurve);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Image.asset(
+                          img_forward,height: 45.h,width: 45.w,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-            )
-          ],
-        ),
+            ),
+          )
+        ],
       ),
     );
   }
