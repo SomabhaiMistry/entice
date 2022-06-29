@@ -32,3 +32,6 @@ const sky_blue_42caff = Color(0xff42caff);
 const btn_sky_blue_23A8F8 = Color(0xff23A8F8);
 const btn_sky_blue2_1B9DF6 = Color(0xff1B9DF6);
 const btn_sky_blue3_0E7DEC = Color(0xff0E7DEC);
+
+
+const purpal_5126A2 = Color(0xff5126A2);

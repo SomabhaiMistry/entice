@@ -1,0 +1,28 @@
+<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_14_1727)">
+<circle cx="27" cy="27" r="27" fill="url(#paint0_radial_14_1727)"/>
+</g>
+<ellipse cx="15.6259" cy="8.25948" rx="6.29595" ry="1.81396" transform="rotate(-29.8101 15.6259 8.25948)" fill="#D9D9D9"/>
+<ellipse cx="39.5653" cy="49.6813" rx="2.89409" ry="0.721374" transform="rotate(-29.8101 39.5653 49.6813)" fill="#D9D9D9"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.8201 14.4644C28.1043 14.5537 28.3526 14.7315 28.5288 14.9717C28.7051 15.2119 28.8001 15.502 28.8001 15.8V22.8H34.4001C34.6562 22.7998 34.9074 22.87 35.1264 23.0027C35.3454 23.1355 35.5238 23.3257 35.6422 23.5528C35.7605 23.7799 35.8144 24.0351 35.7978 24.2906C35.7812 24.5462 35.6948 24.7923 35.5481 25.0022L25.7481 39.0022C25.5775 39.2465 25.3334 39.4301 25.0514 39.5261C24.7693 39.6222 24.4639 39.6257 24.1797 39.5362C23.8954 39.4467 23.6472 39.2689 23.471 39.0286C23.2948 38.7882 23.1999 38.498 23.2001 38.2V31.2H17.6001C17.344 31.2001 17.0928 31.1299 16.8738 30.9972C16.6548 30.8645 16.4764 30.6742 16.358 30.4471C16.2396 30.22 16.1858 29.9648 16.2024 29.7093C16.219 29.4537 16.3053 29.2076 16.4521 28.9978L26.2521 14.9978C26.4229 14.7539 26.667 14.5708 26.949 14.4751C27.231 14.3794 27.5361 14.3762 27.8201 14.4658V14.4644Z" fill="url(#paint1_radial_14_1727)"/>
+<defs>
+<filter id="filter0_i_14_1727" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="7"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_14_1727"/>
+</filter>
+<radialGradient id="paint0_radial_14_1727" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.40984 5.7541) rotate(55.7995) scale(55.1221)">
+<stop stop-color="#D9D9D9" stop-opacity="0.512527"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_14_1727" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(26.5001 24.9995) rotate(91.9614) scale(14.6099 15.3177)">
+<stop stop-color="#FBFF33"/>
+<stop offset="1" stop-color="#FFE9A9"/>
+</radialGradient>
+</defs>
+</svg>

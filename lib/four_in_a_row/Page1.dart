@@ -18,11 +18,10 @@ class _Page1State extends State<Page1> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.red,
         body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/images/backgound.png"),
+              image: AssetImage("assets/images/four_row_bg.png"),
               fit: BoxFit.fill,
             ),
           ),
@@ -31,18 +30,18 @@ class _Page1State extends State<Page1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                margin: EdgeInsets.only(left: 15.w, right: 15.w, top: 15.h),
+                margin: EdgeInsets.only(left: 5.w, right: 5.w, top: 18.h),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SvgPicture.asset(b_y),
+                    SvgPicture.asset(icon_cross),
                     Row(
                       children: [
-                        SvgPicture.asset(icon_cross),
+                        SvgPicture.asset(icon_question_mark_yellow,width: 44,height: 50,),
                         SizedBox(
-                          width: 12.w,
+                          width: 6.w,
                         ),
-                        SvgPicture.asset(b_y)
+                        SvgPicture.asset(icon_setting,width: 80,height: 50,)
                       ],
                     )
                   ],
@@ -50,13 +49,12 @@ class _Page1State extends State<Page1> {
               ),
               Expanded(
                 child: Container(
-                  color: black_121212,
                 ),
               ),
               Container(
                   padding: EdgeInsets.only(top: 12.h, bottom: 12.h),
                   // height: 160,
-                  color: pista_439050,
+                  // color: pista_439050,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.end,
@@ -115,12 +113,10 @@ class _Page1State extends State<Page1> {
                                   ),
                                 ),
                               ),
-                              Image.asset(img_south_africa,width: 25,height: 15,fit: BoxFit.fill,),
+                              SvgPicture.asset(btn_power_yellow)
                             ],
                           ),
 
-                          // SvgPicture.asset(icon_cross,
-                          //     width: 54, height: 54),
                           SizedBox(
                             height: 6.h,
                           ),
@@ -153,9 +149,7 @@ class _Page1State extends State<Page1> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Image.asset(
-                                img_afghanistan,
-                                width: 12.w,
-                                height: 12.h,
+                                img_star_purpal,width: 18.w,height: 18.h,
                               ),
                               SizedBox(
                                 width: 4.w,
@@ -174,7 +168,7 @@ class _Page1State extends State<Page1> {
                       Column(
                         children: [
                           SvgPicture.asset(
-                            b_y,
+                            icon_super_power,
                             width: 54.w,
                             height: 54.h,
                           ),
@@ -253,7 +247,7 @@ class _Page1State extends State<Page1> {
                                   ),
                                 ),
                               ),
-                              Image.asset(img_south_africa,width: 25,height: 15,fit: BoxFit.fill,),
+                              SvgPicture.asset(btn_power_red)
                             ],
                           ),
 
@@ -292,9 +286,7 @@ class _Page1State extends State<Page1> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Image.asset(
-                                img_afghanistan,
-                                width: 12.w,
-                                height: 12.h,
+                                img_star_purpal,width: 18.w,height: 18.h,
                               ),
                               SizedBox(
                                 width: 4.w,

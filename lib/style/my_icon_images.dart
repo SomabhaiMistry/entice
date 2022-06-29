@@ -55,6 +55,15 @@ const img_backward = 'assets/images/img_backward.png';
 const img_forward = 'assets/images/img_forward.png';
 const img_face2 = 'assets/images/face2.png';
 
+
+const four_row_bg = 'assets/images/four_row_bg.png';
+const img_star_purpal = 'assets/images/img_star_purpal.png';
+
+
+
+
+
+
 const btn_login = 'assets/images/btn_login.svg';
 const fb = 'assets/images/fb.svg';
 const google = 'assets/images/google.svg';
@@ -81,3 +90,12 @@ const icon_green_coin = 'assets/images/icon_green_coin.svg';
 const add_friends = 'assets/images/add_friends.svg';
 const btn_play = 'assets/images/btn_play.svg';
 const btn_next = 'assets/images/btn_next.svg';
+
+
+const icon_question_mark_yellow = 'assets/images/icon_question_mark_yellow.svg';
+const icon_setting = 'assets/images/icon_setting.svg';
+
+
+const btn_power_yellow = 'assets/images/btn_power_yellow.svg';
+const btn_power_red = 'assets/images/btn_power_red.svg';
+const icon_super_power = 'assets/images/icon_super_power.svg';

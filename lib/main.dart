@@ -1,3 +1,4 @@
+import 'package:entice/SpinWheel/SimplePage1.dart';
 import 'package:entice/uiScreen/ButtonDemo.dart';
 import 'package:entice/uiScreen/Demo.dart';
 import 'package:entice/uiScreen/ListScreen.dart';
