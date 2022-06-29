@@ -251,7 +251,6 @@ class _Page1State extends State<Page1> {
                             ],
                           ),
 
-
                           // SvgPicture.asset(icon_cross,
                           //     width: 54, height: 54),
                           SizedBox(
