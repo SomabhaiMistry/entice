@@ -39,9 +39,11 @@ class _Page1State extends State<Page1> {
                       children: [
                         SvgPicture.asset(icon_question_mark_yellow,width: 44,height: 50,),
                         SizedBox(
-                          width: 6.w,
+                          width: 2.w,
                         ),
-                        SvgPicture.asset(icon_setting,width: 80,height: 50,)
+                        // SvgPicture.asset(icon_question_mark_yellow,width: 44,height: 50,),
+
+                        SvgPicture.asset(icon_setting,width: 44,height: 50,)
                       ],
                     )
                   ],
@@ -145,7 +147,7 @@ class _Page1State extends State<Page1> {
                             height: 3.h,
                           ),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Image.asset(
@@ -169,8 +171,8 @@ class _Page1State extends State<Page1> {
                         children: [
                           SvgPicture.asset(
                             icon_super_power,
-                            width: 54.w,
-                            height: 54.h,
+                            // width: 54.w,
+                            // height: 54.h,
                           ),
                           SizedBox(
                             height: 7.h,
@@ -281,7 +283,7 @@ class _Page1State extends State<Page1> {
                             height: 3.h,
                           ),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Image.asset(

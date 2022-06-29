@@ -57,6 +57,7 @@ const img_face2 = 'assets/images/face2.png';
 
 
 const four_row_bg = 'assets/images/four_row_bg.png';
+const img_spinner_bg = 'assets/images/img_spinner_bg.png';
 const img_star_purpal = 'assets/images/img_star_purpal.png';
 
 
