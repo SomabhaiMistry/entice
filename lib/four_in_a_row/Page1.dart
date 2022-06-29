@@ -39,10 +39,8 @@ class _Page1State extends State<Page1> {
                       children: [
                         SvgPicture.asset(icon_question_mark_yellow,width: 44,height: 50,),
                         SizedBox(
-                          width: 2.w,
+                          width: 10.w,
                         ),
-                        // SvgPicture.asset(icon_question_mark_yellow,width: 44,height: 50,),
-
                         SvgPicture.asset(icon_setting,width: 44,height: 50,)
                       ],
                     )

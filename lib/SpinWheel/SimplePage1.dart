@@ -41,10 +41,8 @@ class _SimplePage1State extends State<SimplePage1> {
                         children: [
                           SvgPicture.asset(icon_question_mark_yellow,width: 44,height: 50,),
                           SizedBox(
-                            width: 2.w,
+                            width: 10.w,
                           ),
-                          // SvgPicture.asset(icon_question_mark_yellow,width: 44,height: 50,),
-
                           SvgPicture.asset(icon_setting,width: 44,height: 50,)
                         ],
                       )
