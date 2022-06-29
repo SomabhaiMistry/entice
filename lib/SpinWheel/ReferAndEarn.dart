@@ -121,12 +121,36 @@ class _ReferAndEarnState extends State<ReferAndEarn> {
                       textAlign: TextAlign.center,
                     ),
                   ),
-
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
                     children: [
-
+                      Expanded(
+                        flex: 2,
+                        child: Text(
+                          "ABCDEFG123456",
+                          style: TextStyle(
+                              fontFamily: chewy_regular,
+                              fontSize: 25,
+                              color: yellow_F7CB46),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      Container(
+                        width: 1.5.w,
+                        height: 45.h,
+                        color: yellow_F7CB46,
+                      ),
+                      Expanded(
+                        child: Text(
+                          "Copy\nreferral code",
+                          style: TextStyle(
+                              fontFamily: chewy_regular,
+                              fontSize: 12,
+                              color: yellow_F7CB46),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
                     ],
                   ),
                   // DottedBorder(
@@ -136,7 +160,7 @@ class _ReferAndEarnState extends State<ReferAndEarn> {
                   //   child: ClipRRect(
                   //     borderRadius: BorderRadius.all(Radius.circular(12)),
                   //     child: Container(
-                  //       height: 100,
+                  //       height: 200,
                   //       width: 120,
                   //       color: Colors.amber,
                   //     ),
