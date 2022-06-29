@@ -96,11 +96,11 @@ class _DemoState extends State<Demo> {
                     children: [
                       Center(
                         child: Container(
-                          margin: EdgeInsets.only(top: 30.h,left: 23.w,right: 23.w),
+                          margin: EdgeInsets.only(top: 25.h,left: 23.w,right: 23.w),
                           child: Image.asset(
                             img_rules_bg,
-                            height: 600.h,
-                            // width: double.infinity,
+                            height: 430.h,
+                            width: double.infinity,
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -109,7 +109,7 @@ class _DemoState extends State<Demo> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          SizedBox(height: 110,),
+                          SizedBox(height: 90,),
                           Container(
                             margin: EdgeInsets.only(left: 55,right: 55),
                             child: Text(

@@ -99,13 +99,24 @@ class _Page1State extends State<Page1> {
                           SizedBox(
                             height: 8.h,
                           ),
-                          CircleAvatar(
-                            backgroundColor: yellow_F7CB46,
-                            radius: 35.r,
-                            child: CircleAvatar(
-                              backgroundImage: const AssetImage(img_india),
-                              radius: 29.8.r,
-                            ),
+
+                          Stack(
+                            alignment: Alignment.bottomCenter,
+                            children: [
+
+                              Container(
+                                margin: EdgeInsets.only(bottom: 8.h),
+                                child: CircleAvatar(
+                                  backgroundColor: yellow_F7CB46,
+                                  radius: 35.r,
+                                  child: CircleAvatar(
+                                    backgroundImage: const AssetImage(img_india),
+                                    radius: 29.8.r,
+                                  ),
+                                ),
+                              ),
+                              Image.asset(img_south_africa,width: 25,height: 15,fit: BoxFit.fill,),
+                            ],
                           ),
 
                           // SvgPicture.asset(icon_cross,
@@ -217,14 +228,35 @@ class _Page1State extends State<Page1> {
                           SizedBox(
                             height: 8.h,
                           ),
-                          CircleAvatar(
-                            backgroundColor: red_DD364A,
-                            radius: 35.r,
-                            child: CircleAvatar(
-                              backgroundImage: const AssetImage(img_india),
-                              radius: 29.8.r,
-                            ),
+                          // CircleAvatar(
+                          //   backgroundColor: red_DD364A,
+                          //   radius: 35.r,
+                          //   child: CircleAvatar(
+                          //     backgroundImage: const AssetImage(img_india),
+                          //     radius: 29.8.r,
+                          //   ),
+                          // ),
+
+
+                          Stack(
+                            alignment: Alignment.bottomCenter,
+                            children: [
+
+                              Container(
+                                margin: EdgeInsets.only(bottom: 8.h),
+                                child: CircleAvatar(
+                                  backgroundColor: red_DD364A,
+                                  radius: 35.r,
+                                  child: CircleAvatar(
+                                    backgroundImage: const AssetImage(img_india),
+                                    radius: 29.8.r,
+                                  ),
+                                ),
+                              ),
+                              Image.asset(img_south_africa,width: 25,height: 15,fit: BoxFit.fill,),
+                            ],
                           ),
+
 
                           // SvgPicture.asset(icon_cross,
                           //     width: 54, height: 54),
