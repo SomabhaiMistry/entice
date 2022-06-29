@@ -1,3 +1,4 @@
+import 'package:entice/SpinWheel/ReferAndEarn.dart';
 import 'package:entice/SpinWheel/SimplePage1.dart';
 import 'package:entice/uiScreen/ButtonDemo.dart';
 import 'package:entice/uiScreen/Demo.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const SimplePage1(),
+          home: const ReferAndEarn(),
         );
       },
     );
