@@ -78,7 +78,7 @@ class _DemoState extends State<Demo> {
             ),
             Positioned(
               top: 55,
-              right: 105,
+              right: 100,
               child: Image.asset(
                 img_wallet,
                 width: 35.w,
@@ -99,30 +99,31 @@ class _DemoState extends State<Demo> {
                           margin: EdgeInsets.only(top: 30.h,left: 23.w,right: 23.w),
                           child: Image.asset(
                             img_rules_bg,
-                            // height: 450.h,
+                            height: 600.h,
                             // width: double.infinity,
                             fit: BoxFit.fill,
                           ),
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.only(top: 0.h),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              margin: EdgeInsets.only(left: 60.h,right: 60.h),
-                              child: Text(
-                                str_playes_description,
-                                style: TextStyle(
-                                    fontSize: 13.sp,
-                                    height: 1.3,
-                                    fontFamily: poppins_regular,
-                                    color: pista_439050),
-                              ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          SizedBox(height: 110,),
+                          Container(
+                            margin: EdgeInsets.only(left: 55,right: 55),
+                            child: Text(
+                              str_playes_description,
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  height: 1.3,
+                                  fontFamily: poppins_regular,
+                                  color: pista_439050),
                             ),
-                            Text(
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 55,right: 55,top: 15),
+                            child: Text(
                               str_four_playes,
                               style: TextStyle(
                                   fontSize: 14.sp,
@@ -130,7 +131,10 @@ class _DemoState extends State<Demo> {
                                   fontWeight: FontWeight.w900,
                                   color: pista_439050),
                             ),
-                            Text(
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 55,right: 55,top: 15),
+                            child: Text(
                               str_first_playes,
                               style: TextStyle(
                                   fontSize: 13.sp,
@@ -138,7 +142,10 @@ class _DemoState extends State<Demo> {
                                   fontFamily: poppins_regular,
                                   color: pista_439050),
                             ),
-                            Text(
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 55,right: 55,top:3),
+                            child: Text(
                               str_secound_playes,
                               style: TextStyle(
                                   fontSize: 13.sp,
@@ -146,7 +153,10 @@ class _DemoState extends State<Demo> {
                                   fontFamily: poppins_regular,
                                   color: pista_439050),
                             ),
-                            Text(
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 55,right: 55,top:3),
+                            child: Text(
                               str_third_playes,
                               style: TextStyle(
                                   fontSize: 13.sp,
@@ -154,7 +164,11 @@ class _DemoState extends State<Demo> {
                                   fontFamily: poppins_regular,
                                   color: pista_439050),
                             ),
-                            Text(
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 55,right: 55,top: 15),
+
+                            child: Text(
                               str_two_playes,
                               style: TextStyle(
                                   fontSize: 14.sp,
@@ -162,7 +176,11 @@ class _DemoState extends State<Demo> {
                                   fontWeight: FontWeight.w900,
                                   color: pista_439050),
                             ),
-                            Text(
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 55,right: 55,top: 15),
+
+                            child: Text(
                               str_winner,
                               style: TextStyle(
                                   fontSize: 13.sp,
@@ -170,8 +188,8 @@ class _DemoState extends State<Demo> {
                                   fontFamily: poppins_regular,
                                   color: pista_439050),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
 
                       Center(

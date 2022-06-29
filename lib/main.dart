@@ -1,8 +1,11 @@
 import 'package:entice/uiScreen/ButtonDemo.dart';
 import 'package:entice/uiScreen/Demo.dart';
 import 'package:entice/uiScreen/ListScreen.dart';
+import 'package:entice/uiScreen/Testing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'four_in_a_row/Page1.dart';
 
 void main() {
   runApp(const MyApp());

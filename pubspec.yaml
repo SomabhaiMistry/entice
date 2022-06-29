@@ -80,6 +80,9 @@ flutter:
     - family: chewy_Regular
       fonts:
         - asset: fonts/chewy_regular.ttf
+    - family: Sfpro_DisplayMedium
+      fonts:
+        - asset: fonts/sf_pro_displaymedium.ttf
 
     - family: sfproDisplayBold
       fonts:
@@ -112,10 +115,6 @@ flutter:
     - family: ChelseaMarketRegular
       fonts:
         - asset: fonts/ChelseaMarket-Regular.ttf
-
-    - family: sfproDisplayMedium
-      fonts:
-        - asset: fonts/sf_pro_display_medium.otf
 
     - family: poppinsRegular
       fonts:
