@@ -55,15 +55,15 @@ const img_backward = 'assets/images/img_backward.png';
 const img_forward = 'assets/images/img_forward.png';
 const img_face2 = 'assets/images/face2.png';
 
-
 const four_row_bg = 'assets/images/four_row_bg.png';
 const img_spinner_bg = 'assets/images/img_spinner_bg.png';
 const img_star_purpal = 'assets/images/img_star_purpal.png';
 
-
-
-
-
+const img_telegram = 'assets/images/img_telegram.png';
+const img_whatsapp = 'assets/images/img_whatsapp.png';
+const img_facebok_circle = 'assets/images/img_facebok_circle.png';
+const bg_copy_code_rect = 'assets/images/bg_copy_code_rect.png';
+const img_yellow_copy_rect = 'assets/images/img_yellow_copy_rect.png';
 
 const btn_login = 'assets/images/btn_login.svg';
 const fb = 'assets/images/fb.svg';
@@ -92,11 +92,13 @@ const add_friends = 'assets/images/add_friends.svg';
 const btn_play = 'assets/images/btn_play.svg';
 const btn_next = 'assets/images/btn_next.svg';
 
-
 const icon_question_mark_yellow = 'assets/images/icon_question_mark_yellow.svg';
 const icon_setting = 'assets/images/icon_setting.svg';
 
-
 const btn_power_yellow = 'assets/images/btn_power_yellow.svg';
-const btn_power_red = 'assets/images/btn_power_red.svg';
+const btn_power_red = 'assets/imagesimg_copy_code_rect/btn_power_red.svg';
 const icon_super_power = 'assets/images/icon_super_power.svg';
+
+const icon_telegram = 'assets/images/icon_telegram.svg';
+const icon_facebook_circle = 'assets/images/icon_facebook_circle.svg';
+const gift_box = 'assets/images/gift_box.gif';
