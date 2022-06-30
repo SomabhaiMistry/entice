@@ -40,10 +40,10 @@ class _Popup2State extends State<Popup2> {
                           margin: EdgeInsets.only(bottom: 15.h),
                           child: CircleAvatar(
                             backgroundColor: white_ffffff,
-                            radius: 35.r,
+                            radius: 43.r,
                             child: CircleAvatar(
                               backgroundImage: const AssetImage(img_india),
-                              radius: 29.8.r,
+                              radius: 38.r,
                             ),
                           ),
                         ),
