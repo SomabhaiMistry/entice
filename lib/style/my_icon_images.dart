@@ -115,4 +115,5 @@ const bg_rect_add_friend = 'assets/images/bg_rect_add_friend.svg';
 
 
 const btn_green_bg = 'assets/images/btn_green_bg.svg';
+const bg = 'assets/images/bg.svg';
 const gift_box = 'assets/images/gift_box.gif';

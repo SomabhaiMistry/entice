@@ -29,6 +29,8 @@ class _Popup2State extends State<Popup2> {
               alignment: Alignment.center,
               children: [
                 Center(child: SvgPicture.asset(bg_rect_add_friend)),
+                Center(child: SvgPicture.asset(bg)),
+
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
