@@ -28,7 +28,7 @@ class _Popup1State extends State<Popup1> {
             Stack(
               alignment: Alignment.center,
               children: [
-                Center(child: SvgPicture.asset(bg_rect_add_friend)),
+                Center(child: SvgPicture.asset(bg_rect_add_friend,)),
                 Center(child: SvgPicture.asset(bg)),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -228,7 +228,261 @@ class _Popup1State extends State<Popup1> {
                           ),
                         ],
                       ),
-                    )
+                    ),
+
+                    Container(
+                      margin:
+                          EdgeInsets.only(left: 35.w, right: 35.w, top: 15.h),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(10.r),
+                                child: Image.asset(
+                                  img_india,
+                                  height: 60,
+                                  width: 60,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8.h,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Image.asset(
+                                    img_star_purpal,
+                                    width: 12.w,
+                                    height: 12.h,
+                                  ),
+                                  SizedBox(
+                                    width: 4.w,
+                                  ),
+                                  Text(
+                                    "718 point",
+                                    style: TextStyle(
+                                        fontSize: 11.sp,
+                                        fontFamily: chewy_regular,
+                                        color: brown_4B3C04),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(10.r),
+                                child: Image.asset(
+                                  img_india,
+                                  height: 60,
+                                  width: 60,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8.h,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Image.asset(
+                                    img_star_purpal,
+                                    width: 12.w,
+                                    height: 12.h,
+                                  ),
+                                  SizedBox(
+                                    width: 4.w,
+                                  ),
+                                  Text(
+                                    "718 point",
+                                    style: TextStyle(
+                                        fontSize: 11.sp,
+                                        fontFamily: chewy_regular,
+                                        color: brown_4B3C04),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(10.r),
+                                child: Image.asset(
+                                  img_india,
+                                  height: 60,
+                                  width: 60,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8.h,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Image.asset(
+                                    img_star_purpal,
+                                    width: 12.w,
+                                    height: 12.h,
+                                  ),
+                                  SizedBox(
+                                    width: 4.w,
+                                  ),
+                                  Text(
+                                    "718 point",
+                                    style: TextStyle(
+                                        fontSize: 11.sp,
+                                        fontFamily: chewy_regular,
+                                        color: brown_4B3C04),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    //
+                    // Container(
+                    //   margin:
+                    //       EdgeInsets.only(left: 35.w, right: 35.w, top: 15.h),
+                    //   child: Row(
+                    //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    //     children: [
+                    //       Column(
+                    //         mainAxisAlignment: MainAxisAlignment.center,
+                    //         crossAxisAlignment: CrossAxisAlignment.center,
+                    //         children: [
+                    //           ClipRRect(
+                    //             borderRadius: BorderRadius.circular(10.r),
+                    //             child: Image.asset(
+                    //               img_india,
+                    //               height: 60,
+                    //               width: 60,
+                    //               fit: BoxFit.fill,
+                    //             ),
+                    //           ),
+                    //           SizedBox(
+                    //             height: 8.h,
+                    //           ),
+                    //           Row(
+                    //             mainAxisAlignment: MainAxisAlignment.center,
+                    //             mainAxisSize: MainAxisSize.max,
+                    //             children: [
+                    //               Image.asset(
+                    //                 img_star_purpal,
+                    //                 width: 12.w,
+                    //                 height: 12.h,
+                    //               ),
+                    //               SizedBox(
+                    //                 width: 4.w,
+                    //               ),
+                    //               Text(
+                    //                 "718 point",
+                    //                 style: TextStyle(
+                    //                     fontSize: 11.sp,
+                    //                     fontFamily: chewy_regular,
+                    //                     color: brown_4B3C04),
+                    //               )
+                    //             ],
+                    //           ),
+                    //         ],
+                    //       ),
+                    //       Column(
+                    //         mainAxisAlignment: MainAxisAlignment.center,
+                    //         crossAxisAlignment: CrossAxisAlignment.center,
+                    //         children: [
+                    //           ClipRRect(
+                    //             borderRadius: BorderRadius.circular(10.r),
+                    //             child: Image.asset(
+                    //               img_india,
+                    //               height: 60,
+                    //               width: 60,
+                    //               fit: BoxFit.fill,
+                    //             ),
+                    //           ),
+                    //           SizedBox(
+                    //             height: 8.h,
+                    //           ),
+                    //           Row(
+                    //             mainAxisAlignment: MainAxisAlignment.center,
+                    //             mainAxisSize: MainAxisSize.max,
+                    //             children: [
+                    //               Image.asset(
+                    //                 img_star_purpal,
+                    //                 width: 12.w,
+                    //                 height: 12.h,
+                    //               ),
+                    //               SizedBox(
+                    //                 width: 4.w,
+                    //               ),
+                    //               Text(
+                    //                 "718 point",
+                    //                 style: TextStyle(
+                    //                     fontSize: 11.sp,
+                    //                     fontFamily: chewy_regular,
+                    //                     color: brown_4B3C04),
+                    //               )
+                    //             ],
+                    //           ),
+                    //         ],
+                    //       ),
+                    //       Column(
+                    //         mainAxisAlignment: MainAxisAlignment.center,
+                    //         crossAxisAlignment: CrossAxisAlignment.center,
+                    //         children: [
+                    //           ClipRRect(
+                    //             borderRadius: BorderRadius.circular(10.r),
+                    //             child: Image.asset(
+                    //               img_india,
+                    //               height: 60,
+                    //               width: 60,
+                    //               fit: BoxFit.fill,
+                    //             ),
+                    //           ),
+                    //           SizedBox(
+                    //             height: 8.h,
+                    //           ),
+                    //           Row(
+                    //             mainAxisAlignment: MainAxisAlignment.center,
+                    //             mainAxisSize: MainAxisSize.max,
+                    //             children: [
+                    //               Image.asset(
+                    //                 img_star_purpal,
+                    //                 width: 12.w,
+                    //                 height: 12.h,
+                    //               ),
+                    //               SizedBox(
+                    //                 width: 4.w,
+                    //               ),
+                    //               Text(
+                    //                 "718 point",
+                    //                 style: TextStyle(
+                    //                     fontSize: 11.sp,
+                    //                     fontFamily: chewy_regular,
+                    //                     color: brown_4B3C04),
+                    //               )
+                    //             ],
+                    //           ),
+                    //         ],
+                    //       ),
+                    //     ],
+                    //   ),
+                    // )
                   ],
                 )
               ],

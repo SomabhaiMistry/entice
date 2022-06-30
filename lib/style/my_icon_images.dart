@@ -74,6 +74,8 @@ const img_confirm = 'assets/images/img_confirm.png';
 
 const img_cycle = 'assets/images/img_cycle.png';
 
+const img_power = 'assets/images/img_power.png';
+
 const btn_login = 'assets/images/btn_login.svg';
 const fb = 'assets/images/fb.svg';
 const google = 'assets/images/google.svg';

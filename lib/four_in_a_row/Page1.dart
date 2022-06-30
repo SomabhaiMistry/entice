@@ -167,11 +167,12 @@ class _Page1State extends State<Page1> {
                       ),
                       Column(
                         children: [
-                          SvgPicture.asset(
-                            icon_super_power,
-                            // width: 54.w,
-                            // height: 54.h,
-                          ),
+                          Image.asset(img_power),
+                          // SvgPicture.asset(
+                          //   icon_super_power,
+                          //   // width: 54.w,
+                          //   // height: 54.h,
+                          // ),
                           SizedBox(
                             height: 7.h,
                           ),
