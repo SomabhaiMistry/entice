@@ -110,11 +110,16 @@ class _SimplePage1State extends State<SimplePage1> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                img_afghanistan,
-                                width: 12.w,
-                                height: 12.h,
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(2.r),
+                                child: Image.asset(
+                                  img_india,
+                                  height: 14.h,
+                                  width: 14.w,
+                                  fit: BoxFit.fill,
+                                ),
                               ),
+
                               SizedBox(
                                 width: 5.w,
                               ),
@@ -335,11 +340,16 @@ class _SimplePage1State extends State<SimplePage1> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                img_afghanistan,
-                                width: 12.w,
-                                height: 12.h,
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(2.r),
+                                child: Image.asset(
+                                  img_india,
+                                  height: 14.h,
+                                  width: 14.w,
+                                  fit: BoxFit.fill,
+                                ),
                               ),
+
                               SizedBox(
                                 width: 5.w,
                               ),
