@@ -68,10 +68,10 @@ class _Popup1State extends State<Popup1> {
                       ],
                     ),
 
-
                     SizedBox(
                       height: 12.h,
                     ),
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -89,7 +89,7 @@ class _Popup1State extends State<Popup1> {
                           width: 6.w,
                         ),
                         Text(
-                          str_rutvik,
+                          str_jay,
                           style: TextStyle(
                               fontSize: 15.sp,
                               fontFamily: chewy_regular,
@@ -97,9 +97,8 @@ class _Popup1State extends State<Popup1> {
                         ),
                       ],
                     ),
-                    SizedBox(
-                      height: 50.h,
-                    ),
+
+                    SizedBox(height: 50.h,),
 
                     Image.asset(img_follow),
 
@@ -114,7 +113,7 @@ class _Popup1State extends State<Popup1> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               ClipRRect(
-                                borderRadius: BorderRadius.circular(10.r),
+                                borderRadius: BorderRadius.circular(6.r),
                                 child: Image.asset(
                                   img_india,
                                   height: 60,
@@ -153,7 +152,7 @@ class _Popup1State extends State<Popup1> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               ClipRRect(
-                                borderRadius: BorderRadius.circular(10.r),
+                                borderRadius: BorderRadius.circular(6.r),
                                 child: Image.asset(
                                   img_india,
                                   height: 60,
@@ -192,7 +191,7 @@ class _Popup1State extends State<Popup1> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               ClipRRect(
-                                borderRadius: BorderRadius.circular(10.r),
+                                borderRadius: BorderRadius.circular(6.r),
                                 child: Image.asset(
                                   img_india,
                                   height: 60,
@@ -232,7 +231,7 @@ class _Popup1State extends State<Popup1> {
 
                     Container(
                       margin:
-                          EdgeInsets.only(left: 35.w, right: 35.w, top: 15.h),
+                          EdgeInsets.only(left: 35.w, right: 35.w, top: 13.h),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
@@ -241,7 +240,7 @@ class _Popup1State extends State<Popup1> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               ClipRRect(
-                                borderRadius: BorderRadius.circular(10.r),
+                                borderRadius: BorderRadius.circular(6.r),
                                 child: Image.asset(
                                   img_india,
                                   height: 60,
@@ -280,7 +279,7 @@ class _Popup1State extends State<Popup1> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               ClipRRect(
-                                borderRadius: BorderRadius.circular(10.r),
+                                borderRadius: BorderRadius.circular(6.r),
                                 child: Image.asset(
                                   img_india,
                                   height: 60,
@@ -319,7 +318,7 @@ class _Popup1State extends State<Popup1> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               ClipRRect(
-                                borderRadius: BorderRadius.circular(10.r),
+                                borderRadius: BorderRadius.circular(6.r),
                                 child: Image.asset(
                                   img_india,
                                   height: 60,
@@ -356,138 +355,11 @@ class _Popup1State extends State<Popup1> {
                         ],
                       ),
                     ),
-                    //
-                    // Container(
-                    //   margin:
-                    //       EdgeInsets.only(left: 35.w, right: 35.w, top: 15.h),
-                    //   child: Row(
-                    //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    //     children: [
-                    //       Column(
-                    //         mainAxisAlignment: MainAxisAlignment.center,
-                    //         crossAxisAlignment: CrossAxisAlignment.center,
-                    //         children: [
-                    //           ClipRRect(
-                    //             borderRadius: BorderRadius.circular(10.r),
-                    //             child: Image.asset(
-                    //               img_india,
-                    //               height: 60,
-                    //               width: 60,
-                    //               fit: BoxFit.fill,
-                    //             ),
-                    //           ),
-                    //           SizedBox(
-                    //             height: 8.h,
-                    //           ),
-                    //           Row(
-                    //             mainAxisAlignment: MainAxisAlignment.center,
-                    //             mainAxisSize: MainAxisSize.max,
-                    //             children: [
-                    //               Image.asset(
-                    //                 img_star_purpal,
-                    //                 width: 12.w,
-                    //                 height: 12.h,
-                    //               ),
-                    //               SizedBox(
-                    //                 width: 4.w,
-                    //               ),
-                    //               Text(
-                    //                 "718 point",
-                    //                 style: TextStyle(
-                    //                     fontSize: 11.sp,
-                    //                     fontFamily: chewy_regular,
-                    //                     color: brown_4B3C04),
-                    //               )
-                    //             ],
-                    //           ),
-                    //         ],
-                    //       ),
-                    //       Column(
-                    //         mainAxisAlignment: MainAxisAlignment.center,
-                    //         crossAxisAlignment: CrossAxisAlignment.center,
-                    //         children: [
-                    //           ClipRRect(
-                    //             borderRadius: BorderRadius.circular(10.r),
-                    //             child: Image.asset(
-                    //               img_india,
-                    //               height: 60,
-                    //               width: 60,
-                    //               fit: BoxFit.fill,
-                    //             ),
-                    //           ),
-                    //           SizedBox(
-                    //             height: 8.h,
-                    //           ),
-                    //           Row(
-                    //             mainAxisAlignment: MainAxisAlignment.center,
-                    //             mainAxisSize: MainAxisSize.max,
-                    //             children: [
-                    //               Image.asset(
-                    //                 img_star_purpal,
-                    //                 width: 12.w,
-                    //                 height: 12.h,
-                    //               ),
-                    //               SizedBox(
-                    //                 width: 4.w,
-                    //               ),
-                    //               Text(
-                    //                 "718 point",
-                    //                 style: TextStyle(
-                    //                     fontSize: 11.sp,
-                    //                     fontFamily: chewy_regular,
-                    //                     color: brown_4B3C04),
-                    //               )
-                    //             ],
-                    //           ),
-                    //         ],
-                    //       ),
-                    //       Column(
-                    //         mainAxisAlignment: MainAxisAlignment.center,
-                    //         crossAxisAlignment: CrossAxisAlignment.center,
-                    //         children: [
-                    //           ClipRRect(
-                    //             borderRadius: BorderRadius.circular(10.r),
-                    //             child: Image.asset(
-                    //               img_india,
-                    //               height: 60,
-                    //               width: 60,
-                    //               fit: BoxFit.fill,
-                    //             ),
-                    //           ),
-                    //           SizedBox(
-                    //             height: 8.h,
-                    //           ),
-                    //           Row(
-                    //             mainAxisAlignment: MainAxisAlignment.center,
-                    //             mainAxisSize: MainAxisSize.max,
-                    //             children: [
-                    //               Image.asset(
-                    //                 img_star_purpal,
-                    //                 width: 12.w,
-                    //                 height: 12.h,
-                    //               ),
-                    //               SizedBox(
-                    //                 width: 4.w,
-                    //               ),
-                    //               Text(
-                    //                 "718 point",
-                    //                 style: TextStyle(
-                    //                     fontSize: 11.sp,
-                    //                     fontFamily: chewy_regular,
-                    //                     color: brown_4B3C04),
-                    //               )
-                    //             ],
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     ],
-                    //   ),
-                    // )
                   ],
                 )
               ],
             ),
-            SizedBox(height: 45.h,),
+            SizedBox(height: 43.h,),
             SvgPicture.asset(icon_cross)
           ],
         ),

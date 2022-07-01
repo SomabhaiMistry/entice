@@ -22,7 +22,7 @@ class _Test1State extends State<Test1> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CommonText(title: "vaibhav"),
+              CommonText(title: "Rock St@r"),
 
               Stack(
                 alignment: Alignment.center,

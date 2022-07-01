@@ -13,7 +13,7 @@ class CommonText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return   Container(
-      margin: EdgeInsets.only(left: 25.w,right: 25.w,top: 20.h),
+      margin: EdgeInsets.only(left: 25.w,right: 25.w,top: 15.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.max,
