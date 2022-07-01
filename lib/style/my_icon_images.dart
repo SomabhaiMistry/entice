@@ -106,8 +106,8 @@ const btn_next = 'assets/images/btn_next.svg';
 const icon_question_mark_yellow = 'assets/images/icon_question_mark_yellow.svg';
 const icon_setting = 'assets/images/icon_setting.svg';
 
-const btn_power_yellow = 'assets/images/btn_power_yellow.svg';
-const btn_power_red = 'assets/imagesimg_copy_code_rect/btn_power_red.svg';
+const  btn_power_yellow = 'assets/images/btn_power_yellow.svg';
+const btn_power_red = 'assets/images/btn_power_red.svg';
 const icon_super_power = 'assets/images/icon_super_power.svg';
 
 const icon_telegram = 'assets/images/icon_telegram.svg';

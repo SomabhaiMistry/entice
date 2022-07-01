@@ -124,11 +124,16 @@ class _Page1State extends State<Page1> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Image.asset(
-                                img_afghanistan,
-                                width: 12.w,
-                                height: 12.h,
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(2.r),
+                                child: Image.asset(
+                                  img_india,
+                                  height: 14.h,
+                                  width: 14.w,
+                                  fit: BoxFit.fill,
+                                ),
                               ),
+
                               SizedBox(
                                 width: 5.w,
                               ),
@@ -218,15 +223,6 @@ class _Page1State extends State<Page1> {
                           SizedBox(
                             height: 8.h,
                           ),
-                          // CircleAvatar(
-                          //   backgroundColor: red_DD364A,
-                          //   radius: 35.r,
-                          //   child: CircleAvatar(
-                          //     backgroundImage: const AssetImage(img_india),
-                          //     radius: 29.8.r,
-                          //   ),
-                          // ),
-
 
                           Stack(
                             alignment: Alignment.bottomCenter,
@@ -256,11 +252,16 @@ class _Page1State extends State<Page1> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Image.asset(
-                                img_afghanistan,
-                                width: 12.w,
-                                height: 12.h,
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(2.r),
+                                child: Image.asset(
+                                  img_india,
+                                  height: 14.h,
+                                  width: 14.w,
+                                  fit: BoxFit.fill,
+                                ),
                               ),
+
                               SizedBox(
                                 width: 5.w,
                               ),
