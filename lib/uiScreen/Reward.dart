@@ -950,7 +950,6 @@ class _RewardState extends State<Reward> {
                                   Stack(
                                     alignment: Alignment.center,
                                     children: [
-                                      // SvgPicture.asset(bg_golden),
                                       Image.asset(
                                         box_golden,
                                         width: 225.w,

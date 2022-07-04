@@ -54,18 +54,14 @@ const img_home_bg = 'assets/images/img_home_bg.png';
 const img_backward = 'assets/images/img_backward.png';
 const img_forward = 'assets/images/img_forward.png';
 const img_face2 = 'assets/images/face2.png';
-
 const four_row_bg = 'assets/images/four_row_bg.png';
 const img_spinner_bg = 'assets/images/img_spinner_bg.png';
 const img_star_purpal = 'assets/images/img_star_purpal.png';
-
 const img_telegram = 'assets/images/img_telegram.png';
 const img_whatsapp = 'assets/images/img_whatsapp.png';
 const img_facebok_circle = 'assets/images/img_facebok_circle.png';
 const bg_copy_code_rect = 'assets/images/bg_copy_code_rect.png';
 const img_yellow_copy_rect = 'assets/images/img_yellow_copy_rect.png';
-
-
 const img_follow = 'assets/images/img_follow.png';
 const img_unfollow = 'assets/images/img_unfollow.png';
 const img_delete = 'assets/images/img_delete.png';
@@ -73,8 +69,6 @@ const img_confirm = 'assets/images/img_confirm.png';
 const img_cycle = 'assets/images/img_cycle.png';
 const img_power = 'assets/images/img_power.png';
 const box_yellow = 'assets/images/box_yellow.png';
-
-
 const box_golden = 'assets/images/box_golden.png';
 const medal = 'assets/images/medal.png';
 const img_ellipse = 'assets/images/img_ellipse.png';
@@ -82,9 +76,6 @@ const box_skyblue = 'assets/images/box_skyblue.png';
 const img_lock = 'assets/images/img_lock.png';
 const bg_overlap = 'assets/images/bg_overlap.png';
 const log_top_bg = 'assets/images/log_top_bg.png';
-
-
-
 
 const btn_login = 'assets/images/btn_login.svg';
 const fb = 'assets/images/fb.svg';
@@ -112,27 +103,18 @@ const icon_green_coin = 'assets/images/icon_green_coin.svg';
 const add_friends = 'assets/images/add_friends.svg';
 const btn_play = 'assets/images/btn_play.svg';
 const btn_next = 'assets/images/btn_next.svg';
-
 const icon_question_mark_yellow = 'assets/images/icon_question_mark_yellow.svg';
 const icon_setting = 'assets/images/icon_setting.svg';
-
 const  btn_power_yellow = 'assets/images/btn_power_yellow.svg';
 const btn_power_red = 'assets/images/btn_power_red.svg';
 const icon_super_power = 'assets/images/icon_super_power.svg';
-
 const icon_telegram = 'assets/images/icon_telegram.svg';
 const icon_facebook_circle = 'assets/images/icon_facebook_circle.svg';
 const bg_rect_add_friend = 'assets/images/bg_rect_add_friend.svg';
-
-
-
 const btn_green_bg = 'assets/images/btn_green_bg.svg';
 const bg = 'assets/images/bg.svg';
 const img_medal = 'assets/images/img_medal.svg';
 const ellipse = 'assets/images/ellipse.svg';
-
-
-
 const green = 'assets/images/green.svg';
 const bg_golden = 'assets/images/bg_golden.svg';
 const title_green_curve = 'assets/images/title_green_curve.svg';
