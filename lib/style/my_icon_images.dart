@@ -138,3 +138,4 @@ const bg_golden = 'assets/images/bg_golden.svg';
 const title_green_curve = 'assets/images/title_green_curve.svg';
 const title_box = 'assets/images/title_box.svg';
 const gift_box = 'assets/images/gift_box.gif';
+const diamond = 'assets/images/diamond.gif';
