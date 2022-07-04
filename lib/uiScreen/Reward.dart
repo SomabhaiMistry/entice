@@ -130,29 +130,59 @@ class _RewardState extends State<Reward> {
                           SizedBox(
                             height: 9.h,
                           ),
-                          Container(
-                            margin: EdgeInsets.only(right: 150),
-                            child: LinearPercentIndicator(
-                              width: MediaQuery.of(context).size.width - 50,
-                              animation: true,
-                              lineHeight: 30.0,
-                              animationDuration: 2500,
-                              percent: 0.8,
-                              center: Text(
+                          SizedBox(
+                            height: 9.h,
+                          ),
+                          LinearPercentIndicator(
+                            width: 250,
+                            animation: true,
+                            lineHeight: 30.0,
+                            animationDuration: 2500,
+                            percent: 0.8,
+                            center: Text(
+                              "80.0%",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontFamily: chewy_regular,
+                                  color: white_ffffff),
+                            ),
+                            linearStrokeCap: LinearStrokeCap.roundAll,
+                            backgroundColor: Colors.orange[100],
+                            //background progressbar color
+                            progressColor: Colors.green,
+                          ),
+                          SizedBox(
+                            height: 9.h,
+                          ),
+                          Stack(
+                            alignment: Alignment.center,
+                            children: [
+                              Container(
+                                width: 250,
+                                height: 25,
+                                decoration: BoxDecoration(
+                                    border: Border.all(
+                                        color: white_ffffff, width: 2.5),
+                                    borderRadius: BorderRadius.circular(18)),
+                                child: ClipRRect(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(18)),
+                                  child: LinearProgressIndicator(
+                                    value: 0.8,
+                                    valueColor: AlwaysStoppedAnimation<Color>(
+                                        Color(0xff00ff00)),
+                                    backgroundColor: Color(0xffD6D6D6),
+                                  ),
+                                ),
+                              ),
+                              Text(
                                 "80.0%",
                                 style: TextStyle(
                                     fontSize: 15,
                                     fontFamily: chewy_regular,
                                     color: white_ffffff),
                               ),
-                              linearStrokeCap: LinearStrokeCap.roundAll,
-                              backgroundColor: Colors.orange[100],
-                              //background progressbar color
-                              progressColor: Colors.green,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 9.h,
+                            ],
                           ),
                           Text(
                             "Need 80 RP for level 3",
@@ -179,16 +209,21 @@ class _RewardState extends State<Reward> {
                     textAlign: TextAlign.center,
                   ),
                 ),
-
-                SizedBox(height: 15,),
+                SizedBox(
+                  height: 15,
+                ),
                 Container(
-                  margin: EdgeInsets.only(left: 25,right: 25),
-
+                  margin: EdgeInsets.only(left: 25, right: 25),
                   child: Stack(
                     children: [
-                      Image.asset(img_county_bg,width: double.infinity,height: 350.h,fit: BoxFit.fill,),
+                      Image.asset(
+                        img_county_bg,
+                        width: double.infinity,
+                        height: 310.h,
+                        fit: BoxFit.fill,
+                      ),
                       Column(
-                        mainAxisAlignment:MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Stack(
@@ -202,25 +237,236 @@ class _RewardState extends State<Reward> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 8.0,top: 4),
-                                child: Text("Add Friends",style: TextStyle(color: white_ffffff,fontSize: 16.sp,fontFamily: chewy_regular),),
+                                padding:
+                                    const EdgeInsets.only(left: 8.0, top: 4),
+                                child: Text(
+                                  "Add Friends",
+                                  style: TextStyle(
+                                      color: white_ffffff,
+                                      fontSize: 16.sp,
+                                      fontFamily: chewy_regular),
+                                ),
                               ),
-
                             ],
                           ),
+                          SizedBox(height:16.h),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(
+                                  width: 12.w,
+                                ),
+                                //  Scrolling data horizontal.
+                                Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    // SvgPicture.asset(bg_golden),
+                                    Image.asset(
+                                      box_golden,
+                                      width: 225.w,
+                                    ),
 
-                          Text("vabhav",style: TextStyle(
-                            fontFamily: chewy_regular,color: white_ffffff,fontSize: 15
-                          ),),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                                    Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 15.h,
+                                        ),
+                                        Center(
+                                          child: Text(
+                                            "Add 1 Friend and Get\n10 Reward Points.",
+                                            style: TextStyle(
+                                                fontFamily: chewy_regular,
+                                                fontSize: 16.sp,
+                                                color: brown_4B3C04),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 15.h,
+                                        ),
+                                        Image.asset(medal),
+                                        SizedBox(
+                                          height: 15.h,
+                                        ),
+                                        Center(
+                                          child: Text(
+                                            "Task Completed",
+                                            style: TextStyle(
+                                                fontFamily: chewy_regular,
+                                                fontSize: 16.sp,
+                                                color: golden_DEC280),
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 12.w,
+                                ),
+                                Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    // SvgPicture.asset(bg_golden),
+                                    Image.asset(
+                                      box_skyblue,
+                                      width: 225.w,
+                                    ),
 
-                            ],
-                          )
+                                    Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 15.h,
+                                        ),
+                                        Center(
+                                          child: Text(
+                                            "Add 2 Friend and Get\n10 Reward Points.",
+                                            style: TextStyle(
+                                                fontFamily: chewy_regular,
+                                                fontSize: 16.sp,
+                                                color: blue_1F507E),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 18.h,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              "Reward",
+                                              style: TextStyle(
+                                                  fontSize: 16.sp,
+                                                  fontFamily: chewy_regular,
+                                                  color: white_opacity_B3ffffff),
+                                            ),
+                                            SizedBox(
+                                              width: 13,
+                                            ),
+                                            Stack(
+                                              alignment: Alignment.center,
+                                              children: [
+                                                Image.asset(img_ellipse),
+                                                Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    Text(
+                                                      "10",
+                                                      style: TextStyle(
+                                                          fontFamily:
+                                                              chewy_regular,
+                                                          fontSize: 15,
+                                                          color: white_ffffff),
+                                                    ),
+                                                    SizedBox(
+                                                      width: 9,
+                                                    ),
+                                                    Image.asset(
+                                                      img_india,
+                                                      width: 16,
+                                                      height: 16,
+                                                    )
+                                                  ],
+                                                )
+                                              ],
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 12.w,
+                                ),
+                                Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    Image.asset(
+                                      log_top_bg,
+                                      width: 225.w,
+                                    ),
+                                    // SvgPicture.asset(bg_golden),
+                                    Image.asset(
+                                      box_skyblue,
+                                      width: 225.w,
+                                    ),
 
-
+                                    Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 15.h,
+                                        ),
+                                        Center(
+                                          child: Text(
+                                            "Add 2 Friend and Get\n10 Reward Points.",
+                                            style: TextStyle(
+                                                fontFamily: chewy_regular,
+                                                fontSize: 16.sp,
+                                                color: blue_1F507E),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 50.h,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              "Reward",
+                                              style: TextStyle(
+                                                  fontSize: 16.sp,
+                                                  fontFamily: chewy_regular,
+                                                  color: white_opacity_B3ffffff),
+                                            ),
+                                            SizedBox(
+                                              width: 13,
+                                            ),
+                                            Stack(
+                                              alignment: Alignment.center,
+                                              children: [
+                                                Image.asset(img_ellipse),
+                                                Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    Text(
+                                                      "20",
+                                                      style: TextStyle(
+                                                          fontFamily:
+                                                              chewy_regular,
+                                                          fontSize: 15,
+                                                          color: white_ffffff),
+                                                    ),
+                                                    SizedBox(
+                                                      width: 9,
+                                                    ),
+                                                    Image.asset(
+                                                      img_india,
+                                                      width: 16,
+                                                      height: 16,
+                                                    )
+                                                  ],
+                                                )
+                                              ],
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       )
                     ],
@@ -354,7 +600,6 @@ class _RewardState extends State<Reward> {
                       box_skyblue,
                       width: 225.w,
                     ),
-
 
                     Column(
                       children: [
