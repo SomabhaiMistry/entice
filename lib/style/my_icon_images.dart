@@ -76,6 +76,10 @@ const box_skyblue = 'assets/images/box_skyblue.png';
 const img_lock = 'assets/images/img_lock.png';
 const bg_overlap = 'assets/images/bg_overlap.png';
 const log_top_bg = 'assets/images/log_top_bg.png';
+const bg_setting_bg = 'assets/images/bg_setting_bg.png';
+const img_title_setting = 'assets/images/img_title_setting.png';
+
+
 
 const btn_login = 'assets/images/btn_login.svg';
 const fb = 'assets/images/fb.svg';
@@ -119,5 +123,7 @@ const green = 'assets/images/green.svg';
 const bg_golden = 'assets/images/bg_golden.svg';
 const title_green_curve = 'assets/images/title_green_curve.svg';
 const title_box = 'assets/images/title_box.svg';
+
+const icon_vibration = 'assets/images/icon_vibration.svg';
 const gift_box = 'assets/images/gift_box.gif';
 const diamond = 'assets/images/diamond.gif';

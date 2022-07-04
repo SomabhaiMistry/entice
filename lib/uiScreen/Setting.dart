@@ -17,63 +17,136 @@ class Setting extends StatefulWidget {
 class _SettingState extends State<Setting> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: pink_FE685D,
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        body: Stack(
+          alignment: Alignment.center,
           children: [
-            Stack(
+            Align(
               alignment: Alignment.center,
-              children: [
-                Center(child: SvgPicture.asset(bg_rect_add_friend,)),
-                Center(child: SvgPicture.asset(bg)),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-
-
-                    Container(
-                      margin: EdgeInsets.only(left: 75,right: 75),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Stack(
+                    children: [
+                      Center(
+                        child: Container(
+                            margin: EdgeInsets.only(top: 30.h,left: 23.w,right: 23.w),
+                            child:
+                            Stack(
+                              children: [
+                                Image.asset(
+                                  img_rules_bg,
+                                  height: 300.h,
+                                  width: double.infinity,
+                                  fit: BoxFit.fill,
+                                ),
+                                SvgPicture.asset(bg,width: double.infinity,
+                                height: 300,)
+                              ],
+                            )
+                        ),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.max,
                         children: [
-                          SvgPicture.asset(b_y),
-                          Text(
-                            "Settings",
-                            style: TextStyle(
-                              letterSpacing:3,
-                              color: Color(0xffe0f9e1),
-                              fontWeight: FontWeight.bold,
-                              fontFamily: chewy_regular,
-                              fontSize: 28,
-                              shadows: <Shadow>[
-                                Shadow(
-                                  // offset: Offset(10.0, 10.0),
-                                  blurRadius: 3.0,
-                                  color: Color(0xff104d1b),
+                          Container(
+                            margin: EdgeInsets.only(left: 50,right: 50,top: 100),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                SvgPicture.asset(icon_vibration),
+                                SizedBox(width: 6.w,),
+                                Expanded(
+                                  child: Text("Music",style: TextStyle(
+                                      color: brown_drak_532102,fontFamily: chewy_regular,
+                                      fontSize: 27.sp
+                                  ),),
                                 ),
-                                Shadow(
-                                  // offset: Offset(10.0, 10.0),
-                                  blurRadius: 8.0,
-                                  color: Color(0xff104d1b),
-                                ),
+                                SvgPicture.asset(icon_vibration),
+
                               ],
                             ),
-                            textAlign: TextAlign.center,
                           ),
-                          SvgPicture.asset(icon_cross),
+                          Container(
+                            margin: EdgeInsets.only(left: 50,right: 50,top: 30),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                SvgPicture.asset(icon_vibration),
+                                SizedBox(width: 6.w,),
+                                Expanded(
+                                  child: Text("Sound",style: TextStyle(
+                                      color: brown_drak_532102,fontFamily: chewy_regular,
+                                      fontSize: 27.sp
+                                  ),),
+                                ),
+                                SvgPicture.asset(icon_vibration),
+
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 50,right: 50,top: 30),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                SvgPicture.asset(icon_vibration),
+                                SizedBox(width: 6.w,),
+                                Expanded(
+                                  child: Text("Vibration",style: TextStyle(
+                                      color: brown_drak_532102,fontFamily: chewy_regular,
+                                      fontSize: 27.sp
+                                  ),),
+                                ),
+                                SvgPicture.asset(icon_vibration),
+
+                              ],
+                            ),
+                          ),
                         ],
                       ),
-                    )
 
-                  ],
-                )
-              ],
-            ),
+                      Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            GestureDetector(
+                                onTap: () {
+                                  Navigator.pop(context);
+                                },
+                                child: Container(
+                                    margin: EdgeInsets.only(top: 20.h),
+                                    child: SvgPicture.asset(b_y))),
+                            SizedBox(
+                              width: 3.w,
+                            ),
+                            Image.asset(
+                              img_title_setting,
+                              width: 160.w,
+                              height: 70.h,
+                            ),
+                            SizedBox(
+                              width: 3.w,
+                            ),
+                            Container(
+                                margin: EdgeInsets.only(top: 20.h),
+                                child: SvgPicture.asset(icon_cross)),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
