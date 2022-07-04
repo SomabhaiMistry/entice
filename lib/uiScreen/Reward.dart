@@ -23,7 +23,7 @@ class _RewardState extends State<Reward> {
         body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/images/four_row_bg.png"),
+              image: AssetImage("assets/images/backgound.png"),
               fit: BoxFit.fill,
             ),
           ),
@@ -130,65 +130,83 @@ class _RewardState extends State<Reward> {
                           SizedBox(
                             height: 9.h,
                           ),
-                          SizedBox(
-                            height: 9.h,
-                          ),
-                          LinearPercentIndicator(
-                            width: 250,
-                            animation: true,
-                            lineHeight: 30.0,
-                            animationDuration: 2500,
-                            percent: 0.8,
-                            center: Text(
-                              "80.0%",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontFamily: chewy_regular,
-                                  color: white_ffffff),
-                            ),
-                            linearStrokeCap: LinearStrokeCap.roundAll,
-                            backgroundColor: Colors.orange[100],
-                            //background progressbar color
-                            progressColor: Colors.green,
-                          ),
-                          SizedBox(
-                            height: 9.h,
-                          ),
                           Stack(
                             alignment: Alignment.center,
                             children: [
                               Container(
+                                padding: EdgeInsets.all(1.8),
                                 width: 250,
-                                height: 25,
+                                height: 28,
                                 decoration: BoxDecoration(
+                                    color: Color(0xffD6D6D6),
                                     border: Border.all(
-                                        color: white_ffffff, width: 2.5),
-                                    borderRadius: BorderRadius.circular(18)),
+                                        color: white_ffffff, width: 2),
+                                    borderRadius: BorderRadius.circular(15)),
                                 child: ClipRRect(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(18)),
-                                  child: LinearProgressIndicator(
-                                    value: 0.8,
+                                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                                  child: LinearProgressIndicator(value: 0.8,
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                        Color(0xff00ff00)),
+                                        Color(0xff20a872)),
                                     backgroundColor: Color(0xffD6D6D6),
                                   ),
                                 ),
                               ),
-                              Text(
-                                "80.0%",
-                                style: TextStyle(
-                                    fontSize: 15,
-                                    fontFamily: chewy_regular,
-                                    color: white_ffffff),
+                              Row(
+
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "80",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: chewy_regular,
+                                      color: white_ffffff,
+                                      shadows: <Shadow>[
+                                        Shadow(
+                                          // offset: Offset(10.0, 10.0),
+                                          blurRadius: 3.0,
+                                          color:Color(0xff000000),
+                                        ),
+                                        Shadow(
+                                          // offset: Offset(10.0, 10.0),
+                                          blurRadius: 8.0,
+                                          color: Color(0xff1F507E),
+                                        ),
+                                      ],),
+                                  ),
+                                  Text(
+                                    " / 100",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: chewy_regular,
+                                      color: white_ffffff,
+                                      shadows: <Shadow>[
+                                        Shadow(
+                                          // offset: Offset(10.0, 10.0),
+                                          blurRadius: 3.0,
+                                          color:Color(0xff000000),
+                                        ),
+                                        Shadow(
+                                          // offset: Offset(10.0, 10.0),
+                                          blurRadius: 8.0,
+                                          color: Color(0xff1F507E),
+                                        ),
+                                      ],),
+                                  ),
+                                ],
                               ),
                             ],
                           ),
+                          
+                          SizedBox(
+                            height: 9.h,
+                          ),
+
                           Text(
                             "Need 80 RP for level 3",
                             style: TextStyle(
                                 fontSize: 13.sp,
-                                fontFamily: chewy_regular,
                                 color: white_opacity_B3ffffff),
                           ),
                         ],
@@ -213,258 +231,345 @@ class _RewardState extends State<Reward> {
                   height: 15,
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 25, right: 25),
+                  margin: EdgeInsets.only(left: 0.w,),
                   child: Stack(
+                    alignment: Alignment.center,
                     children: [
-                      Image.asset(
-                        img_county_bg,
+                      SvgPicture.asset(
+                        title_box,
                         width: double.infinity,
-                        height: 310.h,
+                        height: 330.h,
                         fit: BoxFit.fill,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Stack(
-                            // alignment: Alignment.topCenter,
-                            children: [
-                              Container(
-                                // margin: EdgeInsets.only(left: 70,right: 70,top: 0),
-                                height: 30.h,
-                                decoration: BoxDecoration(
-                                  color: yellow_F7CB46,
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 8.0, top: 4),
-                                child: Text(
-                                  "Add Friends",
-                                  style: TextStyle(
-                                      color: white_ffffff,
-                                      fontSize: 16.sp,
-                                      fontFamily: chewy_regular),
-                                ),
-                              ),
-                            ],
+                          Container(
+                            margin: EdgeInsets.only(left: 50.w,top: 13.h),
+                            child: Text(
+                              "Add Friends",
+                              style: TextStyle(
+                                  color: white_ffffff,
+                                  fontSize: 16.sp,
+                                  fontFamily: chewy_regular),
+                            ),
                           ),
-                          SizedBox(height:16.h),
+                          SizedBox(height:30.h),
                           SingleChildScrollView(
                             scrollDirection: Axis.horizontal,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                SizedBox(
-                                  width: 12.w,
-                                ),
-                                //  Scrolling data horizontal.
-                                Stack(
-                                  alignment: Alignment.center,
-                                  children: [
-                                    // SvgPicture.asset(bg_golden),
-                                    Image.asset(
-                                      box_golden,
-                                      width: 225.w,
-                                    ),
+                            child: Container(
+                              margin: EdgeInsets.only(left: 50),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                    width:35.w,
+                                  ),
+                                  Stack(
+                                    alignment: Alignment.center,
+                                    children: [
+                                      // SvgPicture.asset(bg_golden),
+                                      Image.asset(
+                                        box_golden,
+                                        width: 225.w,
+                                      ),
 
-                                    Column(
-                                      children: [
-                                        SizedBox(
-                                          height: 15.h,
-                                        ),
-                                        Center(
-                                          child: Text(
-                                            "Add 1 Friend and Get\n10 Reward Points.",
-                                            style: TextStyle(
-                                                fontFamily: chewy_regular,
-                                                fontSize: 16.sp,
-                                                color: brown_4B3C04),
-                                            textAlign: TextAlign.center,
+                                      Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Center(
+                                            child: Text(
+                                              "Add 1 Friend and Get\n10 Reward Points.",
+                                              style: TextStyle(
+                                                  fontFamily: chewy_regular,
+                                                  fontSize: 16.sp,
+                                                  color: brown_7e411f),
+                                              textAlign: TextAlign.center,
+                                            ),
                                           ),
-                                        ),
-                                        SizedBox(
-                                          height: 15.h,
-                                        ),
-                                        Image.asset(medal),
-                                        SizedBox(
-                                          height: 15.h,
-                                        ),
-                                        Center(
-                                          child: Text(
-                                            "Task Completed",
-                                            style: TextStyle(
-                                                fontFamily: chewy_regular,
-                                                fontSize: 16.sp,
-                                                color: golden_DEC280),
+                                          SizedBox(
+                                            height: 16.h,
                                           ),
-                                        ),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 12.w,
-                                ),
-                                Stack(
-                                  alignment: Alignment.center,
-                                  children: [
-                                    // SvgPicture.asset(bg_golden),
-                                    Image.asset(
-                                      box_skyblue,
-                                      width: 225.w,
-                                    ),
-
-                                    Column(
-                                      children: [
-                                        SizedBox(
-                                          height: 15.h,
-                                        ),
-                                        Center(
-                                          child: Text(
-                                            "Add 2 Friend and Get\n10 Reward Points.",
-                                            style: TextStyle(
-                                                fontFamily: chewy_regular,
-                                                fontSize: 16.sp,
-                                                color: blue_1F507E),
-                                            textAlign: TextAlign.center,
+                                          Image.asset(medal),
+                                          SizedBox(
+                                            height: 12.h,
                                           ),
-                                        ),
-                                        SizedBox(
-                                          height: 18.h,
-                                        ),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Text(
-                                              "Reward",
+                                          Center(
+                                            child: Text(
+                                              "Task Completed",
                                               style: TextStyle(
                                                   fontSize: 16.sp,
-                                                  fontFamily: chewy_regular,
-                                                  color: white_opacity_B3ffffff),
+                                                  color: golden_DEC280),
                                             ),
-                                            SizedBox(
-                                              width: 13,
-                                            ),
-                                            Stack(
-                                              alignment: Alignment.center,
-                                              children: [
-                                                Image.asset(img_ellipse),
-                                                Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      "10",
-                                                      style: TextStyle(
-                                                          fontFamily:
-                                                              chewy_regular,
-                                                          fontSize: 15,
-                                                          color: white_ffffff),
-                                                    ),
-                                                    SizedBox(
-                                                      width: 9,
-                                                    ),
-                                                    Image.asset(
-                                                      img_india,
-                                                      width: 16,
-                                                      height: 16,
-                                                    )
-                                                  ],
-                                                )
-                                              ],
-                                            )
-                                          ],
-                                        )
-                                      ],
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 12.w,
-                                ),
-                                Stack(
-                                  alignment: Alignment.center,
-                                  children: [
-                                    Image.asset(
-                                      log_top_bg,
-                                      width: 225.w,
-                                    ),
-                                    // SvgPicture.asset(bg_golden),
-                                    Image.asset(
-                                      box_skyblue,
-                                      width: 225.w,
-                                    ),
-
-                                    Column(
-                                      children: [
-                                        SizedBox(
-                                          height: 15.h,
-                                        ),
-                                        Center(
-                                          child: Text(
-                                            "Add 2 Friend and Get\n10 Reward Points.",
-                                            style: TextStyle(
-                                                fontFamily: chewy_regular,
-                                                fontSize: 16.sp,
-                                                color: blue_1F507E),
-                                            textAlign: TextAlign.center,
                                           ),
-                                        ),
-                                        SizedBox(
-                                          height: 50.h,
-                                        ),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Text(
-                                              "Reward",
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    width:7.w,
+                                  ),
+                                  Stack(
+                                    alignment: Alignment.center,
+                                    children: [
+                                      // SvgPicture.asset(bg_golden),
+                                      Image.asset(
+                                        box_skyblue,
+                                        width: 225.w,
+                                      ),
+
+                                      Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Center(
+                                            child: Text(
+                                              "Add 2 Friend and Get\n10 Reward Points.",
                                               style: TextStyle(
-                                                  fontSize: 16.sp,
                                                   fontFamily: chewy_regular,
-                                                  color: white_opacity_B3ffffff),
+                                                  fontSize: 16.sp,
+                                                  color: blue_1F507E),
+                                              textAlign: TextAlign.center,
                                             ),
-                                            SizedBox(
-                                              width: 13,
-                                            ),
-                                            Stack(
-                                              alignment: Alignment.center,
-                                              children: [
-                                                Image.asset(img_ellipse),
-                                                Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      "20",
-                                                      style: TextStyle(
-                                                          fontFamily:
-                                                              chewy_regular,
+                                          ),
+                                          SizedBox(
+                                            height: 20.h,
+                                          ),
+
+                                          Stack(
+                                            alignment: Alignment.center,
+                                            children: [
+                                              Container(
+                                                padding: EdgeInsets.all(3),
+                                                width: 200,
+                                                height: 28,
+                                                decoration: BoxDecoration(
+                                                  color: Color(0xffD6D6D6),
+                                                    border: Border.all(
+                                                        color: blue_1F507E, width: 1.5),
+                                                    borderRadius: BorderRadius.circular(8)),
+                                                child: ClipRRect(
+                                                  borderRadius: BorderRadius.all(Radius.circular(6)),
+                                                  child: LinearProgressIndicator(value: 0.8,
+                                                    valueColor: AlwaysStoppedAnimation<Color>(
+                                                        Color(0xfffed65c)),
+                                                    backgroundColor: Color(0xffD6D6D6),
+                                                  ),
+                                                ),
+                                              ),
+                                              Row(
+
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.center,
+                                                children: [
+                                                  Text(
+                                                    "80",
+                                                    style: TextStyle(
+                                                      fontSize: 15,
+                                                      fontFamily: chewy_regular,
+                                                      color: white_ffffff,
+                                                      shadows: <Shadow>[
+                                                        Shadow(
+                                                          // offset: Offset(10.0, 10.0),
+                                                          blurRadius: 3.0,
+                                                          color:Color(0xff000000),
+                                                        ),
+                                                        Shadow(
+                                                          // offset: Offset(10.0, 10.0),
+                                                          blurRadius: 8.0,
+                                                          color: Color(0xff1F507E),
+                                                        ),
+                                                      ],),
+                                                  ),
+                                                  Text(
+                                                    " / 100",
+                                                    style: TextStyle(
+                                                      fontSize: 15,
+                                                      fontFamily: chewy_regular,
+                                                      color: white_ffffff,
+                                                      shadows: <Shadow>[
+                                                        Shadow(
+                                                          // offset: Offset(10.0, 10.0),
+                                                          blurRadius: 3.0,
+                                                          color:Color(0xff000000),
+                                                        ),
+                                                        Shadow(
+                                                          // offset: Offset(10.0, 10.0),
+                                                          blurRadius: 8.0,
+                                                          color: Color(0xff1F507E),
+                                                        ),
+                                                      ],),
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                          SizedBox(
+                                            height: 22.h,
+                                          ),
+
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                "Reward",
+                                                style: TextStyle(
+                                                    fontSize: 16.sp,
+                                                    fontFamily: chewy_regular,
+                                                    color: white_opacity_B3ffffff),
+                                              ),
+                                              SizedBox(
+                                                width: 13,
+                                              ),
+                                              Stack(
+                                                alignment: Alignment.center,
+                                                children: [
+                                                  Image.asset(img_ellipse),
+                                                  Row(
+                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                    children: [
+                                                      Text(
+                                                        "10",
+                                                        style: TextStyle(
                                                           fontSize: 15,
-                                                          color: white_ffffff),
-                                                    ),
-                                                    SizedBox(
-                                                      width: 9,
-                                                    ),
-                                                    Image.asset(
-                                                      img_india,
-                                                      width: 16,
-                                                      height: 16,
-                                                    )
-                                                  ],
-                                                )
-                                              ],
-                                            )
-                                          ],
-                                        )
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ],
+                                                          fontFamily: chewy_regular,
+                                                          color: white_ffffff,
+                                                          shadows: <Shadow>[
+                                                            Shadow(
+                                                              // offset: Offset(10.0, 10.0),
+                                                              blurRadius: 3.0,
+                                                              color:Color(0xff000000),
+                                                            ),
+                                                            Shadow(
+                                                              // offset: Offset(10.0, 10.0),
+                                                              blurRadius: 8.0,
+                                                              color: Color(0xff1F507E),
+                                                            ),
+                                                          ],),
+                                                      ),
+
+                                                      SizedBox(
+                                                        width: 9,
+                                                      ),
+                                                      Image.asset(
+                                                        img_india,
+                                                        width: 16,
+                                                        height: 16,
+                                                      )
+                                                    ],
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    width:7.w,
+                                  ),
+                                  Stack(
+                                    alignment: Alignment.center,
+                                    children: [
+
+                                      // SvgPicture.asset(bg_golden),
+                                      Image.asset(
+                                        box_skyblue,
+                                        width: 225.w,
+                                      ),
+                                      Image.asset(
+                                        bg_overlap,
+                                        width: 225.w,
+                                      ),
+                                      Image.asset(
+                                        img_lock,
+                                      ),
+
+                                      Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Center(
+                                            child: Text(
+                                              "Add 2 Friend and Get\n10 Reward Points.",
+                                              style: TextStyle(
+                                                  fontFamily: chewy_regular,
+                                                  fontSize: 16.sp,
+                                                  color: blue_1F507E),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            height: 65.h,
+                                          ),
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                "Reward",
+                                                style: TextStyle(
+                                                    fontSize: 16.sp,
+                                                    fontFamily: chewy_regular,
+                                                    color: white_opacity_B3ffffff),
+                                              ),
+                                              SizedBox(
+                                                width: 9,
+                                              ),
+                                              Stack(
+                                                alignment: Alignment.center,
+                                                children: [
+                                                  Image.asset(img_ellipse),
+
+                                                  Row(
+                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                    children: [
+                                                      Text(
+                                                        "20",
+                                                        style: TextStyle(
+                                                          fontSize: 15,
+                                                          fontFamily: chewy_regular,
+                                                          color: white_ffffff,
+                                                          shadows: <Shadow>[
+                                                            Shadow(
+                                                              // offset: Offset(10.0, 10.0),
+                                                              blurRadius: 3.0,
+                                                              color:Color(0xff000000),
+                                                            ),
+                                                            Shadow(
+                                                              // offset: Offset(10.0, 10.0),
+                                                              blurRadius: 8.0,
+                                                              color: Color(0xff1F507E),
+                                                            ),
+                                                          ],),
+                                                      ),
+
+                                                      SizedBox(
+                                                        width: 9,
+                                                      ),
+                                                      Image.asset(
+                                                        img_india,
+                                                        width: 16,
+                                                        height: 16,
+                                                      )
+                                                    ],
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    width:7.w,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ],
@@ -472,140 +577,224 @@ class _RewardState extends State<Reward> {
                     ],
                   ),
                 ),
+                // Stack(
+                //   alignment: Alignment.center,
+                //   children: [
+                //     // SvgPicture.asset(bg_golden),
+                //     Image.asset(
+                //       box_golden,
+                //       width: 225.w,
+                //     ),
+                //
+                //     Column(
+                //       mainAxisAlignment: MainAxisAlignment.center,
+                //       crossAxisAlignment: CrossAxisAlignment.center,
+                //       children: [
+                //         Center(
+                //           child: Text(
+                //             "Add 1 Friend and Get\n10 Reward Points.",
+                //             style: TextStyle(
+                //                 fontFamily: chewy_regular,
+                //                 fontSize: 16.sp,
+                //                 color: brown_7e411f),
+                //             textAlign: TextAlign.center,
+                //           ),
+                //         ),
+                //         SizedBox(
+                //           height: 16.h,
+                //         ),
+                //         Image.asset(medal),
+                //         SizedBox(
+                //           height: 12.h,
+                //         ),
+                //         Center(
+                //           child: Text(
+                //             "Task Completed",
+                //             style: TextStyle(
+                //                 fontSize: 16.sp,
+                //                 color: golden_DEC280),
+                //           ),
+                //         ),
+                //       ],
+                //     )
+                //   ],
+                // ),
+                // Stack(
+                //   alignment: Alignment.center,
+                //   children: [
+                //     // SvgPicture.asset(bg_golden),
+                //     Image.asset(
+                //       box_skyblue,
+                //       width: 225.w,
+                //     ),
+                //
+                //     Column(
+                //       mainAxisAlignment: MainAxisAlignment.center,
+                //       crossAxisAlignment: CrossAxisAlignment.center,
+                //       children: [
+                //         Center(
+                //           child: Text(
+                //             "Add 2 Friend and Get\n10 Reward Points.",
+                //             style: TextStyle(
+                //                 fontFamily: chewy_regular,
+                //                 fontSize: 16.sp,
+                //                 color: blue_1F507E),
+                //             textAlign: TextAlign.center,
+                //           ),
+                //         ),
+                //         SizedBox(
+                //           height: 20.h,
+                //         ),
+                //
+                //         Stack(
+                //           alignment: Alignment.center,
+                //           children: [
+                //             Container(
+                //               width: 200,
+                //               height: 28,
+                //               decoration: BoxDecoration(
+                //                   border: Border.all(
+                //                       color: blue_1F507E, width: 1.5),
+                //                   borderRadius: BorderRadius.circular(8)),
+                //               child: ClipRRect(
+                //                 borderRadius: BorderRadius.all(Radius.circular(8)),
+                //                 child: LinearProgressIndicator(value: 0.8,
+                //                   valueColor: AlwaysStoppedAnimation<Color>(
+                //                       Color(0xfffed65c)),
+                //                   backgroundColor: Color(0xffD6D6D6),
+                //                 ),
+                //               ),
+                //             ),
+                //             Row(
+                //
+                //               mainAxisAlignment: MainAxisAlignment.center,
+                //               crossAxisAlignment: CrossAxisAlignment.center,
+                //               children: [
+                //                 Text(
+                //                   "80",
+                //                   style: TextStyle(
+                //                       fontSize: 15,
+                //                       fontFamily: chewy_regular,
+                //                       color: white_ffffff,
+                //                     shadows: <Shadow>[
+                //                       Shadow(
+                //                         // offset: Offset(10.0, 10.0),
+                //                         blurRadius: 3.0,
+                //                         color:Color(0xff000000),
+                //                       ),
+                //                       Shadow(
+                //                         // offset: Offset(10.0, 10.0),
+                //                         blurRadius: 8.0,
+                //                         color: Color(0xff1F507E),
+                //                       ),
+                //                     ],),
+                //                 ),
+                //                 Text(
+                //                   " / 100",
+                //                   style: TextStyle(
+                //                       fontSize: 15,
+                //                       fontFamily: chewy_regular,
+                //                       color: white_ffffff,
+                //                     shadows: <Shadow>[
+                //                       Shadow(
+                //                         // offset: Offset(10.0, 10.0),
+                //                         blurRadius: 3.0,
+                //                         color:Color(0xff000000),
+                //                       ),
+                //                       Shadow(
+                //                         // offset: Offset(10.0, 10.0),
+                //                         blurRadius: 8.0,
+                //                         color: Color(0xff1F507E),
+                //                       ),
+                //                     ],),
+                //                 ),
+                //               ],
+                //             ),
+                //           ],
+                //         ),
+                //         SizedBox(
+                //           height: 22.h,
+                //         ),
+                //
+                //         Row(
+                //           mainAxisAlignment: MainAxisAlignment.center,
+                //           children: [
+                //             Text(
+                //               "Reward",
+                //               style: TextStyle(
+                //                   fontSize: 16.sp,
+                //                   fontFamily: chewy_regular,
+                //                   color: white_opacity_B3ffffff),
+                //             ),
+                //             SizedBox(
+                //               width: 13,
+                //             ),
+                //             Stack(
+                //               alignment: Alignment.center,
+                //               children: [
+                //                 Image.asset(img_ellipse),
+                //                 Row(
+                //                   mainAxisAlignment: MainAxisAlignment.center,
+                //                   children: [
+                //                     Text(
+                //                       "10",
+                //                       style: TextStyle(
+                //                         fontSize: 15,
+                //                         fontFamily: chewy_regular,
+                //                         color: white_ffffff,
+                //                         shadows: <Shadow>[
+                //                           Shadow(
+                //                             // offset: Offset(10.0, 10.0),
+                //                             blurRadius: 3.0,
+                //                             color:Color(0xff000000),
+                //                           ),
+                //                           Shadow(
+                //                             // offset: Offset(10.0, 10.0),
+                //                             blurRadius: 8.0,
+                //                             color: Color(0xff1F507E),
+                //                           ),
+                //                         ],),
+                //                     ),
+                //
+                //                     SizedBox(
+                //                       width: 9,
+                //                     ),
+                //                     Image.asset(
+                //                       img_india,
+                //                       width: 16,
+                //                       height: 16,
+                //                     )
+                //                   ],
+                //                 )
+                //               ],
+                //             )
+                //           ],
+                //         )
+                //       ],
+                //     )
+                //   ],
+                // ),
                 Stack(
                   alignment: Alignment.center,
                   children: [
-                    // SvgPicture.asset(bg_golden),
-                    Image.asset(
-                      box_golden,
-                      width: 225.w,
-                    ),
 
-                    Column(
-                      children: [
-                        SizedBox(
-                          height: 15.h,
-                        ),
-                        Center(
-                          child: Text(
-                            "Add 1 Friend and Get\n10 Reward Points.",
-                            style: TextStyle(
-                                fontFamily: chewy_regular,
-                                fontSize: 16.sp,
-                                color: brown_4B3C04),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 15.h,
-                        ),
-                        Image.asset(medal),
-                        SizedBox(
-                          height: 15.h,
-                        ),
-                        Center(
-                          child: Text(
-                            "Task Completed",
-                            style: TextStyle(
-                                fontFamily: chewy_regular,
-                                fontSize: 16.sp,
-                                color: golden_DEC280),
-                          ),
-                        ),
-                      ],
-                    )
-                  ],
-                ),
-                Stack(
-                  alignment: Alignment.center,
-                  children: [
                     // SvgPicture.asset(bg_golden),
                     Image.asset(
                       box_skyblue,
                       width: 225.w,
                     ),
-
-                    Column(
-                      children: [
-                        SizedBox(
-                          height: 15.h,
-                        ),
-                        Center(
-                          child: Text(
-                            "Add 2 Friend and Get\n10 Reward Points.",
-                            style: TextStyle(
-                                fontFamily: chewy_regular,
-                                fontSize: 16.sp,
-                                color: blue_1F507E),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 18.h,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Reward",
-                              style: TextStyle(
-                                  fontSize: 16.sp,
-                                  fontFamily: chewy_regular,
-                                  color: white_opacity_B3ffffff),
-                            ),
-                            SizedBox(
-                              width: 13,
-                            ),
-                            Stack(
-                              alignment: Alignment.center,
-                              children: [
-                                Image.asset(img_ellipse),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      "10",
-                                      style: TextStyle(
-                                          fontFamily: chewy_regular,
-                                          fontSize: 15,
-                                          color: white_ffffff),
-                                    ),
-                                    SizedBox(
-                                      width: 9,
-                                    ),
-                                    Image.asset(
-                                      img_india,
-                                      width: 16,
-                                      height: 16,
-                                    )
-                                  ],
-                                )
-                              ],
-                            )
-                          ],
-                        )
-                      ],
-                    )
-                  ],
-                ),
-                Stack(
-                  alignment: Alignment.center,
-                  children: [
                     Image.asset(
-                      log_top_bg,
+                      bg_overlap,
                       width: 225.w,
                     ),
-                    // SvgPicture.asset(bg_golden),
                     Image.asset(
-                      box_skyblue,
-                      width: 225.w,
+                      img_lock,
                     ),
 
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        SizedBox(
-                          height: 15.h,
-                        ),
                         Center(
                           child: Text(
                             "Add 2 Friend and Get\n10 Reward Points.",
@@ -630,22 +819,37 @@ class _RewardState extends State<Reward> {
                                   color: white_opacity_B3ffffff),
                             ),
                             SizedBox(
-                              width: 13,
+                              width: 9,
                             ),
                             Stack(
                               alignment: Alignment.center,
                               children: [
                                 Image.asset(img_ellipse),
+
+
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
                                       "20",
                                       style: TextStyle(
-                                          fontFamily: chewy_regular,
-                                          fontSize: 15,
-                                          color: white_ffffff),
+                                        fontSize: 15,
+                                        fontFamily: chewy_regular,
+                                        color: white_ffffff,
+                                        shadows: <Shadow>[
+                                          Shadow(
+                                            // offset: Offset(10.0, 10.0),
+                                            blurRadius: 3.0,
+                                            color:Color(0xff000000),
+                                          ),
+                                          Shadow(
+                                            // offset: Offset(10.0, 10.0),
+                                            blurRadius: 8.0,
+                                            color: Color(0xff1F507E),
+                                          ),
+                                        ],),
                                     ),
+
                                     SizedBox(
                                       width: 9,
                                     ),

@@ -80,6 +80,7 @@ const medal = 'assets/images/medal.png';
 const img_ellipse = 'assets/images/img_ellipse.png';
 const box_skyblue = 'assets/images/box_skyblue.png';
 const img_lock = 'assets/images/img_lock.png';
+const bg_overlap = 'assets/images/bg_overlap.png';
 const log_top_bg = 'assets/images/log_top_bg.png';
 
 
@@ -134,4 +135,6 @@ const ellipse = 'assets/images/ellipse.svg';
 
 const green = 'assets/images/green.svg';
 const bg_golden = 'assets/images/bg_golden.svg';
+const title_green_curve = 'assets/images/title_green_curve.svg';
+const title_box = 'assets/images/title_box.svg';
 const gift_box = 'assets/images/gift_box.gif';
