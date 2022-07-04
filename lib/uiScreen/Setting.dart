@@ -59,7 +59,7 @@ class _SettingState extends State<Setting> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                SvgPicture.asset(icon_vibration),
+                                SvgPicture.asset(icon_music),
                                 SizedBox(width: 6.w,),
                                 Expanded(
                                   child: Text("Music",style: TextStyle(
@@ -67,7 +67,7 @@ class _SettingState extends State<Setting> {
                                       fontSize: 27.sp
                                   ),),
                                 ),
-                                SvgPicture.asset(icon_vibration),
+                                SvgPicture.asset(icon_music),
 
                               ],
                             ),
@@ -78,7 +78,7 @@ class _SettingState extends State<Setting> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                SvgPicture.asset(icon_vibration),
+                                SvgPicture.asset(icon_sound),
                                 SizedBox(width: 6.w,),
                                 Expanded(
                                   child: Text("Sound",style: TextStyle(
@@ -86,7 +86,7 @@ class _SettingState extends State<Setting> {
                                       fontSize: 27.sp
                                   ),),
                                 ),
-                                SvgPicture.asset(icon_vibration),
+                                SvgPicture.asset(icon_sound),
 
                               ],
                             ),

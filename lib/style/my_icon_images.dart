@@ -125,5 +125,8 @@ const title_green_curve = 'assets/images/title_green_curve.svg';
 const title_box = 'assets/images/title_box.svg';
 
 const icon_vibration = 'assets/images/icon_vibration.svg';
+const icon_music = 'assets/images/icon_music.svg';
+const icon_sound = 'assets/images/icon_sound.svg';
+const icon_forward_green = 'assets/images/icon_forward_green.svg';
 const gift_box = 'assets/images/gift_box.gif';
 const diamond = 'assets/images/diamond.gif';

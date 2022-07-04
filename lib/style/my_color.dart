@@ -43,5 +43,6 @@ const brown_7e411f = Color(0xff7e411f);
 const brown_drak_532102 = Color(0xff532102);
 const golden_DEC280 = Color(0xffDEC280);
 const blue_1F507E = Color(0xff1F507E);
+const blue_1c4175 = Color(0xff1c4175);
 const gold_FED65C = Color(0xffFED65C);
 const green_20a872 = Color(0xff20a872);

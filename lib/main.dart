@@ -5,6 +5,7 @@ import 'package:entice/four_in_a_row/Popup2.dart';
 import 'package:entice/uiScreen/ButtonDemo.dart';
 import 'package:entice/uiScreen/Demo.dart';
 import 'package:entice/uiScreen/ListScreen.dart';
+import 'package:entice/uiScreen/NotificationList.dart';
 import 'package:entice/uiScreen/Reward.dart';
 import 'package:entice/uiScreen/Setting.dart';
 import 'package:entice/uiScreen/Test1.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const Demo(),
+          home: const Reward(),
         );
       },
     );
