@@ -86,6 +86,8 @@ const img_update = 'assets/images/img_update.png';
 const btn_update_now = 'assets/images/btn_update_now.png';
 const img_mining_bg = 'assets/images/img_mining_bg.png';
 const img_point_bg = 'assets/images/img_point_bg.png';
+const img_title_box = 'assets/images/title_box.png';
+const title_green_curve = 'assets/images/title_green_curve.png';
 
 
 
@@ -129,7 +131,7 @@ const img_medal = 'assets/images/img_medal.svg';
 const ellipse = 'assets/images/ellipse.svg';
 const green = 'assets/images/green.svg';
 const bg_golden = 'assets/images/bg_golden.svg';
-const title_green_curve = 'assets/images/title_green_curve.svg';
+// const title_green_curve = 'assets/images/title_green_curve.svg';
 const title_box = 'assets/images/title_box.svg';
 
 const icon_vibration = 'assets/images/icon_vibration.svg';
