@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
+const black_60000000 = Color(0x99000000);
 const black_121212 = Color(0xff121212);
 const black_181818 = Color(0xff181818);
 const border_black_3C3429 = Color(0xff3C3429);

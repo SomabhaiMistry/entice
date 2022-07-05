@@ -413,24 +413,27 @@ class _RewardState extends State<Reward> {
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                "Reward",
+                                                "Rewards",
                                                 style: TextStyle(
                                                     fontSize: 16.sp,
                                                     fontFamily: chewy_regular,
                                                     color: white_opacity_B3ffffff),
                                               ),
                                               SizedBox(
-                                                width: 13,
+                                                width: 9,
                                               ),
                                               Stack(
                                                 alignment: Alignment.center,
                                                 children: [
                                                   Image.asset(img_ellipse),
+
                                                   Row(
                                                     mainAxisAlignment: MainAxisAlignment.center,
+                                                    crossAxisAlignment: CrossAxisAlignment.center,
                                                     children: [
+                                                      SizedBox(width: 12,),
                                                       Text(
-                                                        "10",
+                                                        "12",
                                                         style: TextStyle(
                                                           fontSize: 15,
                                                           fontFamily: chewy_regular,
@@ -448,15 +451,7 @@ class _RewardState extends State<Reward> {
                                                             ),
                                                           ],),
                                                       ),
-
-                                                      SizedBox(
-                                                        width: 9,
-                                                      ),
-                                                      Image.asset(
-                                                        img_india,
-                                                        width: 16,
-                                                        height: 16,
-                                                      )
+                                                      Image.asset(diamond,height:35.h,width:35.w,)
                                                     ],
                                                   )
                                                 ],
@@ -498,7 +493,7 @@ class _RewardState extends State<Reward> {
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                "Reward",
+                                                "Rewards",
                                                 style: TextStyle(
                                                     fontSize: 16.sp,
                                                     fontFamily: chewy_regular,
@@ -545,14 +540,14 @@ class _RewardState extends State<Reward> {
                                           )
                                         ],
                                       ),
-                                      Container(
-                                        width: 213.w,
-                                        height: 225.h,
-                                        decoration: BoxDecoration(
-                                            color: Color(0xB3002236),
-                                            borderRadius: BorderRadius.circular(6.r)
-                                        ),
-                                      ),
+                                      // Container(
+                                      //   width: double.infinity,
+                                      //   height: double.infinity,
+                                      //   decoration: BoxDecoration(
+                                      //       color: Color(0xB3002236),
+                                      //       borderRadius: BorderRadius.circular(6.r)
+                                      //   ),
+                                      // ),
                                       Image.asset(
                                         img_lock,
                                       ),
@@ -749,29 +744,31 @@ class _RewardState extends State<Reward> {
                                           SizedBox(
                                             height: 22.h,
                                           ),
-
                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                "Reward",
+                                                "Rewards",
                                                 style: TextStyle(
                                                     fontSize: 16.sp,
                                                     fontFamily: chewy_regular,
                                                     color: white_opacity_B3ffffff),
                                               ),
                                               SizedBox(
-                                                width: 13,
+                                                width: 9,
                                               ),
                                               Stack(
                                                 alignment: Alignment.center,
                                                 children: [
                                                   Image.asset(img_ellipse),
+
                                                   Row(
                                                     mainAxisAlignment: MainAxisAlignment.center,
+                                                    crossAxisAlignment: CrossAxisAlignment.center,
                                                     children: [
+                                                      SizedBox(width: 12,),
                                                       Text(
-                                                        "10",
+                                                        "12",
                                                         style: TextStyle(
                                                           fontSize: 15,
                                                           fontFamily: chewy_regular,
@@ -789,15 +786,7 @@ class _RewardState extends State<Reward> {
                                                             ),
                                                           ],),
                                                       ),
-
-                                                      SizedBox(
-                                                        width: 9,
-                                                      ),
-                                                      Image.asset(
-                                                        img_india,
-                                                        width: 16,
-                                                        height: 16,
-                                                      )
+                                                      Image.asset(diamond,height:35.h,width:35.w,)
                                                     ],
                                                   )
                                                 ],
@@ -839,7 +828,7 @@ class _RewardState extends State<Reward> {
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                "Reward",
+                                                "Rewards",
                                                 style: TextStyle(
                                                     fontSize: 16.sp,
                                                     fontFamily: chewy_regular,
@@ -886,14 +875,14 @@ class _RewardState extends State<Reward> {
                                           )
                                         ],
                                       ),
-                                      Container(
-                                        width: 213.w,
-                                        height: 228.h,
-                                        decoration: BoxDecoration(
-                                            color: Color(0xB3002236),
-                                            borderRadius: BorderRadius.circular(6.r)
-                                        ),
-                                      ),
+                                      // Container(
+                                      //   width: 213.w,
+                                      //   height: 228.h,
+                                      //   decoration: BoxDecoration(
+                                      //       color: Color(0xB3002236),
+                                      //       borderRadius: BorderRadius.circular(6.r)
+                                      //   ),
+                                      // ),
                                       Image.asset(
                                         img_lock,
                                       ),
@@ -1089,29 +1078,31 @@ class _RewardState extends State<Reward> {
                                           SizedBox(
                                             height: 22.h,
                                           ),
-
                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                "Reward",
+                                                "Rewards",
                                                 style: TextStyle(
                                                     fontSize: 16.sp,
                                                     fontFamily: chewy_regular,
                                                     color: white_opacity_B3ffffff),
                                               ),
                                               SizedBox(
-                                                width: 13,
+                                                width: 9,
                                               ),
                                               Stack(
                                                 alignment: Alignment.center,
                                                 children: [
                                                   Image.asset(img_ellipse),
+
                                                   Row(
                                                     mainAxisAlignment: MainAxisAlignment.center,
+                                                    crossAxisAlignment: CrossAxisAlignment.center,
                                                     children: [
+                                                      SizedBox(width: 12,),
                                                       Text(
-                                                        "10",
+                                                        "12",
                                                         style: TextStyle(
                                                           fontSize: 15,
                                                           fontFamily: chewy_regular,
@@ -1129,15 +1120,7 @@ class _RewardState extends State<Reward> {
                                                             ),
                                                           ],),
                                                       ),
-
-                                                      SizedBox(
-                                                        width: 9,
-                                                      ),
-                                                      Image.asset(
-                                                        img_india,
-                                                        width: 16,
-                                                        height: 16,
-                                                      )
+                                                      Image.asset(diamond,height:35.h,width:35.w,)
                                                     ],
                                                   )
                                                 ],
@@ -1179,7 +1162,7 @@ class _RewardState extends State<Reward> {
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                "Reward",
+                                                "Rewards",
                                                 style: TextStyle(
                                                     fontSize: 16.sp,
                                                     fontFamily: chewy_regular,
@@ -1226,14 +1209,14 @@ class _RewardState extends State<Reward> {
                                           )
                                         ],
                                       ),
-                                      Container(
-                                        width: 213.w,
-                                        height: 228.h,
-                                        decoration: BoxDecoration(
-                                            color: Color(0xB3002236),
-                                            borderRadius: BorderRadius.circular(6.r)
-                                        ),
-                                      ),
+                                      // Container(
+                                      //   width: 213.w,
+                                      //   height: 228.h,
+                                      //   decoration: BoxDecoration(
+                                      //       color: Color(0xB3002236),
+                                      //       borderRadius: BorderRadius.circular(6.r)
+                                      //   ),
+                                      // ),
                                       Image.asset(
                                         img_lock,
                                       ),

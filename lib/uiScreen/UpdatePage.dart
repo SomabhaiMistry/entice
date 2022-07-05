@@ -1,7 +1,4 @@
-import 'package:dotted_line/dotted_line.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -10,15 +7,14 @@ import '../style/my_icon_images.dart';
 import '../style/my_string.dart';
 import '../utilites/Constant.dart';
 
-class Demo extends StatefulWidget {
-  const Demo({Key? key}) : super(key: key);
+class UpdatePage extends StatefulWidget {
+  const UpdatePage({Key? key}) : super(key: key);
 
   @override
-  State<Demo> createState() => _DemoState();
+  State<UpdatePage> createState() => _UpdatePageState();
 }
 
-class _DemoState extends State<Demo> {
-
+class _UpdatePageState extends State<UpdatePage> {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
@@ -54,54 +50,54 @@ class _DemoState extends State<Demo> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(top: 95.h),
-                            child:Center(
-                              child: Text(
-                                "New Update available",style: TextStyle(
-                                fontSize: 20.sp,color: Colors.black,fontFamily: chewy_regular),
-                              ),
-                            )
+                              margin: EdgeInsets.only(top: 95.h),
+                              child:Center(
+                                child: Text(
+                                  "New Update available",style: TextStyle(
+                                    fontSize: 20.sp,color: Colors.black,fontFamily: chewy_regular),
+                                ),
+                              )
                           ),
                           SizedBox(height: 21.h,),
                           Center(
                             child: Text(
-                              "Minor bug fixed",style: TextStyle(
-                              fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                              "settMinor bug fixed",style: TextStyle(
+                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
                             ),
                           ),
                           SizedBox(height: 7.h,),
                           Center(
                             child: Text(
                               "New Games added",style: TextStyle(
-                              fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
                             ),
                           ),
                           SizedBox(height: 7.h,),
                           Center(
                             child: Text(
                               "Updated UI",style: TextStyle(
-                              fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
                             ),
                           ),
                           SizedBox(height: 7.h,),
                           Center(
                             child: Text(
                               "Improved game playing experience",style: TextStyle(
-                              fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
                             ),
                           ),
                           SizedBox(height: 7.h,),
                           Center(
                             child: Text(
                               "Improved Ludo game UI",style: TextStyle(
-                              fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
                             ),
                           ),
                           SizedBox(height: 7.h,),
                           Center(
                             child: Text(
                               "Updated NFT logic",style: TextStyle(
-                              fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
                             ),
                           ),
                           SizedBox(height: 20.h,),

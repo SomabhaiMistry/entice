@@ -5,11 +5,14 @@ import 'package:entice/four_in_a_row/Popup2.dart';
 import 'package:entice/uiScreen/ButtonDemo.dart';
 import 'package:entice/uiScreen/Demo.dart';
 import 'package:entice/uiScreen/ListScreen.dart';
+import 'package:entice/uiScreen/NoDataFound.dart';
 import 'package:entice/uiScreen/NotificationList.dart';
 import 'package:entice/uiScreen/Reward.dart';
 import 'package:entice/uiScreen/Setting.dart';
 import 'package:entice/uiScreen/Test1.dart';
 import 'package:entice/uiScreen/Testing.dart';
+import 'package:entice/uiScreen/UnderMaintinance.dart';
+import 'package:entice/uiScreen/UpdatePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -36,7 +39,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const Reward(),
+          home: const UpdatePage(),
         );
       },
     );

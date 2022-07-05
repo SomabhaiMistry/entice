@@ -78,6 +78,12 @@ const bg_overlap = 'assets/images/bg_overlap.png';
 const log_top_bg = 'assets/images/log_top_bg.png';
 const bg_setting_bg = 'assets/images/bg_setting_bg.png';
 const img_title_setting = 'assets/images/img_title_setting.png';
+const img_notification_bg = 'assets/images/img_notification_bg.png';
+const img_under_maintance = 'assets/images/img_under_maintance.png';
+const img_data_not_found = 'assets/images/img_data_not_found.png';
+const btn_back = 'assets/images/btn_back.png';
+const img_update = 'assets/images/img_update.png';
+const btn_update_now = 'assets/images/btn_update_now.png';
 
 
 
