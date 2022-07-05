@@ -84,6 +84,8 @@ const img_data_not_found = 'assets/images/img_data_not_found.png';
 const btn_back = 'assets/images/btn_back.png';
 const img_update = 'assets/images/img_update.png';
 const btn_update_now = 'assets/images/btn_update_now.png';
+const img_mining_bg = 'assets/images/img_mining_bg.png';
+const img_point_bg = 'assets/images/img_point_bg.png';
 
 
 

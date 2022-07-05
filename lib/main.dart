@@ -5,6 +5,7 @@ import 'package:entice/four_in_a_row/Popup2.dart';
 import 'package:entice/uiScreen/ButtonDemo.dart';
 import 'package:entice/uiScreen/Demo.dart';
 import 'package:entice/uiScreen/ListScreen.dart';
+import 'package:entice/uiScreen/Mining.dart';
 import 'package:entice/uiScreen/NoDataFound.dart';
 import 'package:entice/uiScreen/NotificationList.dart';
 import 'package:entice/uiScreen/Reward.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const UpdatePage(),
+          home: const Mining(),
         );
       },
     );
