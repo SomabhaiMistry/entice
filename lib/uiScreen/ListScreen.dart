@@ -627,9 +627,11 @@ class ListScreen extends StatelessWidget {
                   ),
                 ),
                 ///////////////////////////////////////////////////////////////////
-                Text("New",style: TextStyle(
-                  fontSize: 20,fontFamily: chewy_regular,color: black_121212
-                ),),
+                Center(
+                  child: Text("-------- New Screen--------",style: TextStyle(
+                    fontSize: 20,fontFamily: chewy_regular,color: black_121212
+                  ),),
+                ),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
