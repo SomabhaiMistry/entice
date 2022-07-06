@@ -8,7 +8,6 @@ import '../utilites/Constant.dart';
 
 class Reward extends StatefulWidget {
   const Reward({Key? key}) : super(key: key);
-
   @override
   State<Reward> createState() => _RewardState();
 }

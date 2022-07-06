@@ -27,32 +27,10 @@ class _Test1State extends State<Test1> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CarouselSlider(
-                items: [
-                  SwapFile(),
-                  SwapFile(),
-                  SwapFile(),
-                  SwapFile(),
-                  SwapFile(),
-                  SwapFile(),
-                  SwapFile(),
-                ],
-                //Slider Container properties
-                options: CarouselOptions(
-                  height: 375.h,
-                  aspectRatio: 16/9,
-                  viewportFraction: 0.9,
-                  initialPage: 0,
-                  enableInfiniteScroll: true,
-                  reverse: false,
-                  autoPlay: true,
-                  autoPlayInterval: Duration(seconds: 3),
-                  autoPlayAnimationDuration: Duration(milliseconds: 800),
-                  autoPlayCurve: Curves.fastOutSlowIn,
-                  // enlargeCenterPage: true,
-                  scrollDirection: Axis.horizontal,
-                ),
-              )
+
+
+
+
             ],
           ),
         ),

@@ -144,15 +144,16 @@ class _MyBadgeAndBenefitsState extends State<MyBadgeAndBenefits> {
                   height: 36.h,
                 ),
                 CarouselSlider(
-                  items: [
-                    SwapFile(),
-                    SwapFile(),
-                    SwapFile(),
-                    SwapFile(),
-                    SwapFile(),
-                    SwapFile(),
-                    SwapFile(),
-                  ],
+                  items: List.generate(10, (index) => SwapFile()),
+                  // items: [
+                  //   SwapFile(),
+                  //   SwapFile(),
+                  //   SwapFile(),
+                  //   SwapFile(),
+                  //   SwapFile(),
+                  //   SwapFile(),
+                  //   SwapFile(),
+                  // ],
                   //Slider Container properties
                   options: CarouselOptions(
                     height: 375.h,

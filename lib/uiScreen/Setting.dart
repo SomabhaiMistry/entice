@@ -37,9 +37,9 @@ class _SettingState extends State<Setting> {
                             child:
                             Stack(
                               children: [
-                                Image.asset(img_rules_bg, height: 300.h,
-                                  width: double.infinity, fit: BoxFit.fill,),
-                                SvgPicture.asset(bg,width: double.infinity, height: 300, fit: BoxFit.fill,)
+                                Image.asset(img_setting_bg,fit: BoxFit.fill,),
+
+                                // SvgPicture.asset(bg,width: double.infinity, height: 300, fit: BoxFit.fill,)
                               ],
                             )
                         ),
