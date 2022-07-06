@@ -56,11 +56,11 @@ class _RewardSwapPage2State extends State<RewardSwapPage2> {
               alignment: Alignment.center,
               children: [
                 Container(
+                  margin: EdgeInsets.only(left: 20.w,right: 35.w),
                   padding: EdgeInsets.all(3),
-                  width: 200,
-                  height: 28,
+                  height: 32,
                   decoration: BoxDecoration(
-                      color: Color(0xffD6D6D6),
+                      color: Color(0xffffffff),
                       border: Border.all(
                           color: blue_1F507E, width: 1.5),
                       borderRadius: BorderRadius.circular(8)),
@@ -69,7 +69,8 @@ class _RewardSwapPage2State extends State<RewardSwapPage2> {
                     child: LinearProgressIndicator(value: 0.8,
                       valueColor: AlwaysStoppedAnimation<Color>(
                           Color(0xfffed65c)),
-                      backgroundColor: Color(0xffD6D6D6),
+                      // backgroundColor: Color(0xffD6D6D6),
+                      backgroundColor: Color(0xffffffff),
                     ),
                   ),
                 ),

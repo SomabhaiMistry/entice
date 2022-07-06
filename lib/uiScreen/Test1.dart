@@ -33,7 +33,7 @@ class _Test1State extends State<Test1> {
                 children: [
                   Container(
                     margin: EdgeInsets.only(left: 20, right: 20, top: 25),
-                    height: 310.h,
+                    height: 330.h,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: yellow_F7CB46,
@@ -87,7 +87,7 @@ class _Test1State extends State<Test1> {
                           ],
                         ),
                         SizedBox(
-                          height: 16.h,
+                          height: 25.3.h,
                         ),
                         CarouselSlider(
                           items: [
