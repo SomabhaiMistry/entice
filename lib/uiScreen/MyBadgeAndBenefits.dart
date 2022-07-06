@@ -61,7 +61,6 @@ class _MyBadgeAndBenefitsState extends State<MyBadgeAndBenefits> {
                 SizedBox(
                   height: 30.h,
                 ),
-
                 Stack(
                   alignment: Alignment.center,
                   children: [
@@ -100,13 +99,6 @@ class _MyBadgeAndBenefitsState extends State<MyBadgeAndBenefits> {
                 SizedBox(
                   height: 29.h,
                 ),
-
-
-
-
-
-
-
                 Center(
                   child: Stack(
                     alignment: Alignment.topRight,
@@ -136,7 +128,6 @@ class _MyBadgeAndBenefitsState extends State<MyBadgeAndBenefits> {
                     ],
                   ),
                 ),
-
                 SizedBox(
                   height: 8.h,
                 ),
