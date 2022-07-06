@@ -38,9 +38,8 @@ class _UpdatePageState extends State<UpdatePage> {
                             child:
                             Stack(
                               children: [
-                                Image.asset(img_rules_bg, height: 350.h,
-                                  width: double.infinity, fit: BoxFit.fill,),
-                                SvgPicture.asset(bg,width: double.infinity, height: 350.h, fit: BoxFit.fill,)
+                                Image.asset(img_setting_bg,fit: BoxFit.fill,),
+                                SvgPicture.asset(bg,width: double.infinity, fit: BoxFit.fill,)
                               ],
                             )
                         ),
@@ -50,59 +49,71 @@ class _UpdatePageState extends State<UpdatePage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
-                              margin: EdgeInsets.only(top: 95.h),
+                              margin: EdgeInsets.only(top: 90.h,left: 50.w,right: 50.w),
                               child:Center(
                                 child: Text(
-                                  "New Update available",style: TextStyle(
+                                  "Please update the app to enjoy full featured app with more benefits for you.",style: TextStyle(
                                     fontSize: 20.sp,color: Colors.black,fontFamily: chewy_regular),
-                                ),
+                                textAlign: TextAlign.center,),
+
                               )
                           ),
                           SizedBox(height: 21.h,),
-                          Center(
-                            child: Text(
-                              "settMinor bug fixed",style: TextStyle(
-                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
-                            ),
-                          ),
-                          SizedBox(height: 7.h,),
-                          Center(
-                            child: Text(
-                              "New Games added",style: TextStyle(
-                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
-                            ),
-                          ),
-                          SizedBox(height: 7.h,),
-                          Center(
-                            child: Text(
-                              "Updated UI",style: TextStyle(
-                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
-                            ),
-                          ),
-                          SizedBox(height: 7.h,),
-                          Center(
-                            child: Text(
-                              "Improved game playing experience",style: TextStyle(
-                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
-                            ),
-                          ),
-                          SizedBox(height: 7.h,),
-                          Center(
-                            child: Text(
-                              "Improved Ludo game UI",style: TextStyle(
-                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
-                            ),
-                          ),
-                          SizedBox(height: 7.h,),
-                          Center(
-                            child: Text(
-                              "Updated NFT logic",style: TextStyle(
-                                fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
-                            ),
-                          ),
-                          SizedBox(height: 20.h,),
 
-                          Center(child: Image.asset(btn_update_now,height: 83,))
+                          Container(
+                              margin: EdgeInsets.only(top: 90.h,left: 50.w,right: 50.w),
+                              child:Center(
+                                child: Text(
+                                  "New update available",style: TextStyle(
+                                    fontSize: 18.sp,color: Colors.black,fontFamily: chewy_regular),
+                                  textAlign: TextAlign.center,),
+
+                              )
+                          ),
+                          // Center(
+                          //   child: Text(
+                          //     "settMinor bug fixed",style: TextStyle(
+                          //       fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                          //   ),
+                          // ),
+                          // SizedBox(height: 7.h,),
+                          // Center(
+                          //   child: Text(
+                          //     "New Games added",style: TextStyle(
+                          //       fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                          //   ),
+                          // ),
+                          // SizedBox(height: 7.h,),
+                          // Center(
+                          //   child: Text(
+                          //     "Updated UI",style: TextStyle(
+                          //       fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                          //   ),
+                          // ),
+                          // SizedBox(height: 7.h,),
+                          // Center(
+                          //   child: Text(
+                          //     "Improved game playing experience",style: TextStyle(
+                          //       fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                          //   ),
+                          // ),
+                          // SizedBox(height: 7.h,),
+                          // Center(
+                          //   child: Text(
+                          //     "Improved Ludo game UI",style: TextStyle(
+                          //       fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                          //   ),
+                          // ),
+                          // SizedBox(height: 7.h,),
+                          // Center(
+                          //   child: Text(
+                          //     "Updated NFT logic",style: TextStyle(
+                          //       fontSize: 14.sp,color:black_60000000,fontFamily: chewy_regular),
+                          //   ),
+                          // ),
+                          SizedBox(height: 30.h,),
+
+                          Center(child: Image.asset(btn_update_now,height: 78.h,))
                         ],
                       ),
 

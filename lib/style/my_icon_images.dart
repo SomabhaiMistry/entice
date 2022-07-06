@@ -88,6 +88,12 @@ const img_mining_bg = 'assets/images/img_mining_bg.png';
 const img_point_bg = 'assets/images/img_point_bg.png';
 const img_title_box = 'assets/images/title_box.png';
 const title_green_curve = 'assets/images/title_green_curve.png';
+const img_setting_bg = 'assets/images/img_setting_bg.png';
+const img_badge_rect_bg = 'assets/images/img_badge_rect_bg.png';
+const img_gold_coin = 'assets/images/img_gold_coin.png';
+const img_deposite_bounce = 'assets/images/img_deposite_bounce.png';
+const img_status_pending = 'assets/images/img_status_pending.png';
+const img_status_success = 'assets/images/img_status_success.png';
 
 
 

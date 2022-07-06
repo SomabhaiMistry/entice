@@ -33,6 +33,7 @@ import 'GameModeSelect.dart';
 import 'HomePage.dart';
 import 'LoginScreen.dart';
 import 'MobileVerification.dart';
+import 'MyBadgeAndBenefits.dart';
 import 'PlayWithFriend.dart';
 import 'PlaywithFriendFourPlayer.dart';
 import 'PlaywithFriendFourPlayerOnline.dart';
@@ -872,6 +873,25 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       "UpdatePage",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MyBadgeAndBenefits(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "MyBadgeAndBenefits",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,

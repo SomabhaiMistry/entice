@@ -14,6 +14,7 @@ import 'package:entice/uiScreen/Test1.dart';
 import 'package:entice/uiScreen/Testing.dart';
 import 'package:entice/uiScreen/UnderMaintinance.dart';
 import 'package:entice/uiScreen/UpdatePage.dart';
+import 'package:entice/uiScreen/test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

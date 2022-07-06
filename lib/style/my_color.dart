@@ -50,3 +50,4 @@ const green_20a872 = Color(0xff20a872);
 
 
 const point_line_4a5c94 = Color(0x8F4a5c94);
+const inactive_progress_313125 = Color(0xfF313125);
