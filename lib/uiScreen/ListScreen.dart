@@ -9,6 +9,7 @@ import 'package:entice/uiScreen/NoDataFound.dart';
 import 'package:entice/uiScreen/NotificationList.dart';
 import 'package:entice/uiScreen/Reward.dart';
 import 'package:entice/uiScreen/Setting.dart';
+import 'package:entice/uiScreen/Test1.dart';
 import 'package:entice/uiScreen/UnderMaintinance.dart';
 import 'package:entice/uiScreen/UpdatePage.dart';
 import 'package:flutter/material.dart';
@@ -892,6 +893,25 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       "MyBadgeAndBenefits",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Test1(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "Test1",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,

@@ -51,3 +51,17 @@ const green_20a872 = Color(0xff20a872);
 
 const point_line_4a5c94 = Color(0x8F4a5c94);
 const inactive_progress_313125 = Color(0xfF313125);
+
+
+const gold1_FEED91 = Color(0xfFFEED91);
+const gold2_73502E = Color(0xfF73502E);
+
+const blue1_8BBFDE = Color(0xfF8BBFDE);
+const blue2_76AFD0 = Color(0xfF76AFD0);
+const blue3_417197 = Color(0xfF417197);
+
+const skyblue1_b8dced = Color(0xfFb8dced);
+const skyblue2_1c4b72 = Color(0xfF76AFD0);
+
+
+
