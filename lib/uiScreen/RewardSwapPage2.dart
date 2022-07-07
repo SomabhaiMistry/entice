@@ -20,7 +20,7 @@ class _RewardSwapPage2State extends State<RewardSwapPage2> {
         Container(
           margin: EdgeInsets.only(right: 12),
           width: double.infinity,
-          height: 225,
+          height: 200,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
 

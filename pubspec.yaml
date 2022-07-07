@@ -35,6 +35,9 @@ dependencies:
   dotted_border: ^2.0.0+2
   bouncing_widget: ^2.0.0
   carousel_slider: ^4.1.1
+  fluttertoast: ^8.0.9
+
+  toast: ^0.1.5
 
 
   # The following adds the Cupertino Icons font to your application.

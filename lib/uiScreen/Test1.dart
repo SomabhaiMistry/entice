@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:entice/SelfTesting/CommonMainFile.dart';
 import 'package:entice/style/my_color.dart';
 import 'package:entice/uiScreen/RewardSwapPage1.dart';
 import 'package:entice/uiScreen/RewardSwapPage2.dart';
@@ -32,8 +33,8 @@ class _Test1State extends State<Test1> {
                 clipBehavior: Clip.none,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 20, right: 20, top: 25),
-                    height: 330.h,
+                    margin: EdgeInsets.only(left: 10, right: 10, top: 25),
+                    height: 295.h,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: yellow_F7CB46,
@@ -81,7 +82,7 @@ class _Test1State extends State<Test1> {
                                 style: TextStyle(
                                     color: white_ffffff,
                                     fontSize: 16.sp,
-                                    fontFamily: chewy_regular),
+                                    fontFamily: sf_pro_display_semibold),
                               ),
                             ),
                           ],
@@ -97,11 +98,13 @@ class _Test1State extends State<Test1> {
                           ],
                           //Slider Container properties
                           options: CarouselOptions(
-                            height: 225.h,
+                            height: 200.h,
                             // aspectRatio: 16 / 9,
                             viewportFraction: 0.80,
                             initialPage: 0,
                             reverse: false,
+                            autoPlay: true,
+                            enableInfiniteScroll: false,
                             scrollDirection: Axis.horizontal,
                           ),
                         )
@@ -109,7 +112,10 @@ class _Test1State extends State<Test1> {
                     ),
                   ),
                 ],
-              )
+              ),
+
+
+              ChewyRegular("APp Name", 15, blue_2FA1C7)
             ],
           ),
         ),

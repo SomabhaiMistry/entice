@@ -1,3 +1,4 @@
+import 'package:entice/SelfTesting/Trial.dart';
 import 'package:entice/SpinWheel/ReferAndEarn.dart';
 import 'package:entice/SpinWheel/SimplePage1.dart';
 import 'package:entice/four_in_a_row/Page1.dart';
@@ -932,6 +933,25 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       "Testing",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Trial(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "Trial",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,

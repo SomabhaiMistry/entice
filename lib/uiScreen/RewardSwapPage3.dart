@@ -20,7 +20,7 @@ class _RewardSwapPage3State extends State<RewardSwapPage3> {
       children: [
         Container(
           width: double.infinity,
-          height: 225,
+          height: 200,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             gradient: LinearGradient(
@@ -104,7 +104,7 @@ class _RewardSwapPage3State extends State<RewardSwapPage3> {
         ),
         Container(
           width: double.infinity,
-          height: 225.h,
+          height: 200.h,
           decoration: BoxDecoration(
               color: Color(0xB3002236),
               borderRadius: BorderRadius.circular(12.r)
