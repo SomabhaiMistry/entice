@@ -43,6 +43,7 @@ import 'PlaywithFriendPlayer.dart';
 import 'Profile.dart';
 import 'RulesPage.dart';
 import 'SplashScreen.dart';
+import 'Testing.dart';
 import 'Wallet.dart';
 import 'WelCome.dart';
 
@@ -645,7 +646,7 @@ class ListScreen extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(12.0),
                     child: Text(
-                      "ReferAndEarn Position",
+                      "ReferAndEarn",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,
@@ -912,6 +913,25 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       "Test1",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Testing(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "Testing",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,

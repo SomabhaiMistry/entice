@@ -56,7 +56,7 @@ class _RewardState extends State<Reward> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 26, top: 36.h),
+                    margin: EdgeInsets.only(left: 26.w,right: 26.w, top: 36.h),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       mainAxisSize: MainAxisSize.max,
@@ -97,118 +97,120 @@ class _RewardState extends State<Reward> {
                         SizedBox(
                           width: 21.w,
                         ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  str_jay,
-                                  style: TextStyle(
-                                      fontSize: 16.sp,
-                                      fontFamily: chewy_regular,
-                                      color: white_ffffff),
-                                ),
-                                SizedBox(
-                                  width: 6.w,
-                                ),
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(2.r),
-                                  child: Image.asset(
-                                    img_india,
-                                    height: 20,
-                                    width: 20,
-                                    fit: BoxFit.fill,
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Text(
+                                    str_jay,
+                                    style: TextStyle(
+                                        fontSize: 16.sp,
+                                        fontFamily: chewy_regular,
+                                        color: white_ffffff),
                                   ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              height: 9.h,
-                            ),
-                            Stack(
-                              alignment: Alignment.center,
-                              children: [
-                                Container(
-                                  padding: EdgeInsets.all(1.8),
-                                  width: 250,
-                                  height: 28,
-                                  decoration: BoxDecoration(
-                                      color: Color(0xffD6D6D6),
-                                      border: Border.all(
-                                          color: white_ffffff, width: 2),
-                                      borderRadius: BorderRadius.circular(15)),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.all(Radius.circular(15)),
-                                    child: LinearProgressIndicator(value: 0.8,
-                                      valueColor: AlwaysStoppedAnimation<Color>(
-                                          Color(0xff20a872)),
-                                      backgroundColor: Color(0xffD6D6D6),
+                                  SizedBox(
+                                    width: 6.w,
+                                  ),
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(2.r),
+                                    child: Image.asset(
+                                      img_india,
+                                      height: 20,
+                                      width: 20,
+                                      fit: BoxFit.fill,
                                     ),
                                   ),
-                                ),
-                                Row(
-
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      "80",
-                                      style: TextStyle(
-                                        fontSize: 15,
-                                        fontFamily: chewy_regular,
-                                        color: white_ffffff,
-                                        shadows: <Shadow>[
-                                          Shadow(
-                                            // offset: Offset(10.0, 10.0),
-                                            blurRadius: 3.0,
-                                            color:Color(0xff000000),
-                                          ),
-                                          Shadow(
-                                            // offset: Offset(10.0, 10.0),
-                                            blurRadius: 8.0,
-                                            color: Color(0xff1F507E),
-                                          ),
-                                        ],),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 9.h,
+                              ),
+                              Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.all(1.8),
+                                    // width: 250,
+                                    height: 28,
+                                    decoration: BoxDecoration(
+                                        color: Color(0xffD6D6D6),
+                                        border: Border.all(
+                                            color: white_ffffff, width: 2),
+                                        borderRadius: BorderRadius.circular(15)),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.all(Radius.circular(15)),
+                                      child: LinearProgressIndicator(value: 0.8,
+                                        valueColor: AlwaysStoppedAnimation<Color>(
+                                            Color(0xff20a872)),
+                                        backgroundColor: Color(0xffD6D6D6),
+                                      ),
                                     ),
-                                    Text(
-                                      " / 100",
-                                      style: TextStyle(
-                                        fontSize: 15,
-                                        fontFamily: chewy_regular,
-                                        color: white_ffffff,
-                                        shadows: <Shadow>[
-                                          Shadow(
-                                            // offset: Offset(10.0, 10.0),
-                                            blurRadius: 3.0,
-                                            color:Color(0xff000000),
-                                          ),
-                                          Shadow(
-                                            // offset: Offset(10.0, 10.0),
-                                            blurRadius: 8.0,
-                                            color: Color(0xff1F507E),
-                                          ),
-                                        ],),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
+                                  ),
+                                  Row(
 
-                            SizedBox(
-                              height: 9.h,
-                            ),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "80",
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                          fontFamily: chewy_regular,
+                                          color: white_ffffff,
+                                          shadows: <Shadow>[
+                                            Shadow(
+                                              // offset: Offset(10.0, 10.0),
+                                              blurRadius: 3.0,
+                                              color:Color(0xff000000),
+                                            ),
+                                            Shadow(
+                                              // offset: Offset(10.0, 10.0),
+                                              blurRadius: 8.0,
+                                              color: Color(0xff1F507E),
+                                            ),
+                                          ],),
+                                      ),
+                                      Text(
+                                        " / 100",
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                          fontFamily: chewy_regular,
+                                          color: white_ffffff,
+                                          shadows: <Shadow>[
+                                            Shadow(
+                                              // offset: Offset(10.0, 10.0),
+                                              blurRadius: 3.0,
+                                              color:Color(0xff000000),
+                                            ),
+                                            Shadow(
+                                              // offset: Offset(10.0, 10.0),
+                                              blurRadius: 8.0,
+                                              color: Color(0xff1F507E),
+                                            ),
+                                          ],),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
 
-                            Text(
-                              "Need 80 RP for level 3",
-                              style: TextStyle(
-                                  fontSize: 13.sp,
-                                  color: white_opacity_B3ffffff),
-                            ),
-                          ],
+                              SizedBox(
+                                height: 9.h,
+                              ),
+
+                              Text(
+                                "Need 80 RP for level 3",
+                                style: TextStyle(
+                                    fontSize: 13.sp,
+                                    color: white_opacity_B3ffffff),
+                              ),
+                            ],
+                          ),
                         )
                       ],
                     ),
