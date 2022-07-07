@@ -47,6 +47,7 @@ const blue_1F507E = Color(0xff1F507E);
 const blue_1c4175 = Color(0xff1c4175);
 const gold_FED65C = Color(0xffFED65C);
 const green_20a872 = Color(0xff20a872);
+const navy_blue_192a5d = Color(0xff192a5d);
 
 
 const point_line_4a5c94 = Color(0x8F4a5c94);

@@ -4,11 +4,13 @@ import 'package:entice/four_in_a_row/Popup1.dart';
 import 'package:entice/four_in_a_row/Popup2.dart';
 import 'package:entice/uiScreen/ButtonDemo.dart';
 import 'package:entice/uiScreen/Demo.dart';
+import 'package:entice/uiScreen/HighestPaidGames1.dart';
 import 'package:entice/uiScreen/ListScreen.dart';
 import 'package:entice/uiScreen/Mining.dart';
 import 'package:entice/uiScreen/NoDataFound.dart';
 import 'package:entice/uiScreen/NotificationList.dart';
 import 'package:entice/uiScreen/Reward.dart';
+import 'package:entice/uiScreen/SelectCurrency.dart';
 import 'package:entice/uiScreen/Setting.dart';
 import 'package:entice/uiScreen/Test1.dart';
 import 'package:entice/uiScreen/Testing.dart';
@@ -41,7 +43,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const ListScreen(),
+          home: const HighestPaidGames1(),
         );
       },
     );

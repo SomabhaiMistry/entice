@@ -95,6 +95,9 @@ const img_deposite_bounce = 'assets/images/img_deposite_bounce.png';
 const img_status_pending = 'assets/images/img_status_pending.png';
 const img_status_success = 'assets/images/img_status_success.png';
 
+const img_currency_gold_coin = 'assets/images/img_currency_gold_coin.png';
+const img_calendar = 'assets/images/img_calendar.png';
+
 
 
 const btn_login = 'assets/images/btn_login.svg';
