@@ -1,3 +1,4 @@
+import 'package:entice/SelfTesting/StoreCart.dart';
 import 'package:entice/SelfTesting/Trial.dart';
 import 'package:entice/SpinWheel/ReferAndEarn.dart';
 import 'package:entice/SpinWheel/SimplePage1.dart';
@@ -16,6 +17,7 @@ import 'package:entice/uiScreen/UpdatePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/src/size_extension.dart';
 
+import '../SelfTesting/ExpansionTileSample.dart';
 import '../four_in_a_row/Popup2.dart';
 import '../style/my_color.dart';
 import '../utilites/Constant.dart';
@@ -1012,6 +1014,44 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       "PaymentTransfer",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => StoreCart(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "StoreCart",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ExpansionTileSample(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "ExpansionTileSample",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,

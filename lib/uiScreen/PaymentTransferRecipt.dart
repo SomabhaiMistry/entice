@@ -169,8 +169,6 @@ SvgPicture.asset(icon_copy)
                         Text("Once you have completed the transaction, update the Transaction Hash below",style: TextStyle(
                             fontSize: 14.sp,color: white_ffffff
                         ),),
-
-
                       ],
                     ),
                   ),

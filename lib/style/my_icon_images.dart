@@ -153,3 +153,4 @@ const icon_forward_green = 'assets/images/icon_forward_green.svg';
 const icon_copy = 'assets/images/icon_copy.svg';
 const gift_box = 'assets/images/gift_box.gif';
 const diamond = 'assets/images/diamond.gif';
+const animation_arrow = 'assets/images/animation_arrow.gif';
