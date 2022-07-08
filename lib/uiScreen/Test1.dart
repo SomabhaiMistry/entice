@@ -163,6 +163,41 @@ class _Test1State extends State<Test1> {
                 ],
               ),
 
+
+
+              Container(
+                height: 150,
+                width: 150,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color(0xff7D49F5),
+                    boxShadow: [
+                    BoxShadow(
+                    color: white_ffffff,
+                      spreadRadius: -12.0,
+                      blurRadius: 12,
+                // offset: Offset(0, 5), // changes position of shadow
+              ),
+            ],
+                ),
+              ),
+
+              Container(
+                height: 300,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color:black_121212.withOpacity(0.5), // darker color
+                    ),
+                    BoxShadow(
+                      color: Color(0xff7D49F5), // background color
+                      spreadRadius: -5.0,
+                      blurRadius: 12.0,
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),

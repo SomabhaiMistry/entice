@@ -37,6 +37,7 @@ import 'HomePage.dart';
 import 'LoginScreen.dart';
 import 'MobileVerification.dart';
 import 'MyBadgeAndBenefits.dart';
+import 'PaymentTransferRecipt.dart';
 import 'PlayWithFriend.dart';
 import 'PlaywithFriendFourPlayer.dart';
 import 'PlaywithFriendFourPlayerOnline.dart';
@@ -972,6 +973,25 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       "GameHistory",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PaymentTransferRecipt(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "PaymentTransferRecipt",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,

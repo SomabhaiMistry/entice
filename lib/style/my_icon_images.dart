@@ -150,5 +150,6 @@ const icon_vibration = 'assets/images/icon_vibration.svg';
 const icon_music = 'assets/images/icon_music.svg';
 const icon_sound = 'assets/images/icon_sound.svg';
 const icon_forward_green = 'assets/images/icon_forward_green.svg';
+const icon_copy = 'assets/images/icon_copy.svg';
 const gift_box = 'assets/images/gift_box.gif';
 const diamond = 'assets/images/diamond.gif';
