@@ -97,6 +97,9 @@ const img_status_success = 'assets/images/img_status_success.png';
 
 const img_currency_gold_coin = 'assets/images/img_currency_gold_coin.png';
 const img_calendar = 'assets/images/img_calendar.png';
+const img_gane_win_bg = 'assets/images/img_gane_win_bg.png';
+const img_game_history_bg1 = 'assets/images/img_game_history_bg1.png';
+const img_credit_btn = 'assets/images/img_credit_btn.png';
 
 
 

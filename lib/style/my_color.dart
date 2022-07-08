@@ -63,6 +63,9 @@ const blue3_417197 = Color(0xfF417197);
 
 const skyblue1_b8dced = Color(0xfFb8dced);
 const skyblue2_1c4b72 = Color(0xfF76AFD0);
+const parrot_5EBB64 = Color(0xfF5EBB64);
+const light_pink_FF9292 = Color(0xfFFF9292);
+const pink_FF3434 = Color(0xfFFF3434);
 
 
 

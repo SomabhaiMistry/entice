@@ -15,23 +15,22 @@ class RewardSwapPage1 extends StatefulWidget {
 class _RewardSwapPage1State extends State<RewardSwapPage1> {
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          margin: EdgeInsets.symmetric(horizontal: 12),
-          width: double.infinity,
-          height: 200,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            gradient: LinearGradient(
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              // stops: [0.1, 0.5, 0.7, 0.9],
-              colors: [gold1_FEED91, gold2_73502E],
-            ),
-          ),
+    return  Container(
+      margin: EdgeInsets.symmetric(horizontal: 12),
+      width: double.infinity,
+      height: 200,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          // stops: [0.1, 0.5, 0.7, 0.9],
+          colors: [gold1_FEED91, gold2_73502E],
         ),
-        Column(
+      ),
+      child: Align(
+        alignment: Alignment.center,
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -61,8 +60,8 @@ class _RewardSwapPage1State extends State<RewardSwapPage1> {
               ),
             ),
           ],
-        )
-      ],
+        ),
+      ),
     );
   }
 }

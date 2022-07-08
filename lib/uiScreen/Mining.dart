@@ -220,5 +220,7 @@ class _MiningState extends State<Mining> {
           ],
         ),
       ),
-    );  }
+    );
+
+  }
 }

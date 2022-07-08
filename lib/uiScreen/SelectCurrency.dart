@@ -73,10 +73,12 @@ class _SelectCurrencyState extends State<SelectCurrency> {
                               Padding(
                                 padding: EdgeInsets.symmetric(horizontal: 20.w),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Image.asset(selectCurrencyList[i].imgCurrency,width: 40.w,height: 40.h,),
-                                    Text(selectCurrencyList[i].tvCurrencyName,style: TextStyle(fontSize: 18.sp,color: white_ffffff,fontFamily: chewy_regular),)
+                                    SizedBox(width: 12.w,),
+                                    Expanded(child: Text(selectCurrencyList[i].tvCurrencyName,style: TextStyle(fontSize: 18.sp,color: white_ffffff,fontFamily: chewy_regular),)),
+                                    SvgPicture.asset(icon_forward_green,color: Colors.white,)
 
                                   ],
                                 ),

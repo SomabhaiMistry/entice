@@ -4,6 +4,7 @@ import 'package:entice/four_in_a_row/Popup1.dart';
 import 'package:entice/four_in_a_row/Popup2.dart';
 import 'package:entice/uiScreen/ButtonDemo.dart';
 import 'package:entice/uiScreen/Demo.dart';
+import 'package:entice/uiScreen/GameHistory.dart';
 import 'package:entice/uiScreen/HighestPaidGames1.dart';
 import 'package:entice/uiScreen/ListScreen.dart';
 import 'package:entice/uiScreen/Mining.dart';
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const HighestPaidGames1(),
+          home: const ListScreen(),
         );
       },
     );

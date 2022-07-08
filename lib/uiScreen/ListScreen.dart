@@ -31,6 +31,7 @@ import 'CreateRoom.dart';
 import 'CreateRoomOnline.dart';
 import 'Deposit.dart';
 import 'FriendSearch.dart';
+import 'GameHistory.dart';
 import 'GameModeSelect.dart';
 import 'HomePage.dart';
 import 'LoginScreen.dart';
@@ -952,6 +953,25 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       "Trial",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GameHistory(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "GameHistory",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,
