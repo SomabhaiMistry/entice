@@ -48,7 +48,7 @@ class _PaymentTransferReciptState extends State<PaymentTransferRecipt> {
                           width: 18.5.w,
                         ),
                         Text(
-                          "Game History",
+                          "Payment transfer",
                           style: TextStyle(
                               fontFamily: chewy_regular,
                               color: Colors.white,
