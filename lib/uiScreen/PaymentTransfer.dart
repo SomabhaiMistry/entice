@@ -169,6 +169,7 @@ class _PaymentTransferState extends State<PaymentTransfer> {
                     child: Theme(
                       data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
                       child: new ExpansionTile(
+                        // trailing: SvgPicture.asset(ellipse,width: 20,height: 20,color: white_ffffff,),
                           title: new Text("IMPS Details",style: TextStyle(
                               fontSize: 16.sp,fontFamily: chewy_regular,color: white_ffffff
                           ),),
