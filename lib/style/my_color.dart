@@ -76,6 +76,7 @@ const bg_navy_blue_1c4175 = Color(0xfF1c4175);
 const pink_FF8787 = Color(0xfFFF8787);
 const light_yellow_FFCC33 = Color(0xfFFFCC33);
 const light_orange_F5A95F = Color(0xfFF5A95F);
+const brown_572F1B = Color(0xfF572F1B);
 
 
 
