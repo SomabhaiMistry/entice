@@ -6,6 +6,7 @@ import 'package:entice/four_in_a_row/Page1.dart';
 import 'package:entice/four_in_a_row/Popup1.dart';
 import 'package:entice/four_in_a_row/Popup3.dart';
 import 'package:entice/uiScreen/Demo.dart';
+import 'package:entice/uiScreen/GameWinPage.dart';
 import 'package:entice/uiScreen/Mining.dart';
 import 'package:entice/uiScreen/NoDataFound.dart';
 import 'package:entice/uiScreen/NotificationList.dart';
@@ -34,9 +35,11 @@ import 'CreateRoomOnline.dart';
 import 'Deposit.dart';
 import 'FriendSearch.dart';
 import 'GameHistory.dart';
+import 'GameLooserPage.dart';
 import 'GameModeSelect.dart';
 import 'HomePage.dart';
 import 'LoginScreen.dart';
+import 'LudoMainPage.dart';
 import 'MobileVerification.dart';
 import 'MyBadgeAndBenefits.dart';
 import 'PaymentTransfer.dart';
@@ -1052,6 +1055,63 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       "ExpansionTileSample",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LudoMainPage(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "LudoMainPage",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GameLooserPage(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "GameLooserPage",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: helveticaNeueNeue_medium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GameWinPage(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      "GameWinPage",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: helveticaNeueNeue_medium,

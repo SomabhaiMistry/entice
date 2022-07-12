@@ -68,5 +68,14 @@ const light_pink_FF9292 = Color(0xfFFF9292);
 const pink_FF3434 = Color(0xfFFF3434);
 const rect_blue_2E4078 = Color(0xfF2E4078);
 
+const cream_F0E2C7 = Color(0xfFF0E2C7);
+const brown_dark_54301d = Color(0xfF54301d);
+const brown1_9F715A = Color(0xfF9F715A);
+const brown2_72442D = Color(0xfF72442D);
+const bg_navy_blue_1c4175 = Color(0xfF1c4175);
+const pink_FF8787 = Color(0xfFFF8787);
+const light_yellow_FFCC33 = Color(0xfFFFCC33);
+const light_orange_F5A95F = Color(0xfFF5A95F);
+
 
 

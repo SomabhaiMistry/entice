@@ -9,6 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:entice/utilites/Constant.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:syncfusion_flutter_gauges/gauges.dart';
 
 import '../style/my_icon_images.dart';
 import '../utilites/Constant.dart';
@@ -183,7 +185,7 @@ class _Test1State extends State<Test1> {
               ),
 
               Container(
-                height: 300,
+                height: 150,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   boxShadow: [
@@ -198,6 +200,47 @@ class _Test1State extends State<Test1> {
                   ],
                 ),
               ),
+              CircularPercentIndicator(
+                radius: 60.0,
+                lineWidth: 60.0,
+                percent: 1.0,
+                animateFromLastPercent: true,
+                animation: true,
+                animationDuration: 500,
+                backgroundColor: white_ffffff,
+                progressColor: Colors.pink,
+              ),
+              CircularProgressIndicator(
+                strokeWidth: 100,
+                value: 0.25,
+                backgroundColor: Colors.transparent,
+                valueColor: AlwaysStoppedAnimation(Colors.pink),
+              ),
+              SfRadialGauge(axes: <RadialAxis>[
+                RadialAxis(
+                  minimum: 0,
+                  maximum: 20,
+                  showLabels: false,
+                  showTicks: false,
+                  startAngle: 270,
+                  endAngle: 270,
+                  axisLineStyle: const AxisLineStyle(
+                    thickness: 0.05,
+                    color:Color(0x26000000),
+                    thicknessUnit: GaugeSizeUnit.factor,
+                  ),
+                  pointers: <GaugePointer>[
+                    RangePointer(
+                      color:Color(0x26000000),
+                      value: 100,
+                      width: 1,
+                      pointerOffset: 0.05,
+                      sizeUnit: GaugeSizeUnit.factor,
+                    )
+                  ],
+                )
+              ]),
+
             ],
           ),
         ),

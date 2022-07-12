@@ -100,6 +100,12 @@ const img_calendar = 'assets/images/img_calendar.png';
 const img_gane_win_bg = 'assets/images/img_gane_win_bg.png';
 const img_game_history_bg1 = 'assets/images/img_game_history_bg1.png';
 const img_credit_btn = 'assets/images/img_credit_btn.png';
+const img_ludo_bg = 'assets/images/img_ludo_bg.png';
+const img_super = 'assets/images/img_super.png';
+const img_super_yellow = 'assets/images/img_super_yellow.png';
+const img_game_looser_title = 'assets/images/img_game_looser_title.png';
+const img_winning_price_rect = 'assets/images/img_winning_price_rect.png';
+const img_back_star = 'assets/images/img_back_star.png';
 
 
 
