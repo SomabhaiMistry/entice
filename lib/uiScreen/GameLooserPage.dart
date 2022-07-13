@@ -73,12 +73,12 @@ class _GameLooserPageState extends State<GameLooserPage> {
                                   Shadow(
                                     // offset: Offset(10.0, 10.0),
                                     blurRadius: 4.0,
-                                    color: Colors.black,
+                                    color:Color(0x99000000),
                                   ),
                                   Shadow(
                                     // offset: Offset(10.0, 10.0),
                                     blurRadius: 4.0,
-                                    color: Colors.black,
+                                    color:Color(0x1a000000),
                                   ),
                                 ],
                               ),

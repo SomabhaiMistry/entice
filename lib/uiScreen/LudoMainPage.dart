@@ -478,7 +478,6 @@ class _LudoMainPageState extends State<LudoMainPage> {
                                         child: Text(
                                           "12",
                                           overflow: TextOverflow.ellipsis,
-
                                           style: TextStyle(
                                               fontSize: 15.sp,
                                               fontFamily: chewy_regular,
@@ -983,7 +982,8 @@ class _LudoMainPageState extends State<LudoMainPage> {
                             colors: [brown1_9F715A, brown2_72442D],
                           )),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -1025,7 +1025,7 @@ class _LudoMainPageState extends State<LudoMainPage> {
                                 height: 5.w,
                               ),
                               Text(
-                                "Surgical\nStrike",
+                                "Surgical Strike",
                                 style: TextStyle(
                                     fontSize: 9.sp, color: Colors.white),
                                 textAlign: TextAlign.center,

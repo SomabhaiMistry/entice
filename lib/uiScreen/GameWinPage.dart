@@ -21,17 +21,17 @@ class _GameWinPageState extends State<GameWinPage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: bg_navy_blue_1c4175,
+        // backgroundColor: bg_navy_blue_1c4175,
         resizeToAvoidBottomInset: false,
         body: Stack(
           alignment: Alignment.bottomCenter,
           children: [
-            // Image.asset(
-            //   img_backgound,
-            //   height:450,
-            //   width: double.infinity,
-            //   fit: BoxFit.fill,
-            // ),
+            Image.asset(
+              img_backgound,
+              // height:450,
+              width: double.infinity,
+              fit: BoxFit.fill,
+            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,

@@ -164,7 +164,16 @@ class _Test1State extends State<Test1> {
                   Positioned(right: 2.5, child: Image.asset(img_cycle))
                 ],
               ),
-
+              Container(
+                  alignment: Alignment.topCenter,
+                  margin: EdgeInsets.only(top: 20),
+                  child: CircularProgressIndicator(
+                    backgroundColor: Colors.grey,
+                    color: Colors.purple,
+                    value: 0.25,
+                    strokeWidth: 10,
+                  )
+              ),
 
 
               Container(
@@ -200,26 +209,28 @@ class _Test1State extends State<Test1> {
                   ],
                 ),
               ),
-              CircularPercentIndicator(
-                radius: 60.0,
-                lineWidth: 60.0,
-                percent: 1.0,
-                animateFromLastPercent: true,
-                animation: true,
-                animationDuration: 500,
-                backgroundColor: white_ffffff,
-                progressColor: Colors.pink,
-              ),
-              CircularProgressIndicator(
-                strokeWidth: 100,
-                value: 0.25,
-                backgroundColor: Colors.transparent,
-                valueColor: AlwaysStoppedAnimation(Colors.pink),
-              ),
+              // CircularPercentIndicator(
+              //   radius: 60.0,
+              //   lineWidth: 60.0,
+              //   percent: 1.0,
+              //   animateFromLastPercent: true,
+              //   animation: true,
+              //   animationDuration: 500,
+              //   backgroundColor: white_ffffff,
+              //   progressColor: Colors.pink,
+              // ),
+              // Center(
+              //   child: CircularProgressIndicator(
+              //     strokeWidth: 70,
+              //     // value: 0.25,
+              //     backgroundColor: Colors.pink,
+              //     valueColor: AlwaysStoppedAnimation(Colors.pink),
+              //   ),
+              // ),
               SfRadialGauge(axes: <RadialAxis>[
                 RadialAxis(
                   minimum: 0,
-                  maximum: 20,
+                  maximum: 100,
                   showLabels: false,
                   showTicks: false,
                   startAngle: 270,
@@ -231,8 +242,8 @@ class _Test1State extends State<Test1> {
                   ),
                   pointers: <GaugePointer>[
                     RangePointer(
-                      color:Color(0x26000000),
-                      value: 100,
+                      color:yellow_F7CB46,
+                      value: 50,
                       width: 1,
                       pointerOffset: 0.05,
                       sizeUnit: GaugeSizeUnit.factor,
