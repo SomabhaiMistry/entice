@@ -476,7 +476,7 @@ class _LudoMainPageState extends State<LudoMainPage> {
                                       Container(
                                         width: 60,
                                         child: Text(
-                                          "12",
+                                          str_jay,
                                           overflow: TextOverflow.ellipsis,
                                           style: TextStyle(
                                               fontSize: 15.sp,
@@ -589,7 +589,7 @@ class _LudoMainPageState extends State<LudoMainPage> {
                                 Container(
                                   width: 60,
                                   child: Text(
-                                    str_vrunda_patel,
+                                    str_vaibhav,
                                     overflow: TextOverflow.ellipsis,
 
                                     style: TextStyle(
@@ -918,7 +918,7 @@ class _LudoMainPageState extends State<LudoMainPage> {
                                       Container(
                                         width: 60,
                                         child: Text(
-                                          str_vrunda_patel,
+                                          str_rutvik,
                                           overflow: TextOverflow.ellipsis,
 
                                           style: TextStyle(
@@ -942,8 +942,7 @@ class _LudoMainPageState extends State<LudoMainPage> {
               ],
             ),
             Container(
-              padding: EdgeInsets.only(
-                  left: 12.w, right: 12.w, top: 8.h, bottom: 6.h),
+              padding: EdgeInsets.only(left: 12.w, right: 12.w, top: 8.h, bottom: 6.h),
               height: 95,
               decoration: BoxDecoration(
                 color: cream_F0E2C7,
@@ -974,6 +973,7 @@ class _LudoMainPageState extends State<LudoMainPage> {
                   ),
                   Expanded(
                     child: Container(
+                      height: 80,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(18.r),
                           gradient: LinearGradient(
@@ -982,8 +982,8 @@ class _LudoMainPageState extends State<LudoMainPage> {
                             colors: [brown1_9F715A, brown2_72442D],
                           )),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -992,11 +992,14 @@ class _LudoMainPageState extends State<LudoMainPage> {
                               SizedBox(
                                 height: 5.w,
                               ),
-                              Text(
-                                "Backward",
-                                style: TextStyle(
-                                    fontSize: 9.sp, color: Colors.white),
-                                textAlign: TextAlign.center,
+                              Container(
+                                height: 22,
+                                child: Text(
+                                  "Backward",
+                                  style: TextStyle(
+                                      fontSize: 9.sp, color: Colors.white),
+                                  textAlign: TextAlign.center,
+                                ),
                               )
                             ],
                           ),
@@ -1008,11 +1011,14 @@ class _LudoMainPageState extends State<LudoMainPage> {
                               SizedBox(
                                 height: 5.w,
                               ),
-                              Text(
-                                "Star",
-                                style: TextStyle(
-                                    fontSize: 9.sp, color: Colors.white),
-                                textAlign: TextAlign.center,
+                              Container(
+                                height: 22,
+                                child: Text(
+                                  "Star",
+                                  style: TextStyle(
+                                      fontSize: 9.sp, color: Colors.white),
+                                  textAlign: TextAlign.center,
+                                ),
                               )
                             ],
                           ),
@@ -1024,11 +1030,15 @@ class _LudoMainPageState extends State<LudoMainPage> {
                               SizedBox(
                                 height: 5.w,
                               ),
-                              Text(
-                                "Surgical Strike",
-                                style: TextStyle(
-                                    fontSize: 9.sp, color: Colors.white),
-                                textAlign: TextAlign.center,
+                              Container(
+                                height: 22,
+                                child: Text(
+                                  "Surgical\nStrike",
+                                  maxLines: 2,
+                                  style: TextStyle(
+                                      fontSize: 9.sp, color: Colors.white),
+                                  textAlign: TextAlign.center,
+                                ),
                               )
                             ],
                           ),
@@ -1040,11 +1050,14 @@ class _LudoMainPageState extends State<LudoMainPage> {
                               SizedBox(
                                 height: 5.w,
                               ),
-                              Text(
-                                "Kill",
-                                style: TextStyle(
-                                    fontSize: 9.sp, color: Colors.white),
-                                textAlign: TextAlign.center,
+                              Container(
+                                height: 22,
+                                child: Text(
+                                  "Kill",
+                                  style: TextStyle(
+                                      fontSize: 9.sp, color: Colors.white),
+                                  textAlign: TextAlign.center,
+                                ),
                               )
                             ],
                           ),
@@ -1056,11 +1069,14 @@ class _LudoMainPageState extends State<LudoMainPage> {
                               SizedBox(
                                 height: 5.w,
                               ),
-                              Text(
-                                "Replace",
-                                style: TextStyle(
-                                    fontSize: 9.sp, color: Colors.white),
-                                textAlign: TextAlign.center,
+                              Container(
+                                height: 22,
+                                child: Text(
+                                  "Replace",
+                                  style: TextStyle(
+                                      fontSize: 9.sp, color: Colors.white),
+                                  textAlign: TextAlign.center,
+                                ),
                               )
                             ],
                           ),
